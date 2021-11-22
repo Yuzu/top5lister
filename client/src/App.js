@@ -22,6 +22,8 @@ import {
   
   @author McKilla Gorilla
 */
+
+// TODO - Add a /home/ route that will be the landing page. there we can determine what to show based on logged in/guest.
 const App = () => {
     return (
         <BrowserRouter>
@@ -32,7 +34,7 @@ const App = () => {
                         <Route path="/" exact component={HomeWrapper} />
                         <Route path="/register/" exact component={RegisterScreen} />
                         <Route path="/login/" exact component={SignInSide} />
-                        <Route path="/top5list/:id" exact component={WorkspaceScreen} />
+                        
                     </Switch>
                     <Statusbar />
                 </GlobalStoreContextProvider>

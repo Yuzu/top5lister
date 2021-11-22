@@ -11,6 +11,8 @@ import AlertDialog from "./AlertDialog.js"
     
     @author McKilla Gorilla
 */
+
+// TODO - rewrite this entire thing to fit the assignment.
 const HomeScreen = () => {
     const { store } = useContext(GlobalStoreContext);
 
