@@ -17,9 +17,9 @@ export default function SplashScreen() {
             <br />
             <br />
             <Stack id="splash-button-list" spacing={2} direction="column">
-                <Button class="splash-button" variant="contained" style={buttonStyle}><Link to="/register/">Create account</Link></Button>
-                <Button class="splash-button" variant="contained" style={buttonStyle}><Link to="/login/">Login</Link></Button>
-                <Button class="splash-button" variant="contained" style={buttonStyle}><Link to="/">Continue as Guest</Link></Button>
+            <Link to="/register/"><Button class="splash-button" variant="contained" style={buttonStyle}>Create account</Button></Link>
+            <Link to="/login/"><Button class="splash-button" variant="contained" style={buttonStyle}>Login</Button></Link>
+            <Link to="/"><Button class="splash-button" variant="contained" style={buttonStyle}>Continue as Guest</Button></Link>
             </Stack>
 
             <text id="splash-footer" style={{fontStyle:"italic", fontSize:15}}>Created by Timothy Wu, CSE316 Fall '21</text>

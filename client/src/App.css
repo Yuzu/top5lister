@@ -76,6 +76,7 @@ body {
 
 .splash-button {
   background-image: linear-gradient(46deg, #d4af37, #d4d4f5);
+  cursor:pointer;
 }
 
 #splash-footer {

@@ -31,7 +31,7 @@ export default function SignInSide() {
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     auth.loginUser({
-        email: data.get("email"),
+        identifier: data.get("identifier"),
         password: data.get("password")
     }, store);
   };
@@ -76,10 +76,10 @@ export default function SignInSide() {
                 margin="normal"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id="identifier"
+                label="Email Address/Username"
+                name="identifier"
+                autoComplete="identifier"
                 autoFocus
               />
               <TextField
