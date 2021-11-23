@@ -84,11 +84,20 @@ export default function PrimarySearchAppBar() {
         case "Dislikes":
             break;
         default:
-            console.log("Invalid sort???");
+            console.log("Sort menu closed");
             break;
     }
   };
 
+  
+  const handleKeyPress = (event) => {
+    if (event.code === "Enter") {
+        event.stopPropagation();
+        event.preventDefault();
+        console.log(event.target.value);
+        // TODO - Pass off to the search handler.
+    }
+  }
   const menuId = 'sort-menu';
   const renderMenu = (
     <Menu
@@ -150,6 +159,7 @@ export default function PrimarySearchAppBar() {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
+              onKeyPress={handleKeyPress}
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
             />
