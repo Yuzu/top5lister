@@ -12,7 +12,22 @@ function Statusbar() {
     const { store } = useContext(GlobalStoreContext);
     const { auth } = useContext(AuthContext);
 
-    let text ="ok!";
+    let text ="";
+
+    switch (store.currentView) {
+        case "HOME_SCREEN":
+            text = "Your Lists";
+            break;
+        case "ALL_LISTS":
+            text = store.searchQuery ? store.searchQuery + " Lists" : "All Lists";
+            break;
+        case "USER_LISTS":
+            text = store.searchQuery ? store.searchQuery + "'s Lists" : "User Lists";
+            break;
+        case "COMMUNITY_LISTS":
+            text = "Community Lists";
+            break;
+    }
     if (store.currentList)
         text = store.currentList.name;
     return (

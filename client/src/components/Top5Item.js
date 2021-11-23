@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import ListItem from '@mui/material/ListItem';
 import IconButton from '@mui/material/IconButton';
 import EditIcon from '@mui/icons-material/Edit';
+
+// TODO- rewrite this to only support text editing, nothing else.
 /*
     This React component represents a single item in our
     Top 5 List, which can be edited or moved around.

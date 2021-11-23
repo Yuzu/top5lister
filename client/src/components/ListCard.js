@@ -7,6 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
+// TODO - rewrite this into the closed listcard. also need to write openlistcard.
 /*
     This is a card in our list of top 5 lists. It lets select
     a list for editing and it has controls for changing its 

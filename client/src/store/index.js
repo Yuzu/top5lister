@@ -24,7 +24,8 @@ export const GlobalStoreActionType = {
     SET_CURRENT_LIST: "SET_CURRENT_LIST",
     SET_ITEM_EDIT_ACTIVE: "SET_ITEM_EDIT_ACTIVE",
     SET_LIST_NAME_EDIT_ACTIVE: "SET_LIST_NAME_EDIT_ACTIVE",
-    SET_CURRENT_VIEW: "SET_CURRENT_VIEW"
+    SET_CURRENT_VIEW: "SET_CURRENT_VIEW",
+    SET_SEARCH_QUERY: "SET_SEARCH_QUERY"
 }
 
 export const CurrentViewType = {
@@ -47,7 +48,8 @@ function GlobalStoreContextProvider(props) {
         listNameActive: false,
         itemActive: false,
         listMarkedForDeletion: null,
-        currentView: "HOME_SCREEN"
+        currentView: "HOME_SCREEN",
+        searchQuery: null
     });
     const history = useHistory();
 
@@ -68,7 +70,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             // STOP EDITING THE CURRENT LIST
@@ -80,7 +83,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 })
             }
             // CREATE A NEW LIST
@@ -92,7 +96,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 })
             }
             // GET ALL THE LISTS SO WE CAN PRESENT THEM
@@ -104,7 +109,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             // PREPARE TO DELETE A LIST
@@ -116,7 +122,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: payload,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             // PREPARE TO DELETE A LIST
@@ -128,7 +135,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             // UPDATE A LIST
@@ -140,7 +148,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             // START EDITING A LIST ITEM
@@ -152,7 +161,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: true,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             // START EDITING A LIST NAME
@@ -164,7 +174,8 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: true,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: store.currentView
+                    currentView: store.currentView,
+                    searchQuery: store.searchQuery
                 });
             }
             case GlobalStoreActionType.SET_CURRENT_VIEW: {
@@ -175,7 +186,20 @@ function GlobalStoreContextProvider(props) {
                     isListNameEditActive: false,
                     isItemEditActive: false,
                     listMarkedForDeletion: null,
-                    currentView: payload
+                    currentView: payload,
+                    searchQuery: store.searchQuery
+                })
+            }
+            case GlobalStoreActionType.SET_SEARCH_QUERY: {
+                return setStore({
+                    idNamePairs: store.idNamePairs,
+                    currentList: store.currentList,
+                    newListCounter: store.newListCounter,
+                    isListNameEditActive: false,
+                    isItemEditActive: false,
+                    listMarkedForDeletion: null,
+                    currentView: store.currentView,
+                    searchQuery: payload
                 })
             }
             default:
@@ -187,6 +211,27 @@ function GlobalStoreContextProvider(props) {
     // DRIVE THE STATE OF THE APPLICATION. WE'LL CALL THESE IN 
     // RESPONSE TO EVENTS INSIDE OUR COMPONENTS.
 
+    store.handleSearch = async function (searchQuery) {
+
+        // Empty search, return the usual lists for this view by checking store and calling the respective value to reload.
+        // then we call storeReducer to reset search query.
+        if (searchQuery === "") {
+            storeReducer({
+                type: GlobalStoreActionType.SET_SEARCH_QUERY,
+                payload: null
+            });
+        }
+        // if searching a user, we have to make an api call.
+
+        // otherwise, we can just filter the currently loaded lists.
+        console.log("aha");
+
+        // Also update store via reducer so our status bar can display properly.
+        storeReducer({
+            type: GlobalStoreActionType.SET_SEARCH_QUERY,
+            payload: `${searchQuery}`
+        });
+    }
     store.homeView = async function () {
         console.log("Setting current view to: Home");
         storeReducer({
