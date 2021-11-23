@@ -8,7 +8,6 @@ import {
     HomeWrapper,
     RegisterScreen,
     Statusbar,
-    WorkspaceScreen,
     SignInSide
 } from './components'
 /*

@@ -12,7 +12,8 @@ export const AuthActionType = {
     LOGIN_USER: "LOGIN_USER",
     LOGOUT_USER: "LOGOUT_USER",
     SHOW_ERROR: "SHOW_ERROR",
-    HIDE_ERROR: "HIDE_ERROR"
+    HIDE_ERROR: "HIDE_ERROR",
+    BROWSE_AS_GUEST: "BROWSE_AS_GUEST"
 }
 
 function AuthContextProvider(props) {
@@ -20,7 +21,8 @@ function AuthContextProvider(props) {
         user: null,
         loggedIn: false,
         error: false,
-        errorMsg: null
+        errorMsg: null,
+        isGuest: false
     });
     const history = useHistory();
     
@@ -37,7 +39,8 @@ function AuthContextProvider(props) {
                 return setAuth({
                     user: payload.user,
                     loggedIn: payload.loggedIn,
-                    error: false
+                    error: false,
+                    isGuest: false
                 });
             }
             case AuthActionType.REGISTER_USER: {
@@ -45,7 +48,8 @@ function AuthContextProvider(props) {
                     user: payload.user,
                     loggedIn: true,
                     error: false,
-                    errorMsg: null
+                    errorMsg: null,
+                    isGuest: false
                 })
             }
             case AuthActionType.LOGIN_USER: {
@@ -53,7 +57,8 @@ function AuthContextProvider(props) {
                     user: payload.user,
                     loggedIn: true,
                     error: false,
-                    errorMsg: null
+                    errorMsg: null,
+                    isGuest: false
                 })
             }
             case AuthActionType.LOGOUT_USER: {
@@ -61,7 +66,8 @@ function AuthContextProvider(props) {
                     user: null,
                     loggedIn: false,
                     error: false,
-                    errorMsg: null
+                    errorMsg: null,
+                    isGuest: false
                 })
             }
             case AuthActionType.SHOW_ERROR: {
@@ -69,7 +75,8 @@ function AuthContextProvider(props) {
                     user: auth.user,
                     loggedIn: auth.loggedIn,
                     error: true,
-                    errorMsg: payload.errorMsg
+                    errorMsg: payload.errorMsg,
+                    isGuest: auth.isGuest
                 })
             }
             case AuthActionType.HIDE_ERROR: {
@@ -77,14 +84,33 @@ function AuthContextProvider(props) {
                     user: auth.user,
                     loggedIn: auth.loggedIn,
                     error: false,
-                    errorMsg: null
+                    errorMsg: null,
+                    isGuest: auth.isGuest
                 })
+            }
+            case AuthActionType.BROWSE_AS_GUEST: {
+                return setAuth({
+                    user: false,
+                    loggedIn: false,
+                    error: false,
+                    errorMsg: null,
+                    isGuest: true
+                }) 
             }
             default:
                 return auth;
         }
     }
 
+    auth.browseAsGuest = function () {
+        console.log("Continuing as guest");
+        if (auth.loggedIn) {
+            return;
+        }
+        authReducer({
+            type: AuthActionType.BROWSE_AS_GUEST
+        });
+    }
     auth.getLoggedIn = async function () {
         if (auth.loggedIn) {
             return; // No need, already logged in.
