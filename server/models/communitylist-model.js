@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 const CommunityListSchema = new Schema(
     {
         name: { type: String, required: true },
+        // NOTE - this can store more than 5 items! the server-side will just filter out the top 5 to return.
         items: { 
             type: [{
                 name: String,

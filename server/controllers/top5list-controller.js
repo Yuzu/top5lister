@@ -140,6 +140,9 @@ getTop5ListPairs = async (req, res) => {
 }
 
 interactWithList = async (req, res) => {
+    // We need the list, the comment/vote, the user info, and a timestamp.
+    // We will check whether the list is valid + published, and whether the user has already voted or not. If they have voted,
+    // we need to undo their previous vote to add the new one.
     return null;
 }
 

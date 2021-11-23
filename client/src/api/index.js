@@ -38,6 +38,8 @@ export const interactWithTop5List = (id, payload) => api.put(`/top5list/interact
 export const incrementViewTop5List = (id) => api.put(`/top5list/increment/normal/${id}`)
 
 
+// get all community lists
+export const getCommunityListPairs = () => api.get(`/communitylistpairs/`)
 
 // Comment or vote on a community list, auth required.
 export const interactWithCommunityList = (id, payload) => api.put(`/top5list/interact/community/${id}`, payload)

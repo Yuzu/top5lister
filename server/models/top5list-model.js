@@ -12,7 +12,7 @@ const Top5ListSchema = new Schema(
                 content: String
                 }], 
             required: true},
-        views: {type: Number}, // TODO - add route for incrementing views
+        views: {type: Number},
         upvotes: {type: [String]}, // votes are kept track of by a list of usernames.
         downvotes: {type: [String]},
         publishDate: {type: Date} // If there is no publishDate, it isn't published yet. Simple as that.

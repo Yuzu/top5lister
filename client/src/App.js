@@ -22,7 +22,6 @@ import {
   @author McKilla Gorilla
 */
 
-// TODO - Add a /home/ route that will be the landing page. there we can determine what to show based on logged in/guest.
 const App = () => {
     return (
         <BrowserRouter>

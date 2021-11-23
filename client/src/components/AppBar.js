@@ -106,7 +106,7 @@ export default function PrimarySearchAppBar() {
         event.stopPropagation();
         event.preventDefault();
         console.log(event.target.value);
-        // TODO - Pass off to the search handler.
+        // Pass off to the search handler.
         store.handleSearch(event.target.value);
     }
   }

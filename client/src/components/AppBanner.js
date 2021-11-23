@@ -52,7 +52,6 @@ export default function AppBanner() {
             <MenuItem onClick={handleMenuClose}><Link to='/login/'>Login</Link></MenuItem>
             <MenuItem onClick={handleMenuClose}><Link to="/">Continue As Guest</Link></MenuItem>
         </Menu>
-        // TODO - write routes for guest and make that work.
     );
     const loggedInMenu = 
         <Menu

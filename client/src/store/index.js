@@ -232,7 +232,10 @@ function GlobalStoreContextProvider(props) {
             payload: `${searchQuery}`
         });
     }
+
+    // TODO - load lists in each of these 4 view functions, and filter accordingly.
     store.homeView = async function () {
+        // TODO - MAKE SURE TO LOAD NOTHING FOR A GUEST!!!!
         console.log("Setting current view to: Home");
         storeReducer({
             type: GlobalStoreActionType.SET_CURRENT_VIEW,
@@ -338,6 +341,7 @@ function GlobalStoreContextProvider(props) {
     }
 
     // THIS FUNCTION LOADS ALL THE ID, NAME PAIRS SO WE CAN LIST ALL THE LISTS
+    // TODO - maybe split this into the 4 view functions?
     store.loadIdNamePairs = async function () {
 
         let ownerEmail = auth.user.email;

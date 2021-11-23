@@ -9,7 +9,6 @@ import AuthContext from '../auth'
 export default function SplashScreen() {
 
     let buttonStyle = {maxWidth: '140px', maxHeight: '60px', minWidth: '140px', minHeight: '60px'};
-    // TODO - Add routing for continue as guest.
     const { auth } = useContext(AuthContext);
     return (
         <div id="splash-screen">

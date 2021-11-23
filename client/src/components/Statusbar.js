@@ -13,7 +13,7 @@ function Statusbar() {
     const { auth } = useContext(AuthContext);
 
     let text ="";
-
+    // TODO - add new list button for home screen, BUT LEAVE GRAYED OUT IF: GUEST BROWSING OR LIST BEING EDITED
     switch (store.currentView) {
         case "HOME_SCREEN":
             text = "Your Lists";
