@@ -25,9 +25,30 @@ const api = axios.create({
 export const createTop5List = (payload) => api.post(`/top5list/`, payload)
 export const getAllTop5Lists = () => api.get(`/top5lists/`)
 export const getTop5ListPairs = () => api.get(`/top5listpairs/`)
-export const updateTop5ListById = (id, payload) => api.put(`/top5list/${id}`, payload)
+export const updateTop5ListById = (id, payload) => api.put(`/top5list/${id}`, payload) // We can also use this route to publish a list
 export const deleteTop5ListById = (id) => api.delete(`/top5list/${id}`)
 export const getTop5ListById = (id) => api.get(`/top5list/${id}`)
+
+
+// comment or vote This route will require auth.
+export const interactWithTop5List = (id, payload) => api.put(`/top5list/interact/normal/${id}`, payload)
+
+// Increment the view of a list, no auth required such that guests can view them.
+// Only increment if published.
+export const incrementViewTop5List = (id) => api.put(`/top5list/increment/normal/${id}`)
+
+
+
+// Comment or vote on a community list, auth required.
+export const interactWithCommunityList = (id, payload) => api.put(`/top5list/interact/community/${id}`, payload)
+
+// Increment the view of a community list, no auth required
+export const incrementCommunityList = (id) => api.put(`/top5list/increment/community/${id}`)
+
+// Update a community list, this will be called whenever a new list is published/deleted
+// auth required since it's implied that if a community list is to be updated, there must be an active user currently.
+export const updateCommunityList = (id, payload) => api.put(`/top5list/community/${id}`, payload)
+
 
 export const getLoggedIn = () => api.get(`/loggedIn/`);
 export const registerUser = (payload) => api.post(`/register/`, payload)

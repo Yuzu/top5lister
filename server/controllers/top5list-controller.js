@@ -42,6 +42,7 @@ updateTop5List = async (req, res) => {
         })
     }
 
+    // TODO - add functionality to publish a list if the payload has a date, that means we want it to be published.
     Top5List.findOne({ _id: req.params.id }, (err, top5List) => {
         console.log("top5List found: " + JSON.stringify(top5List));
         if (err) {
@@ -138,11 +139,21 @@ getTop5ListPairs = async (req, res) => {
     }).catch(err => console.log(err))
 }
 
+interactWithList = async (req, res) => {
+    return null;
+}
+
+incrementView = async (req, res) => {
+    return null;
+}
+
 module.exports = {
     createTop5List,
     updateTop5List,
     deleteTop5List,
     getTop5Lists,
     getTop5ListPairs,
-    getTop5ListById
+    getTop5ListById,
+    interactWithList,
+    incrementView
 }
