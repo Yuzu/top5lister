@@ -16,7 +16,7 @@ import AppBar from "./AppBar.js";
 // TODO - rewrite this entire thing to fit the assignment.
 const HomeScreen = () => {
     const { store } = useContext(GlobalStoreContext);
-
+    
     useEffect(() => {
         store.loadIdNamePairs();
     }, []);
@@ -83,7 +83,6 @@ const HomeScreen = () => {
                     listCard
                 }
             </div>
-        
         </div>)
 }
 

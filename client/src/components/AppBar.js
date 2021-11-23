@@ -17,6 +17,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import FunctionsIcon from '@mui/icons-material/Functions';
 import SortIcon from '@mui/icons-material/Sort';
 
+import { useContext } from 'react'
+import { GlobalStoreContext, CurrentViewType } from '../store'
+
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -60,6 +63,15 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 export default function PrimarySearchAppBar() {
+
+  const CurrentViewType = {
+    HOME_SCREEN: "HOME_SCREEN",
+    ALL_LISTS: "ALL_LISTS",
+    USER_LISTS: "USER_LISTS",
+    COMMUNITY_LISTS: "COMMUNITY_LISTS"
+  }
+    
+  const { store } = useContext(GlobalStoreContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const isMenuOpen = Boolean(anchorEl);
@@ -89,7 +101,6 @@ export default function PrimarySearchAppBar() {
     }
   };
 
-  
   const handleKeyPress = (event) => {
     if (event.code === "Enter") {
         event.stopPropagation();
@@ -98,6 +109,9 @@ export default function PrimarySearchAppBar() {
         // TODO - Pass off to the search handler.
     }
   }
+
+
+  
   const menuId = 'sort-menu';
   const renderMenu = (
     <Menu
@@ -128,25 +142,45 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" style={{ background: '#e6e6e6' }}>
         <Toolbar>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                <IconButton size="large" color="default">
+                <IconButton
+                    id="HOME_SCREEN"
+                    onClick={store.homeView} 
+                    size="large" 
+                    sx={{ color: store.currentView === CurrentViewType.HOME_SCREEN ? "#0743e8" :"#6a6a6a"}}
+                >
                 <Badge>
                     <HouseIcon />
                 </Badge>
                 </IconButton>
 
-                <IconButton size="large" color="default">
+                <IconButton 
+                    id="ALL_LISTS"
+                    onClick={store.allView} 
+                    size="large" 
+                    sx={{ color: store.currentView === CurrentViewType.ALL_LISTS ? "#0743e8" :"#6a6a6a"}}
+                >
                 <Badge>
                     <GroupsIcon />
                 </Badge>
                 </IconButton>
 
-                <IconButton size="large" color="default">
+                <IconButton
+                    id="USER_LISTS"
+                    onClick={store.userView} 
+                    size="large"
+                    sx={{ color: store.currentView === CurrentViewType.USER_LISTS ? "#0743e8" :"#6a6a6a"}}
+                >
                 <Badge>
                     <PersonIcon />
                 </Badge>
                 </IconButton>
 
-                <IconButton size="large" color="default">
+                <IconButton
+                    id="COMMUNITY_LISTS"
+                    onClick={store.communityView}
+                    size="large"
+                    sx={{ color: store.currentView === CurrentViewType.COMMUNITY_LISTS ? "#0743e8" :"#6a6a6a"}}
+                >
                 <Badge>
                     <FunctionsIcon />
                 </Badge>
