@@ -26,8 +26,8 @@ export default function RegisterScreen() {
         auth.registerUser({
             firstName: formData.get('firstName'),
             lastName: formData.get('lastName'),
-            username: formData.get("username"),
-            email: formData.get('email'),
+            username: formData.get("username").toLowerCase(),
+            email: formData.get('email').toLowerCase(),
             password: formData.get('password'),
             passwordVerify: formData.get('passwordVerify')
         }, store);

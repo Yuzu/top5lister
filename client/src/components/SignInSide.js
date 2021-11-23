@@ -31,7 +31,7 @@ export default function SignInSide() {
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     auth.loginUser({
-        identifier: data.get("identifier"),
+        identifier: data.get("identifier").toLowerCase(),
         password: data.get("password")
     }, store);
   };
