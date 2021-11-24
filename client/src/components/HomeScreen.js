@@ -25,9 +25,10 @@ const HomeScreen = () => {
         store.createNewList();
     }
     let listCard = "";
+    // TODO - rewrite to account for open vs closed cards, as well as writing the code for the cards.
     if (store) {
         listCard = 
-            <List sx={{ width: '90%', left: '5%', bgcolor: 'background.paper' }}>
+            <List sx={{ width: '90%', left: '5%', bgcolor: '#e6e6e6' }}>
             {
                 store.idNamePairs.map((pair) => (
                     <ListCard
@@ -39,44 +40,10 @@ const HomeScreen = () => {
             }
             </List>
     }
-    let editActive = store.isListNameEditActive;
-    if (editActive) {
-        return (
-            <div id="top5-list-selector">
-                <div id="list-selector-heading">
-                <Fab 
-                    color="primary" 
-                    aria-label="add"
-                    id="add-list-button"
-                    classList={"disabled"} disabled={true}
-                >
-                    <AddIcon />
-                </Fab>
-                    <Typography variant="h2">Your Lists</Typography>
-                </div>
-                <div id="list-selector-list">
-                <AlertDialog />
-                    {
-                        listCard
-                    }
-                </div>
-            
-            </div>)
-    }
     return (
         <div id="top5-list-selector">
             <AppBar />
-            <div id="list-selector-heading">
-            <Fab 
-                color="primary" 
-                aria-label="add"
-                id="add-list-button"
-                onClick={handleCreateNewList}
-            >
-                <AddIcon />
-            </Fab>
-                <Typography variant="h2">Your Lists</Typography>
-            </div>
+
             <div id="list-selector-list">
             <AlertDialog />
                 {
