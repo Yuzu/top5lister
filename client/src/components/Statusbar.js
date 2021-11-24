@@ -27,9 +27,9 @@ function Statusbar() {
         case "COMMUNITY_LISTS":
             text = "Community Lists";
             break;
+        default:
+            break;
     }
-    if (store.currentList)
-        text = store.currentList.name;
     return (
         <div id="top5-statusbar" style={{display: auth.loggedIn || auth.isGuest ? "" : "none"}}>
             <Typography variant="h4">{text}</Typography>

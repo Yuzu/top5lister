@@ -23,7 +23,7 @@ const CommunityListSchema = new Schema(
         pooledListNum: {type: Number},
         upvotes: {type: [String]}, // votes are kept track of by a list of usernames.
         downvotes: {type: [String]},
-        lastUpdated: {type: Date}
+        // mongodb gives us updatedAt, we can just use that.
     },
     { timestamps: true },
 )

@@ -27,5 +27,6 @@ getCommunityListPairs = async (req, res) => {
 module.exports = {
     interactWithList,
     incrementView,
-    updateList
+    updateList,
+    getCommunityListPairs
 }

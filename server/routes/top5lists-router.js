@@ -15,7 +15,7 @@ router.get('/top5listpairs', auth.verify, Top5ListController.getTop5ListPairs)
 router.put("/top5list/interact/normal/:id", auth.verify, Top5ListController.interactWithList)
 router.put("/top5list/increment/normal/:id", Top5ListController.incrementView)
 
-route.get("/communitylistpairs/", CommunityListController.getCommunityListPairs)
+router.get("/communitylistpairs/", CommunityListController.getCommunityListPairs)
 router.put("/top5list/interact/community/:id", auth.verify, CommunityListController.interactWithList)
 router.put("/top5list/increment/community/:id", CommunityListController.incrementView)
 router.put("/top5list/community/:id", auth.verify, CommunityListController.updateList)

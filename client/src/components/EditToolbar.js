@@ -15,46 +15,39 @@ import CloseIcon from '@mui/icons-material/HighlightOff';
 function EditToolbar() {
     const { store } = useContext(GlobalStoreContext);
 
-    function handleUndo() {
-        store.undo();
-    }
-    function handleRedo() {
-        store.redo();
-    }
     function handleClose() {
         store.closeCurrentList();
     }
+
+    function handlePublish() {
+        // Publish then close list
+        store.closeCurrentList();
+    }
+    // TODO - add conditional checking for publishing
+    // TODO - add publishing
     let editStatus = false;
-    if (store.isItemEditActive) {
+    if (store.isItemEditActive || store.isListNameEditActive) {
         editStatus = true;
     }
-    let hasUndo = store.canUndo(); 
-    let hasRedo = store.canRedo();
+
     return (
         <div id="edit-toolbar">
             <Button
-                classList={editStatus ? "disabled" : hasUndo ? "" : "disabled"} // if editStatus -> disable. Else, check if hasUndo -> ok else disable
-                disabled={editStatus ? true : hasUndo ? false : true}
-                id='undo-button'
-                onClick={handleUndo}
-                variant="contained">
-                    <UndoIcon />
-            </Button>
-            <Button
-                classList={editStatus ? "disabled" : hasRedo ? "" : "disabled"}
-                disabled={editStatus ? true : hasRedo ? false : true}
-                id='redo-button'
-                onClick={handleRedo}
-                variant="contained">
-                    <RedoIcon />
-            </Button>
-            <Button
-                classList={editStatus ? "disabled" : ""}
-                disabled={editStatus}
-                id='close-button'
+                classList={editStatus ? "top5-button-disabled disabled" : "top5-button"} // if editStatus -> disable. Else, check if hasUndo -> ok else disable
+                disabled={editStatus ? true : false}
                 onClick={handleClose}
+                id='save-button'
                 variant="contained">
-                    <CloseIcon />
+                    SAVE
+            </Button>
+            <Button
+                classList={editStatus ? "top5-button-disabled disabled" : "top5-button"}
+                disabled={editStatus ? true : false}
+                color="success" // TODO - conditional rendering based on whether can publish or not, if not then error color
+                onClick={handlePublish}
+                id='publish-button'
+                variant="contained">
+                    PUBLISH
             </Button>
         </div>
     )

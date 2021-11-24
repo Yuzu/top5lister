@@ -90,7 +90,7 @@ body {
 #top5-statusbar {
   position: absolute;
   left: 0%;
-  top: 90%;
+  top: 110%;
   width: 100%;
   height: 10%;
   background-color: #e6e6e6;
@@ -98,4 +98,115 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 36pt;
+}
+
+#top5-workspace {
+  position: absolute;
+  left: 0%;
+  top: 20%;
+  width: 100%;
+  height: 90%;
+
+}
+
+.workspace-listname {
+  position: absolute;
+  left: 0%;
+  top: -12%;
+  width: 25%;
+  height: 20%;
+  font-size: 24pt;
+}
+
+#workspace-home,
+#workspace-edit {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#edit-numbering {
+  position: absolute;
+  left: 0%;
+  top: 1%;
+  width: 20%;
+  height: 100%;
+  background-color: var(--swatch-status);
+}
+
+#edit-items {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  width: 80%;
+  height: 100%;
+  background-color: var(--swatch-primary);
+}
+
+.item-number,
+.top5-item {
+  display: flex;
+  align-items: center;
+  font-size: 48pt;
+  height: 20%;
+}
+
+.item-number {
+  justify-content: center;
+  width: 100%;
+  border: 1px 0px 1px 1px;
+  border-color: black;
+  background-color: linen;
+  color: black;
+}
+
+input {
+  font-size: 20pt;
+}
+
+.top5-item {
+  text-align: left;
+  width: 95%;
+  padding-left: 5%;
+}
+
+.top5-item {
+  background-color: var(--swatch-complement);
+}
+
+#edit-toolbar {
+  background-color: transparent;
+  float: right;
+}
+
+.top5-button,
+.top5-button-disabled {
+  font-size: 36pt;
+  border-width: 0px;
+  float: left;
+  color: black;
+  cursor: pointer;
+  opacity: 100%;
+}
+
+.top5-button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.top5-button-disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.disabled {
+  background-color: lightgray;
+  opacity: 100%;
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  color: var(--swatch-neutral);
 }

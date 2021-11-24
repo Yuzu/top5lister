@@ -28,36 +28,12 @@ function ListCard(props) {
         }
     }
 
-    function handleToggleEdit(event) {
-        event.stopPropagation();
-        toggleEdit();
-    }
-
-    function toggleEdit() {
-        let newActive = !editActive;
-        if (newActive) {
-            store.setIsListNameEditActive();
-        }
-        setEditActive(newActive);
-    }
 
     async function handleDeleteList(event, id) {
         event.stopPropagation();
         store.markListForDeletion(id);
     }
 
-    function handleKeyPress(event) {
-        if (event.code === "Enter") {
-            event.stopPropagation();
-            event.preventDefault();
-            let id = event.target.id.substring("list-".length);
-            store.changeListName(id, text);
-            toggleEdit();
-        }
-    }
-    function handleUpdateText(event) {
-        setText(event.target.value);
-    }
 
     // normal
     let cardElement =
@@ -77,11 +53,6 @@ function ListCard(props) {
         >
                 <Box sx={{ p: 1, flexGrow: 1 }}>{idNamePair.name}</Box>
                 <Box sx={{ p: 1 }}>
-                    <IconButton onClick={handleToggleEdit} aria-label='edit'>
-                        <EditIcon style={{fontSize:'48pt'}} />
-                    </IconButton>
-                </Box>
-                <Box sx={{ p: 1 }}>
                     <IconButton onClick={(event) => {
                         handleDeleteList(event, idNamePair._id)
                     }} aria-label='delete'>
@@ -90,53 +61,7 @@ function ListCard(props) {
                 </Box>
         </ListItem>
 
-    // editing this list card
-    if (editActive) {
-        cardElement =
-            <TextField
-                margin="normal"
-                required
-                fullWidth
-                id={"list-" + idNamePair._id}
-                label="Top 5 List Name"
-                name="name"
-                autoComplete="Top 5 List Name"
-                className='list-card'
-                onKeyPress={handleKeyPress}
-                onChange={handleUpdateText}
-                defaultValue={idNamePair.name}
-                inputProps={{style: {fontSize: 48}}}
-                InputLabelProps={{style: {fontSize: 24}}}
-                autoFocus
-            />
-    }
-    // another list card is being edited, return disabled ver of normal card
-    else if (store.isListNameEditActive) {
-        cardElement =
-        <ListItem
-            id={idNamePair._id}
-            key={idNamePair._id}
-            sx={{ marginTop: '15px', display: 'flex', p: 1 }}
-            button
-            classList={"disabled"} disabled={true}
-            style={{
-                fontSize: '48pt',
-                width: '100%'
-            }}
-        >
-                <Box sx={{ p: 1, flexGrow: 1 }}>{idNamePair.name}</Box>
-                <Box sx={{ p: 1 }}>
-                    <IconButton  aria-label='edit' classList={"disabled"} disabled={true}>
-                        <EditIcon  style={{fontSize:'48pt'}} />
-                    </IconButton>
-                </Box>
-                <Box sx={{ p: 1 }}>
-                    <IconButton  aria-label='delete' classList={"disabled"} disabled={true}>
-                        <DeleteIcon style={{fontSize:'48pt'}} />
-                    </IconButton>
-                </Box>
-        </ListItem>
-    }
+
     return (
         cardElement
     );
