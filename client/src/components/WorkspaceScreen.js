@@ -55,27 +55,40 @@ function WorkspaceScreen() {
     if (store.currentList) {
         list = store.currentList;
     }
-
+    let disabled = store.isItemEditActive || store.isListNameEditActive;
     let listName = 
             (<Box className="workspace-listname" sx={{ p: 1 }}>
-                <IconButton onClick={handleToggleEdit} aria-label='edit'>
-                    <EditIcon style={{fontSize:'12pt'}} />
+                <IconButton onClick={handleToggleEdit} aria-label='edit'
+                    disabled={disabled ? true : false}
+                    classList={disabled ? "top5-button-disabled disabled" : "top5-button"}>
+                        <EditIcon style={{fontSize:'12pt'}} />
                 </IconButton>
                 {text}
             </Box>);
 
+    if (disabled) {
+        listName = 
+            (<Box className="workspace-listname" sx={{ p: 1 }}>
+                <IconButton aria-label='edit'
+                    disabled={true}
+                    classList="top5-button-disabled disabled">
+                        <EditIcon style={{fontSize:'12pt'}} />
+                </IconButton>
+                {text}
+            </Box>);
+    }
 
     if (editActive) {
         listName =
             (<TextField
                 margin="normal"
                 required
-                fullWidth
+   
                 id={"list-" + list._id}
                 label="Top 5 List Name"
                 name="name"
                 autoComplete="Top 5 List Name"
-                className='workspace-listname'
+                className='workspace-listname-edit'
                 onKeyPress={handleKeyPress}
                 onChange={handleUpdateText}
                 defaultValue={text}

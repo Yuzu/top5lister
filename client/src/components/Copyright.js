@@ -1,7 +1,7 @@
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 
-// TODO - clicking on copyright hotlink causes issues.
+
 export default function Copyright(props) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>

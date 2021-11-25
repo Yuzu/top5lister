@@ -18,7 +18,7 @@ export const GlobalStoreActionType = {
     CHANGE_LIST_NAME: "CHANGE_LIST_NAME",
     CLOSE_CURRENT_LIST: "CLOSE_CURRENT_LIST",
     CREATE_NEW_LIST: "CREATE_NEW_LIST",
-    LOAD_ID_NAME_PAIRS: "LOAD_ID_NAME_PAIRS",
+    LOAD_LISTS: "LOAD_LISTS",
     MARK_LIST_FOR_DELETION: "MARK_LIST_FOR_DELETION",
     UNMARK_LIST_FOR_DELETION: "UNMARK_LIST_FOR_DELETION",
     SET_CURRENT_LIST: "SET_CURRENT_LIST",
@@ -42,7 +42,7 @@ function GlobalStoreContextProvider(props) {
 
     // THESE ARE ALL THE THINGS OUR DATA STORE WILL MANAGE
     const [store, setStore] = useState({
-        idNamePairs: [],
+        lists: [],
         currentList: null,
         newListCounter: 0,
         listNameActive: false,
@@ -64,7 +64,7 @@ function GlobalStoreContextProvider(props) {
             // LIST UPDATE OF ITS NAME
             case GlobalStoreActionType.CHANGE_LIST_NAME: {
                 return setStore({
-                    idNamePairs: payload.idNamePairs,
+                    lists: payload.lists,
                     currentList: store.currentList,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -77,7 +77,7 @@ function GlobalStoreContextProvider(props) {
             // STOP EDITING THE CURRENT LIST
             case GlobalStoreActionType.CLOSE_CURRENT_LIST: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: null,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -90,7 +90,7 @@ function GlobalStoreContextProvider(props) {
             // CREATE A NEW LIST
             case GlobalStoreActionType.CREATE_NEW_LIST: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: payload,
                     newListCounter: store.newListCounter + 1,
                     isListNameEditActive: false,
@@ -101,9 +101,9 @@ function GlobalStoreContextProvider(props) {
                 })
             }
             // GET ALL THE LISTS SO WE CAN PRESENT THEM
-            case GlobalStoreActionType.LOAD_ID_NAME_PAIRS: {
+            case GlobalStoreActionType.LOAD_LISTS: {
                 return setStore({
-                    idNamePairs: payload,
+                    lists: payload,
                     currentList: null,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -116,7 +116,7 @@ function GlobalStoreContextProvider(props) {
             // PREPARE TO DELETE A LIST
             case GlobalStoreActionType.MARK_LIST_FOR_DELETION: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: null,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -129,7 +129,7 @@ function GlobalStoreContextProvider(props) {
             // PREPARE TO DELETE A LIST
             case GlobalStoreActionType.UNMARK_LIST_FOR_DELETION: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: null,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -142,7 +142,7 @@ function GlobalStoreContextProvider(props) {
             // UPDATE A LIST
             case GlobalStoreActionType.SET_CURRENT_LIST: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: payload,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -155,7 +155,7 @@ function GlobalStoreContextProvider(props) {
             // START EDITING A LIST ITEM
             case GlobalStoreActionType.SET_ITEM_EDIT_ACTIVE: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: store.currentList,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -168,7 +168,7 @@ function GlobalStoreContextProvider(props) {
             // START EDITING A LIST NAME
             case GlobalStoreActionType.SET_LIST_NAME_EDIT_ACTIVE: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: store.currentList,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: true,
@@ -180,7 +180,7 @@ function GlobalStoreContextProvider(props) {
             }
             case GlobalStoreActionType.SET_CURRENT_VIEW: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: store.currentList,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -192,7 +192,7 @@ function GlobalStoreContextProvider(props) {
             }
             case GlobalStoreActionType.SET_SEARCH_QUERY: {
                 return setStore({
-                    idNamePairs: store.idNamePairs,
+                    lists: store.lists,
                     currentList: store.currentList,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
@@ -213,27 +213,23 @@ function GlobalStoreContextProvider(props) {
 
     store.handleSearch = async function (searchQuery) {
 
-        // Empty search, return the usual lists for this view by checking store and calling the respective value to reload.
-        // then we call storeReducer to reset search query.
+        // Empty search, restore the usual lists for this view by resetting the search query then calling loadLists() again.
         if (searchQuery === "") {
             storeReducer({
                 type: GlobalStoreActionType.SET_SEARCH_QUERY,
                 payload: null
             });
+            store.loadLists();
+            return;
         }
-        // if searching a user, we have to make an api call.
-
-        // otherwise, we can just filter the currently loaded lists.
-        console.log("aha");
-
-        // Also update store via reducer so our status bar can display properly.
+        
+        // Else we update store's searchquery then call loadLists() so it can properly filter.
         storeReducer({
             type: GlobalStoreActionType.SET_SEARCH_QUERY,
-            payload: `${searchQuery}`
+            payload: `${searchQuery}` // HACK Use template literal to copy the string!!!
         });
     }
 
-    // TODO - load lists in each of these 4 view functions, and filter accordingly.
     store.homeView = async function () {
         // TODO - MAKE SURE TO LOAD NOTHING FOR A GUEST!!!!
         console.log("Setting current view to: Home");
@@ -241,6 +237,7 @@ function GlobalStoreContextProvider(props) {
             type: GlobalStoreActionType.SET_CURRENT_VIEW,
             payload: CurrentViewType.HOME_SCREEN
         });
+        store.loadLists();
     }
 
     store.allView = async function () {
@@ -249,6 +246,7 @@ function GlobalStoreContextProvider(props) {
             type: GlobalStoreActionType.SET_CURRENT_VIEW,
             payload: CurrentViewType.ALL_LISTS
         });
+        store.loadLists();
     }
 
     store.userView = async function () {
@@ -257,6 +255,7 @@ function GlobalStoreContextProvider(props) {
             type: GlobalStoreActionType.SET_CURRENT_VIEW,
             payload: CurrentViewType.USER_LISTS
         });
+        store.loadLists();
     }
 
     store.communityView = async function () {
@@ -265,8 +264,10 @@ function GlobalStoreContextProvider(props) {
             type: GlobalStoreActionType.SET_CURRENT_VIEW,
             payload: CurrentViewType.COMMUNITY_LISTS
         });
+        store.loadLists();
     }
     
+    // TODO- rewrite to not use pairs? Maybe we don't need to.
     // THIS FUNCTION PROCESSES CHANGING A LIST NAME
     store.changeListName = async function (id, newName) {
         if (newName === "") {
@@ -340,24 +341,55 @@ function GlobalStoreContextProvider(props) {
         }
     }
 
-    // THIS FUNCTION LOADS ALL THE ID, NAME PAIRS SO WE CAN LIST ALL THE LISTS
-    // TODO - maybe split this into the 4 view functions?
-    store.loadIdNamePairs = async function () {
+    // THIS FUNCTION LOADS ALL THE LISTS
+    // check the current store view and, after loading all lists, filter accordingly.
+    store.loadLists = async function () {
 
         let ownerEmail = auth.user.email;
 
-        const response = await api.getTop5ListPairs();
+        const response = await api.getAllTop5Lists();
         if (response.data.success) {
-            let pairsArray = response.data.idNamePairs;
-            pairsArray = pairsArray.filter(tup => tup.ownerEmail === ownerEmail);
+            let lists = response.data.data;
+            console.log(lists);
             console.log("FILTERING LISTS");
+            // TODO - filter properly!!!
+            // Note that we can have different search queries.
+            // If the search query is coming with user lists, we want to filter by users
+            // If the search query is coming with any other view, we want to search for a list.
+            switch (store.currentView) {
+                case CurrentViewType.HOME_SCREEN: 
+                    // If logged in, only show user's lists.
+                    // Else, that means this is a guest, so load NOTHING!
+                    
+                    // Afterwards, if we have a search query, filter further.
+                    break;
+                
+                case CurrentViewType.ALL_LISTS: 
+                    // Load all published lists for anyone to see!
+
+                    // Afterwards, if we have a search query, filter further.
+                    break;
+                
+                case CurrentViewType.USER_LISTS: 
+                    // Check for a user search query and filter accordingly.
+                    break;
+                
+                case CurrentViewType.COMMUNITY_LISTS: 
+                    // Make calls to the community list endpoints and parse the info properly.
+
+                    // Afterwards, if we have a search query, filter further.
+                    break;
+                default:
+                    console.log("DEFAULT LOADLIST ERROR");
+                    break;
+            }
             storeReducer({
-                type: GlobalStoreActionType.LOAD_ID_NAME_PAIRS,
-                payload: pairsArray
+                type: GlobalStoreActionType.LOAD_LISTS,
+                payload: lists
             });
         }
         else {
-            console.log("API FAILED TO GET THE LIST PAIRS");
+            console.log("API FAILED TO GET THE LISTS");
         }
     }
 
@@ -380,7 +412,7 @@ function GlobalStoreContextProvider(props) {
     store.deleteList = async function (listToDelete) {
         let response = await api.deleteTop5ListById(listToDelete._id);
         if (response.data.success) {
-            store.loadIdNamePairs();
+            store.loadLists();
             history.push("/");
         }
     }

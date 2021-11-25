@@ -137,7 +137,6 @@ export default function PrimarySearchAppBar() {
       <MenuItem onClick={handleMenuClose}>Dislikes</MenuItem>
     </Menu>
   );
-  // TODO - write store functions to get proper lists of which we can then put in the IconButton's onClick.
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{ background: '#c4c4c4' }}>

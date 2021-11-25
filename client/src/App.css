@@ -114,7 +114,16 @@ body {
   left: 0%;
   top: -12%;
   width: 25%;
-  height: 20%;
+  height: 5%;
+  font-size: 24pt;
+}
+
+.workspace-listname-edit {
+  position: absolute;
+  left: 0%;
+  top: -15%;
+  width: 25%;
+  height: 5%;
   font-size: 24pt;
 }
 
