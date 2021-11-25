@@ -59,7 +59,7 @@ function WorkspaceScreen() {
     let listName = 
             (<Box className="workspace-listname" sx={{ p: 1 }}>
                 <IconButton onClick={handleToggleEdit} aria-label='edit'>
-                    <EditIcon style={{fontSize:'24pt'}} />
+                    <EditIcon style={{fontSize:'12pt'}} />
                 </IconButton>
                 {text}
             </Box>);

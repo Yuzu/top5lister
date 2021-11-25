@@ -11,6 +11,8 @@ import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
 
 export default function AppBanner() {
     const { auth } = useContext(AuthContext);
@@ -87,7 +89,7 @@ export default function AppBanner() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static">
+            <AppBar position="static" style={{ background: '#e6e6e6' }}>
                 <Toolbar>
                     <Typography                        
                         variant="h4"
@@ -95,21 +97,21 @@ export default function AppBanner() {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}                        
                     >
-                        <Link style={{ textDecoration: 'none', color: 'white' }} to='/'>T<sup>5</sup>L</Link>
+                        <Link style={{ textDecoration: 'none', color: '#d4af37' }} to='/'>T<sup>5</sup>L</Link>
                     </Typography>
                     <Box sx={{ flexGrow: 1 }}>{editToolbar}</Box>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <IconButton
+                        <Avatar
                             size="large"
                             edge="end"
                             aria-label="account of current user"
                             aria-controls={menuId}
                             aria-haspopup="true"
                             onClick={handleProfileMenuOpen}
-                            color="inherit"
+                            style={{color:"black"}}
                         >
                             {auth.loggedIn ? auth.user.firstName[0].toUpperCase() + auth.user.lastName[0].toUpperCase() : getAccountMenu(auth.loggedIn) }
-                        </IconButton>
+                        </Avatar>
                     </Box>
                 </Toolbar>
             </AppBar>

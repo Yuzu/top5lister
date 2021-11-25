@@ -140,7 +140,7 @@ export default function PrimarySearchAppBar() {
   // TODO - write store functions to get proper lists of which we can then put in the IconButton's onClick.
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" style={{ background: '#e6e6e6' }}>
+      <AppBar position="static" style={{ background: '#c4c4c4' }}>
         <Toolbar>
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                 <IconButton
@@ -188,15 +188,22 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
             </Box>
 
-
-          <Search>
-            <SearchIconWrapper>
-              <SearchIcon />
+          
+          <Search >
+            
+            <SearchIconWrapper >
+              <SearchIcon color="inherit"/>
             </SearchIconWrapper>
             <StyledInputBase
+                style={{
+                  borderRadius: "10px",
+                  borderStyle: "solid",
+                  borderColor: "#6A6A6A"
+              }}
               onKeyPress={handleKeyPress}
               placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
+              
             />
           </Search>
 

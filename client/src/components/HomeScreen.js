@@ -1,8 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { GlobalStoreContext } from '../store'
 import ListCard from './ListCard.js'
-import { Fab, Typography } from '@mui/material'
-import AddIcon from '@mui/icons-material/Add';
 import List from '@mui/material/List';
 import AlertDialog from "./AlertDialog.js";
 import AppBar from "./AppBar.js";
@@ -21,14 +19,11 @@ const HomeScreen = () => {
         store.loadIdNamePairs();
     }, []);
 
-    function handleCreateNewList() {
-        store.createNewList();
-    }
     let listCard = "";
     // TODO - rewrite to account for open vs closed cards, as well as writing the code for the cards.
     if (store) {
         listCard = 
-            <List sx={{ width: '90%', left: '5%', bgcolor: '#e6e6e6' }}>
+            <List sx={{ width: '90%', left: '5%', bgcolor: '#c4c4c4' }}>
             {
                 store.idNamePairs.map((pair) => (
                     <ListCard
