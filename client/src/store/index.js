@@ -61,11 +61,11 @@ function GlobalStoreContextProvider(props) {
     const storeReducer = (action) => {
         const { type, payload } = action;
         switch (type) {
-            // LIST UPDATE OF ITS NAME
+            // LIST UPDATE OF ITS NAME NEED TO UPDATE CURRENTLIST
             case GlobalStoreActionType.CHANGE_LIST_NAME: {
                 return setStore({
-                    lists: payload.lists,
-                    currentList: store.currentList,
+                    lists: store.lists,
+                    currentList: payload,
                     newListCounter: store.newListCounter,
                     isListNameEditActive: false,
                     isItemEditActive: false,
@@ -267,7 +267,8 @@ function GlobalStoreContextProvider(props) {
         store.loadLists();
     }
     
-    // TODO- rewrite to not use pairs? Maybe we don't need to.
+    // TODO- This SHOULD work fine since a list name can only be changed by its owner. Might have to look here as
+    // possible source of error in the future.
     // THIS FUNCTION PROCESSES CHANGING A LIST NAME
     store.changeListName = async function (id, newName) {
         if (newName === "") {
@@ -281,23 +282,13 @@ function GlobalStoreContextProvider(props) {
             async function updateList(top5List) {
                 response = await api.updateTop5ListById(top5List._id, top5List);
                 if (response.data.success) {
-                    async function getListPairs(top5List) {
-                        response = await api.getTop5ListPairs();
-                        if (response.data.success) {
-                            let pairsArray = response.data.idNamePairs;
-                            let ownerEmail = auth.user.email;
-                            pairsArray = pairsArray.filter(tup => tup.ownerEmail === ownerEmail);
-                            console.log("FILTERING LISTS");
-                            storeReducer({
-                                type: GlobalStoreActionType.CHANGE_LIST_NAME,
-                                payload: {
-                                    idNamePairs: pairsArray,
-                                    top5List: top5List
-                                }
-                            });
-                        }
-                    }
-                    getListPairs(top5List);
+                    // reload lists
+                    console.log(top5List);
+                    
+                    storeReducer({
+                        type: GlobalStoreActionType.CHANGE_LIST_NAME,
+                        payload: top5List   
+                    });
                 }
             }
             updateList(top5List);
@@ -436,6 +427,8 @@ function GlobalStoreContextProvider(props) {
             
             response = await api.updateTop5ListById(top5List._id, top5List);
             if (response.data.success) {
+                console.log("SETTING CURRENT LIST:");
+                console.log(top5List);
                 storeReducer({
                     type: GlobalStoreActionType.SET_CURRENT_LIST,
                     payload: top5List
@@ -447,6 +440,10 @@ function GlobalStoreContextProvider(props) {
 
 
     store.updateItem = function (index, newItem) {
+        if (newItem === "") {
+            newItem = "?";
+            console.log("Overwriting empty item rename");
+        }
         store.currentList.items[index] = newItem;
         store.updateCurrentList();
     }
@@ -454,6 +451,7 @@ function GlobalStoreContextProvider(props) {
     store.updateCurrentList = async function () {
         const response = await api.updateTop5ListById(store.currentList._id, store.currentList);
         if (response.data.success) {
+            console.log(response);
             storeReducer({
                 type: GlobalStoreActionType.SET_CURRENT_LIST,
                 payload: store.currentList

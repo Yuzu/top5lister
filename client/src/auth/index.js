@@ -185,11 +185,12 @@ function AuthContextProvider(props) {
                     }
                 })
                 history.push("/");
-                store.loadIdNamePairs();
+                store.loadLists();
             }
         }
         catch (e) {
             //alert(e.response.data.errorMessage);
+            console.log(e);
             authReducer({
                 type: AuthActionType.SHOW_ERROR,
                 payload: {
@@ -212,7 +213,7 @@ function AuthContextProvider(props) {
                     }
                 })
                 history.push("/");
-                store.loadIdNamePairs();
+                store.loadLists();
             }
         }
         catch (e) {
