@@ -13,9 +13,9 @@ const Top5ListSchema = new Schema(
                 content: String
                 }], 
             required: true},
-        views: {type: Number},
-        upvotes: {type: [String]}, // votes are kept track of by a list of usernames.
-        downvotes: {type: [String]},
+        views: {type: Number, required: true},
+        upvotes: {type: [String], required:true}, // votes are kept track of by a list of usernames.
+        downvotes: {type: [String], required:true},
         publishDate: {type: Date} // If there is no publishDate, it isn't published yet. Simple as that.
     },
     { timestamps: true },

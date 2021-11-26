@@ -40,20 +40,19 @@ function ListCard(props) {
 
     let deleteButton = "";
 
-    if (!published) { // conditionally render if this list's owner is the currently logged in user and unpublished
-        if (auth.user !== null && auth.user.username === list.ownerUsername) {
-            deleteButton = (
-                <Box sx={{ p: 1 }} alignSelf='end'>
-                    <IconButton onClick={(event) => {
-                        handleDeleteList(event, list._id)
-                    }} aria-label='delete'>
-                        <DeleteIcon style={{fontSize:'20pt'}} />
-                    </IconButton>
-                </Box>
-            );
-        }
-        
+    // conditionally render if this list's owner is the currently logged in user
+    if (auth.user !== null && auth.user.username === list.ownerUsername) {
+        deleteButton = (
+            <Box sx={{ p: 1 }} alignSelf='end'>
+                <IconButton onClick={(event) => {
+                    handleDeleteList(event, list._id)
+                }} aria-label='delete'>
+                    <DeleteIcon style={{fontSize:'20pt'}} />
+                </IconButton>
+            </Box>
+        );
     }
+ 
 
     let upvotes = 0;
     let downvotes = 0;

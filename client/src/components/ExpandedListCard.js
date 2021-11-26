@@ -10,11 +10,13 @@ import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItemText from '@mui/material/ListItemText';
 import TextField from '@mui/material/TextField';
+import AuthContext from '../auth'
 
 function ExpandedListCard(props) {
     const { store } = useContext(GlobalStoreContext);
     const [text, setText] = useState();
     const { list } = props;
+    const { auth } = useContext(AuthContext);
 
     function handleUpdateText(event) {
         setText(event.target.value);
@@ -30,7 +32,7 @@ function ExpandedListCard(props) {
         }
     }
 
-    // TODO - don't render button at all if published
+
     async function handleDeleteList(event, id) {
         event.stopPropagation();
         store.markListForDeletion(id);
@@ -41,11 +43,11 @@ function ExpandedListCard(props) {
 
     let deleteButton = "";
 
-    if (true) { // todo - check for ownership of list and render conditionally
+    if (auth.user !== null && auth.user.username === list.ownerUsername) { // todo - check for ownership of list and render conditionally
         deleteButton = (
             <Box sx={{ p: 1 }} alignSelf='end'>
                 <IconButton onClick={(event) => {
-                    console.log("A");
+                    handleDeleteList(event, list._id);
                 }} aria-label='delete'>
                     <DeleteIcon style={{fontSize:'20pt'}} />
                 </IconButton>
@@ -61,7 +63,7 @@ function ExpandedListCard(props) {
     }
 
     let viewComponent = "";
-    if (true) { // TODO - check for views existing
+    if (published) { 
         if (views === null) {
             views = 0;
         }
@@ -71,9 +73,9 @@ function ExpandedListCard(props) {
     }
 
     let publishDate = "";
-    if (true) { // TODO - change to checking for publishDate and change "today" to the actual date
+    if (published) {
         publishDate = (
-            <Box height="30px" fontSize={16}>{"Published: " + "TODAY!"}</Box>
+            <Box height="30px" fontSize={16}>{"Published: " + list.publishDate.split("T")[0]}</Box>
         );
     }
     // TODO - look at listcard conditional rendering/functions too! those mirror this closely.

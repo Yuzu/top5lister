@@ -362,7 +362,11 @@ function GlobalStoreContextProvider(props) {
             name: newListName,
             items: ["?", "?", "?", "?", "?"],
             ownerEmail: auth.user.email,
-            ownerUsername: auth.user.username
+            ownerUsername: auth.user.username,
+            comments: [],
+            views: 0,
+            upvotes: [],
+            downvotes: []
         };
         const response = await api.createTop5List(payload);
         if (response.data.success) {
@@ -473,16 +477,16 @@ function GlobalStoreContextProvider(props) {
                 case CurrentViewType.ALL_LISTS: 
                     // Load all published lists for anyone to see!
                     lists = lists.filter(list => list.publishDate !== undefined);
-                    // Afterwards, if we have a search query, filter further.
+                    // TODO Afterwards, if we have a search query, filter further.
                     break;
                 
                 case CurrentViewType.USER_LISTS: 
                     // Check for a user search query and filter accordingly.
-                    if (store.searchQuery !== "") {
+                    if (store.searchQuery === "") {
                         lists = [];
                     }
                     else {
-                        lists.filter(list => list.ownerEmail === store.searchQuery && list.publishDate !== undefined);
+                        lists = lists.filter(list => list.ownerUsername === store.searchQuery && list.publishDate);
                     }
                     break;
                 
