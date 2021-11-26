@@ -214,7 +214,7 @@ function GlobalStoreContextProvider(props) {
                 })
             }
             case GlobalStoreActionType.COLLAPSE_LIST_CARD: {
-                return setStore({
+                return setStore({   
                     ...store,
                     expandedListCards: payload,
                     originalLists: store.originalLists
@@ -382,6 +382,34 @@ function GlobalStoreContextProvider(props) {
         }
     }
 
+    store.publish = async function (list) {
+        console.log("PUBLISHING A LIST:");
+        console.log(list);
+        let id = list._id;
+
+        let response = await api.getTop5ListById(id);
+        if (response.data.success) {
+            let top5List = response.data.top5List;
+            top5List.publishDate = new Date().toISOString();
+            async function updateList(top5List) {
+                response = await api.updateTop5ListById(top5List._id, top5List);
+                if (response.data.success) {
+                    // reload lists
+                    console.log("PUBLISHED LIST:");
+                    console.log(top5List);
+                    
+                    // Return to main menu
+                    storeReducer({
+                        type: GlobalStoreActionType.CLOSE_CURRENT_LIST,
+                        payload: {}
+                    });
+                    history.push("/");
+                }
+            }
+            updateList(top5List);
+        }
+
+    }
     // THIS FUNCTION LOADS ALL THE LISTS
     // check the current store view and, after loading all lists, filter accordingly.
     store.loadLists = async function () {
@@ -417,18 +445,18 @@ function GlobalStoreContextProvider(props) {
                             }
                         });
 
-                        let listNames = []; // keep track of original names
+                        let originalLists = []; // keep track of original names
                         lists.forEach(list => {
-                            listNames.push(list.name);
+                            originalLists.push(list);
                         })
                         console.log("Original lists:");
-                        console.log(listNames);
+                        console.log(originalLists);
                         console.log("filtered lists:");
                         console.log(filterLists);
                         if (filterLists.length !== 0) {
                             storeReducer({
                                 type: GlobalStoreActionType.FILTER_HOME_LISTS,
-                                payload: listNames
+                                payload: originalLists
                             });
 
                             storeReducer({

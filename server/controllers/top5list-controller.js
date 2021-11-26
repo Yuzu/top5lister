@@ -54,6 +54,10 @@ updateTop5List = async (req, res) => {
 
         top5List.name = body.name
         top5List.items = body.items
+
+        if (body.publishDate !== undefined) {
+            top5List.publishDate = body.publishDate;
+        }
         top5List
             .save()
             .then(() => {

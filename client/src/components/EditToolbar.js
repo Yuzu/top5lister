@@ -15,15 +15,38 @@ function EditToolbar() {
         store.closeCurrentList();
     }
 
-    function handlePublish() {
+    function handlePublish(event) {
         // Publish then close list
-        store.closeCurrentList();
+        store.publish(store.currentList);
     }
-    // TODO - add conditional checking for publishing
-    // TODO - add publishing
+
     let editStatus = false;
     if (store.isItemEditActive || store.isListNameEditActive) {
         editStatus = true;
+    }
+
+    let canPublish = true; // change back to false after we ensure disabled if published!
+    if (store.currentList) {
+        let list = store.currentList;
+        if (list.items.includes("?")) {
+            canPublish = false;
+        }
+        // currently searched lists for duplicate published names
+        else if (store.originalLists.length !== 0) {
+            store.originalLists.forEach((original) => {
+                if (original.name.toLowerCase() === list.name && original.publishDate !== undefined) {
+                    canPublish = false;
+                }
+            })
+        }
+        // check for duplicate published names everywhere
+        else {
+            store.lists.forEach((original) => {
+                if (original.name.toLowerCase() === list.name && original.publishDate !== undefined) {
+                    canPublish = false;
+                }
+            })
+        }
     }
 
     return (
@@ -37,9 +60,9 @@ function EditToolbar() {
                     SAVE
             </Button>
             <Button
-                classList={editStatus ? "top5-button-disabled disabled" : "top5-button"}
-                disabled={editStatus ? true : false}
-                color="success" // TODO - conditional rendering based on whether can publish or not, if not then error color
+                classList={editStatus ? "top5-button-disabled disabled" : canPublish ? "top5-button": "top5-button-disabled disabled"}
+                disabled={editStatus ? true : canPublish ? false : true}
+                color={canPublish ? "success" : "error" }
                 onClick={handlePublish}
                 id='publish-button'
                 variant="contained">
