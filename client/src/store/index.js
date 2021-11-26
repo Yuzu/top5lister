@@ -53,9 +53,9 @@ function GlobalStoreContextProvider(props) {
         itemActive: false,
         listMarkedForDeletion: null,
         currentView: "HOME_SCREEN",
-        searchQuery: null,
+        searchQuery: "",
         expandedListCards: [],
-        homeFilterLists: []
+        originalLists: []
     });
     const history = useHistory();
 
@@ -79,7 +79,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             // STOP EDITING THE CURRENT LIST
@@ -94,7 +94,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 })
             }
             // CREATE A NEW LIST
@@ -109,7 +109,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 })
             }
             // GET ALL THE LISTS SO WE CAN PRESENT THEM
@@ -124,7 +124,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             // PREPARE TO DELETE A LIST
@@ -135,7 +135,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             // PREPARE TO DELETE A LIST
@@ -146,7 +146,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             // UPDATE A LIST
@@ -161,7 +161,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             // START EDITING A LIST ITEM
@@ -173,7 +173,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             // START EDITING A LIST NAME
@@ -186,7 +186,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 });
             }
             case GlobalStoreActionType.SET_CURRENT_VIEW: {
@@ -195,7 +195,7 @@ function GlobalStoreContextProvider(props) {
                     currentView: payload,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 })
             }
             case GlobalStoreActionType.SET_SEARCH_QUERY: {
@@ -203,27 +203,27 @@ function GlobalStoreContextProvider(props) {
                     ...store,
                     searchQuery: payload,
                     expandedListCards: store.expandedListCards,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 })
             }
             case GlobalStoreActionType.EXPAND_LIST_CARD: {
                 return setStore({
                     ...store,
                     expandedListCards: payload,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 })
             }
             case GlobalStoreActionType.COLLAPSE_LIST_CARD: {
                 return setStore({
                     ...store,
                     expandedListCards: payload,
-                    homeFilterLists: store.homeFilterLists
+                    originalLists: store.originalLists
                 })
             }
             case GlobalStoreActionType.FILTER_HOME_LISTS: {
                 return setStore({
                     ...store,
-                    homeFilterLists: payload
+                    originalLists: payload
                 })
             }
             default:
@@ -263,31 +263,19 @@ function GlobalStoreContextProvider(props) {
             payload: expandedListCards
         });
     }
-    store.handleSearch = function (searchQuery) {
-
+    store.handleSearch = function (query) {
         // Empty search, restore the usual lists for this view by resetting the search query then calling loadLists() again.
-        if (searchQuery === "") {
+        if (query === "") {
             storeReducer({
                 type: GlobalStoreActionType.SET_SEARCH_QUERY,
-                payload: null
+                payload: ""
             });
             return;
         }
-        console.log("Updating search query " + searchQuery);
-        //store.loadLists(searchQuery);
-        
-        // Else we update store's searchquery then call loadLists() so it can properly filter.
+        console.log("Updating search query " + query);
         storeReducer({
             type: GlobalStoreActionType.SET_SEARCH_QUERY,
-            payload: searchQuery // HACK Use template literal to copy the string!!!
-        });
-    }
-
-    store.setHomeFilterLists = async function(lists) {
-        console.log("Filtering lists in home view");
-        storeReducer({
-            type: GlobalStoreActionType.FILTER_HOME_LISTS,
-            payload: lists
+            payload: `${query}` // HACK Use template literal to copy the string!!!
         });
     }
 
@@ -422,20 +410,32 @@ function GlobalStoreContextProvider(props) {
                     
                     let filterLists = [];
                     // TODO Afterwards, if we have a search query, filter further.
-                    if (store.searchQuery) {
+                    if (store.searchQuery !== "") {
                         lists.forEach(list => {
                             if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
                                 filterLists.push(list);
                             }
                         });
 
-                        console.log("home view filtered lists:");
+                        let listNames = []; // keep track of original names
+                        lists.forEach(list => {
+                            listNames.push(list.name);
+                        })
+                        console.log("Original lists:");
+                        console.log(listNames);
+                        console.log("filtered lists:");
                         console.log(filterLists);
                         if (filterLists.length !== 0) {
                             storeReducer({
                                 type: GlobalStoreActionType.FILTER_HOME_LISTS,
+                                payload: listNames
+                            });
+
+                            storeReducer({
+                                type: GlobalStoreActionType.LOAD_LISTS,
                                 payload: filterLists
                             });
+                            return;
                         }
                         
                     }
@@ -450,7 +450,7 @@ function GlobalStoreContextProvider(props) {
                 
                 case CurrentViewType.USER_LISTS: 
                     // Check for a user search query and filter accordingly.
-                    if (store.searchQuery) {
+                    if (store.searchQuery !== "") {
                         lists = [];
                     }
                     else {

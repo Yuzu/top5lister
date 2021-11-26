@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -18,7 +18,7 @@ import FunctionsIcon from '@mui/icons-material/Functions';
 import SortIcon from '@mui/icons-material/Sort';
 
 import { useContext } from 'react'
-import { GlobalStoreContext, CurrentViewType } from '../store'
+import { GlobalStoreContext } from '../store'
 
 
 const Search = styled('div')(({ theme }) => ({
