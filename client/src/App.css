@@ -255,3 +255,24 @@ input {
   margin-left: -55px;
   background: #c4c4c4;
 }
+
+#list-comments {
+
+  left: -50px;
+  width: 400px;
+  max-width: 400px;
+  height: 150px;
+  max-height: 150px;
+  top: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  background-color: #c6a433;
+}
+
+
+#comment-input {
+  top:500px;
+  display: flex;
+  flex-direction: column;
+}

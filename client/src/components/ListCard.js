@@ -7,7 +7,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt';
 import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Link from '@mui/material/Link';
 
 // TODO - rewrite this into the closed listcard. also need to write openlistcard.
@@ -20,8 +19,6 @@ import Link from '@mui/material/Link';
 */
 function ListCard(props) {
     const { store } = useContext(GlobalStoreContext);
-    const [editActive, setEditActive] = useState(false);
-    const [text, setText] = useState(props.list.name);
     const { list } = props;
 
     function handleLoadList(event, id) {
@@ -43,7 +40,7 @@ function ListCard(props) {
 
     let deleteButton = "";
 
-    if (true) {
+    if (true) { // TODO - conditionally render if this list's owner is the currently logged in user.
         deleteButton = (
             <Box sx={{ p: 1 }} alignSelf='end'>
                 <IconButton onClick={(event) => {
@@ -63,7 +60,7 @@ function ListCard(props) {
     }
 
     let viewComponent = "";
-    if (true) {
+    if (true) { // TODO - change to if (published) | only published list can have views
         if (views === null) {
             views = 0;
         }
@@ -71,6 +68,17 @@ function ListCard(props) {
             <Box height="30px" fontSize={16}>{"Views: " + views}</Box>
         )
     }
+
+    let editComponent = "";
+    if (true) { // TODO - change to if (!published) | published list cannot be edited
+        editComponent = (
+            <Link sx={{ p: 1, flexGrow: 1}} fontSize={16} onClick={(event) => {handleLoadList(event, list._id)}} alignSelf='start'>Edit</Link>
+        );
+    }
+    // TODO - ELSE WE SHOW THE PUBLISH DATE
+
+    // TODO - disable/enable voting depending on publish status
+    // TODO - call viewupdate endpoint if viewing a published list
     // TODO - look at list info: if we have a published date, then we render accordingly.
     // TODO - if logged in, check for user's like/dislike status on this list and color one of the buttons accordingly.
     // If they click again on the previous vote then we just remove any votes
@@ -81,7 +89,7 @@ function ListCard(props) {
         <ListItem
             id={list._id}
             key={list._id}
-            sx={{ marginTop: '15px', display: 'flex', flexDirection: "row", p: 1, bgcolor: "#fffff1" }}
+            sx={{ marginTop: '15px', display: 'flex', flexDirection: "row", p: 1, bgcolor: published ? "#d4d4f5" : "#fffff1" }}
             button
             onClick={(event) => {
                 handleLoadList(event, list._id)
@@ -96,7 +104,7 @@ function ListCard(props) {
             <Box style={{width: '400%'}}>
                 <Box sx={{ p: 1, flexGrow: 1}} fontSize={24} alignSelf='start' >{list.name}</Box>
                 <Box sx={{ p: 1, flexGrow: 1}} fontSize={16} alignSelf='start'>{"By: " + list.ownerUsername}</Box>
-                <Link sx={{ p: 1, flexGrow: 1}} fontSize={16} onClick={(event) => {handleLoadList(event, list._id)}} alignSelf='start'>Edit</Link>
+                {editComponent}
             </Box>
 
 
@@ -132,9 +140,11 @@ function ListCard(props) {
                 {deleteButton}
                 <Box height="20px" sx={{ p: 1 }} alignSelf='start'>
                     <IconButton onClick={(event) => {
-                        console.log("expand");
-                        // TODO - add expanded list card functionality
-                    }} aria-label='open'>
+                        console.log("collapse");
+                        event.preventDefault();
+                        event.stopPropagation();
+                        store.expandListCard(list);
+                    }} aria-label='close'>
                         <KeyboardArrowDownIcon style={{fontSize:'20pt'}} />
                     </IconButton>
                 </Box>

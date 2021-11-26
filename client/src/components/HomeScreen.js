@@ -1,6 +1,7 @@
-import React, { useContext, useEffect } from 'react'
-import { GlobalStoreContext } from '../store'
-import ListCard from './ListCard.js'
+import React, { useContext, useEffect } from 'react';
+import { GlobalStoreContext } from '../store';
+import ListCard from './ListCard.js';
+import ExpandedListCard from "./ExpandedListCard.js";
 import List from '@mui/material/List';
 import AlertDialog from "./AlertDialog.js";
 import AppBar from "./AppBar.js";
@@ -25,13 +26,25 @@ const HomeScreen = () => {
         listCard = 
             <List sx={{ width: '90%', left: '5%', bgcolor: '#c4c4c4' }}>
             {
-                store.lists.map((list) => (
-                    <ListCard
-                        key={list._id}
-                        list={list}
-                        selected={false}
-                    />
-                ))
+                store.lists.map((list) => {
+                    if (store.expandedListCards.includes(list._id)) {
+                        return (
+                            <ExpandedListCard
+                                key={list._id}
+                                list={list}
+                            />
+                        );
+                    }
+                    else {
+                        return (
+                            <ListCard
+                                key={list._id}
+                                list={list}
+                                selected={false}
+                            />
+                        );
+                    }
+                })
             }
             </List>
     }
