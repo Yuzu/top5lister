@@ -102,6 +102,7 @@ export default function AppBanner() {
                     <Box sx={{ flexGrow: 1 }}>{editToolbar}</Box>
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
                         <Avatar
+                            id="avatar"
                             size="large"
                             edge="end"
                             aria-label="account of current user"

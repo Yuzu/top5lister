@@ -276,3 +276,16 @@ input {
   display: flex;
   flex-direction: column;
 }
+
+.top5-comment {
+  font-size: 20px;
+  padding-bottom: 25px; 
+}
+
+.top5-comment-name {
+  text-decoration: underline;
+}
+
+#avatar {
+  cursor:pointer;
+}

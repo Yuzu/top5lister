@@ -136,7 +136,12 @@ function ExpandedListCard(props) {
                             {
                                 list.comments.map((comment) => {
                                     return (
-                                        <div float="left" width="100%"> {"\n" + comment.author + ": " + comment.content + "\n"}</div>
+                                        <div class="top5-comment" float="left" width="100%">
+                                            <span class="top5-comment-name">
+                                                {comment.author}
+                                            </span> 
+                                            {": " + comment.content + "\n"}
+                                        </div>
                                     );
                                 })
                             }

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useRef, useState} from 'react';
 import { GlobalStoreContext } from '../store';
 import ListCard from './ListCard.js';
 import ExpandedListCard from "./ExpandedListCard.js";
@@ -16,10 +16,36 @@ import AppBar from "./AppBar.js";
 const HomeScreen = () => {
     const { store } = useContext(GlobalStoreContext);
     
-    useEffect(() => {
-        store.loadLists();
-    }, []);
+    const[oldStore, updateStore] = useState(store);
 
+    useEffect(() => {
+        
+        if (
+            store.lists.length !== oldStore.lists.length ||
+            store.expandedListCards.length !== oldStore.expandedListCards.length ||
+            store.homeFilterLists.length !== oldStore.homeFilterLists.length ||
+            store.currentView !== oldStore.currentView
+        ) {
+            console.log("RE-LOADING LISTS DUE TO CHANGES");
+            console.log("RE-RENDER");
+            console.log("Previous:");
+            console.log(oldStore);
+            console.log("Now:");
+            console.log(store);
+            store.loadLists();
+        }
+        
+        updateStore(store);
+    }, [store]);
+
+    useEffect(() => {
+        console.log("INITIAL LOADING");
+        store.loadLists();
+    }, [])
+    if (store.homeFilterLists.length !== 0 && store.currentView === "HOME_SCREEN") {
+        console.log("loading homeFilterLists");
+        console.log(store.homeFilterLists)
+    }
     let listCard = "";
     // TODO - rewrite to account for open vs closed cards, as well as writing the code for the cards.
     if (store) {

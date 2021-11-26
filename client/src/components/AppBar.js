@@ -105,7 +105,6 @@ export default function PrimarySearchAppBar() {
     if (event.code === "Enter") {
         event.stopPropagation();
         event.preventDefault();
-        console.log(event.target.value);
         // Pass off to the search handler.
         store.handleSearch(event.target.value);
     }

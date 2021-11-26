@@ -9,7 +9,6 @@ import ThumbDownOffAltIcon from '@mui/icons-material/ThumbDownOffAlt';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Link from '@mui/material/Link';
 
-// TODO - rewrite this into the closed listcard. also need to write openlistcard.
 /*
     This is a card in our list of top 5 lists. It lets select
     a list for editing and it has controls for changing its 
@@ -140,11 +139,11 @@ function ListCard(props) {
                 {deleteButton}
                 <Box height="20px" sx={{ p: 1 }} alignSelf='start'>
                     <IconButton onClick={(event) => {
-                        console.log("collapse");
+                        console.log("expand");
                         event.preventDefault();
                         event.stopPropagation();
                         store.expandListCard(list);
-                    }} aria-label='close'>
+                    }} aria-label='open'>
                         <KeyboardArrowDownIcon style={{fontSize:'20pt'}} />
                     </IconButton>
                 </Box>
