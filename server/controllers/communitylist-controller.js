@@ -1,11 +1,6 @@
 const CommunityList = require('../models/communitylist-model');
 
-interactWithList = async (req, res) => {
-    // We need the list, the comment/vote, the user info, and a timestamp.
-    // We will check whether the list is valid + published, and whether the user has already voted or not. If they have voted,
-    // we need to undo their previous vote to add the new one.
-    return null;
-}
+
 
 incrementView = async (req, res) => {
     return null;
@@ -20,13 +15,12 @@ updateList = async (req, res) => {
     return null;
 }
 
-getCommunityListPairs = async (req, res) => {
+getCommunityLists = async (req, res) => {
     // Return lists similar to the top5list way but with more info.
 }
 
 module.exports = {
-    interactWithList,
     incrementView,
     updateList,
-    getCommunityListPairs
+    getCommunityLists
 }

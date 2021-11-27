@@ -30,19 +30,13 @@ export const deleteTop5ListById = (id) => api.delete(`/top5list/${id}`)
 export const getTop5ListById = (id) => api.get(`/top5list/${id}`)
 
 
-// comment or vote This route will require auth.
-export const interactWithTop5List = (id, payload) => api.put(`/top5list/interact/normal/${id}`, payload)
-
 // Increment the view of a list, no auth required such that guests can view them.
 // Only increment if published.
 export const incrementViewTop5List = (id) => api.put(`/top5list/increment/normal/${id}`)
 
 
 // get all community lists
-export const getCommunityListPairs = () => api.get(`/communitylistpairs/`)
-
-// Comment or vote on a community list, auth required.
-export const interactWithCommunityList = (id, payload) => api.put(`/top5list/interact/community/${id}`, payload)
+export const getCommunityLists = () => api.get(`/communitylists/`)
 
 // Increment the view of a community list, no auth required
 export const incrementCommunityList = (id) => api.put(`/top5list/increment/community/${id}`)
@@ -64,6 +58,11 @@ const apis = {
     updateTop5ListById,
     deleteTop5ListById,
     getTop5ListById,
+
+    incrementViewTop5List,
+    getCommunityLists,
+    incrementCommunityList,
+    updateCommunityList,
 
     getLoggedIn,
     registerUser,

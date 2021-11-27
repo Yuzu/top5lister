@@ -12,11 +12,9 @@ router.get('/top5list/:id', Top5ListController.getTop5ListById)
 router.get('/top5lists', Top5ListController.getTop5Lists)
 router.get('/top5listpairs', Top5ListController.getTop5ListPairs)
 
-router.put("/top5list/interact/normal/:id", auth.verify, Top5ListController.interactWithList)
 router.put("/top5list/increment/normal/:id", Top5ListController.incrementView)
 
-router.get("/communitylistpairs/", CommunityListController.getCommunityListPairs)
-router.put("/top5list/interact/community/:id", auth.verify, CommunityListController.interactWithList)
+router.get("/communitylists/", CommunityListController.getCommunityLists)
 router.put("/top5list/increment/community/:id", CommunityListController.incrementView)
 router.put("/top5list/community/:id", auth.verify, CommunityListController.updateList)
 

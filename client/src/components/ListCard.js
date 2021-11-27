@@ -35,6 +35,9 @@ function ListCard(props) {
         store.markListForDeletion(id);
     }
 
+    let upvoted = list.upvotes.includes(auth.user.username);
+    let downvoted = list.downvotes.includes(auth.user.username);
+
     let published = list.publishDate === undefined ? false : true;
     let views = list.views !== undefined ? list.views : null;
 
@@ -106,6 +109,7 @@ function ListCard(props) {
                     event.preventDefault();
                     event.stopPropagation();
                     store.expandListCard(list);
+                    store.incrementViewCount(list);
                 }} aria-label='open'>
                     <KeyboardArrowDownIcon style={{fontSize:'20pt'}} />
                 </IconButton>
@@ -133,10 +137,10 @@ function ListCard(props) {
 
 
             <Box style={{width: '70%'}}>
-                <Box sx={{ p: 1 }} alignSelf='end'>
-                    <IconButton disabled = {published ? false : true} onClick={(event) => {
+                <Box sx={{ p: 1 }} alignSelf='end' >
+                    <IconButton disabled = {published ? false : true} color = {upvoted ? "success" : "inherit"} onClick={(event) => {
                         console.log("Upvote");
-                        // TODO - add Upvote functionality
+                        store.upvote(list);
                     }} aria-label='upvote'>
                         <ThumbUpOffAltIcon style={{fontSize:'20pt'}} />
                         
@@ -149,9 +153,9 @@ function ListCard(props) {
 
             <Box style={{width: '70%'}}>
                 <Box sx={{ p: 1 }} alignSelf='start'>
-                    <IconButton disabled = {published ? false : true} onClick={(event) => {
+                    <IconButton disabled = {published ? false : true} color = {downvoted ? "error" : "inherit"}onClick={(event) => {
                         console.log("Downvote");
-                        // TODO - add downvote functionality
+                        store.downvote(list);
                     }} aria-label='downvote'>
                         <ThumbDownOffAltIcon style={{fontSize:'20pt'}} />
                     </IconButton>

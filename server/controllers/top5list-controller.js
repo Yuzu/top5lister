@@ -42,7 +42,6 @@ updateTop5List = async (req, res) => {
         })
     }
 
-    // TODO - add functionality to publish a list if the payload has a date, that means we want it to be published.
     Top5List.findOne({ _id: req.params.id }, (err, top5List) => {
         console.log("top5List found: " + JSON.stringify(top5List));
         if (err) {
@@ -54,7 +53,11 @@ updateTop5List = async (req, res) => {
 
         top5List.name = body.name
         top5List.items = body.items
+        top5List.comments = body.comments
 
+        top5List.upvotes = body.upvotes;
+        top5List.downvotes = body.downvotes;
+        
         if (body.publishDate !== undefined) {
             top5List.publishDate = body.publishDate;
         }
@@ -143,15 +146,37 @@ getTop5ListPairs = async (req, res) => {
     }).catch(err => console.log(err))
 }
 
-interactWithList = async (req, res) => {
-    // We need the list, the comment/vote, the user info, and a timestamp.
-    // We will check whether the list is valid + published, and whether the user has already voted or not. If they have voted,
-    // we need to undo their previous vote to add the new one.
-    return null;
-}
 
 incrementView = async (req, res) => {
-    return null;
+    console.log("Incrementing list view count");
+    Top5List.findOne({ _id: req.params.id }, (err, top5List) => {
+        console.log("top5List found: " + JSON.stringify(top5List));
+        if (err) {
+            return res.status(404).json({
+                err,
+                message: 'Top 5 List not found!',
+            })
+        }
+
+        top5List.views += 1;
+        top5List
+            .save()
+            .then(() => {
+                console.log("SUCCESS!!!");
+                return res.status(200).json({
+                    success: true,
+                    id: top5List._id,
+                    message: 'Top 5 List updated!',
+                })
+            })
+            .catch(error => {
+                console.log("FAILURE: " + JSON.stringify(error));
+                return res.status(404).json({
+                    error,
+                    message: 'Top 5 List not updated!',
+                })
+            })
+    })
 }
 
 module.exports = {
@@ -161,6 +186,5 @@ module.exports = {
     getTop5Lists,
     getTop5ListPairs,
     getTop5ListById,
-    interactWithList,
     incrementView
 }

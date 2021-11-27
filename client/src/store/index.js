@@ -281,6 +281,15 @@ function GlobalStoreContextProvider(props) {
         
     }
 
+    store.incrementViewCount = async function (list) {
+        console.log("Incrementing view count");
+        let response = await api.incrementViewTop5List(list._id);
+        if (response.data.success) {
+            console.log("Successful increment");
+            store.loadLists();
+        }
+    }
+
     store.sortLists = function (sort, lists) {
         let unpublished = [];
         let published = [];
@@ -561,6 +570,116 @@ function GlobalStoreContextProvider(props) {
         }
 
     }
+
+    store.addComment = async function (list, content) {
+        let comment = {
+            author: auth.user.username,
+            content: content
+        };
+
+        let id = list._id;
+
+        let response = await api.getTop5ListById(id);
+        if (response.data.success) {
+            let top5List = response.data.top5List;
+            top5List.comments.push(comment);
+            async function updateList(top5List) {
+                response = await api.updateTop5ListById(top5List._id, top5List);
+                if (response.data.success) {
+                    // reload lists
+                    console.log("NEW COMMENT ON LIST:");
+                    console.log(top5List);
+
+                    store.loadLists();
+                }
+            }
+            updateList(top5List);
+        }
+
+    }
+
+    store.upvote = async function (list) {
+
+        let id = list._id;
+
+        let response = await api.getTop5ListById(id);
+        if (response.data.success) {
+            let top5List = response.data.top5List;
+            let username = auth.user.username;
+            let i;
+            // already upvoted, remove upvote
+            if (top5List.upvotes.includes(username)) {
+                i = top5List.upvotes.indexOf(username);
+                top5List.upvotes.splice(i, 1);
+            }
+            // currently downvoted, remove downvote and set to upvote
+            else if (top5List.downvotes.includes(username)) {
+                i = top5List.downvotes.indexOf(username);
+                top5List.downvotes.splice(i, 1);
+
+                // set to upvote
+                top5List.upvotes.push(username);
+            }
+            // else no vote currently, add upvote
+            else {
+                top5List.upvotes.push(username);
+            }
+
+            async function updateList(top5List) {
+                response = await api.updateTop5ListById(top5List._id, top5List);
+                if (response.data.success) {
+                    // reload lists
+                    console.log("UPVOTE CHANGE");
+                    console.log(top5List);
+
+                    store.loadLists();
+                }
+            }
+            updateList(top5List);
+        }
+    }
+
+    store.downvote = async function (list) {
+
+        let id = list._id;
+
+        let response = await api.getTop5ListById(id);
+        if (response.data.success) {
+            let top5List = response.data.top5List;
+            let username = auth.user.username;
+            let i;
+            // already downvoted, remove downvote
+            if (top5List.downvotes.includes(username)) {
+                i = top5List.downvotes.indexOf(username);
+                top5List.downvotes.splice(i, 1);
+            }
+            // currently upvoted, remove upvote and set to downvote
+            else if (top5List.upvotes.includes(username)) {
+                i = top5List.upvotes.indexOf(username);
+                top5List.upvotes.splice(i, 1);
+
+                // set to downvote
+                top5List.downvotes.push(username);
+            }
+            // else no vote currently, add downvote
+            else {
+                top5List.downvotes.push(username);
+            }
+
+            async function updateList(top5List) {
+                response = await api.updateTop5ListById(top5List._id, top5List);
+                if (response.data.success) {
+                    // reload lists
+                    console.log("DOWNVOTE CHANGE");
+                    console.log(top5List);
+
+                    store.loadLists();
+                }
+            }
+            updateList(top5List);
+        }
+    }
+
     // THIS FUNCTION LOADS ALL THE LISTS
     // check the current store view and, after loading all lists, filter accordingly.
     store.loadLists = async function () {

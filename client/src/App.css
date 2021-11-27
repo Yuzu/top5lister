@@ -258,7 +258,7 @@ input {
 
 #list-comments {
 
-  left: -50px;
+  left: -250px;
   width: 400px;
   max-width: 400px;
   height: 150px;
@@ -267,19 +267,20 @@ input {
   display: flex;
   flex-direction: column;
   overflow: scroll;
-  background-color: #c6a433;
 }
 
 
 #comment-input {
-  top:500px;
+  top:200px;
   display: flex;
   flex-direction: column;
 }
 
 .top5-comment {
-  font-size: 20px;
-  padding-bottom: 25px; 
+  padding-bottom: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 .top5-comment-name {

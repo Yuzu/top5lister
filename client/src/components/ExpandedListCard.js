@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useState, useRef } from 'react'
 import { GlobalStoreContext } from '../store'
 import Box from '@mui/material/Box';
 import ListItem from '@mui/material/ListItem';
@@ -9,6 +9,9 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItemText from '@mui/material/ListItemText';
+import Card from "@mui/material/Card";
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import AuthContext from '../auth'
 
@@ -18,6 +21,7 @@ function ExpandedListCard(props) {
     const { list } = props;
     const { auth } = useContext(AuthContext);
 
+    let textInput = useRef(null);
     function handleUpdateText(event) {
         setText(event.target.value);
     }
@@ -28,7 +32,8 @@ function ExpandedListCard(props) {
             event.preventDefault();
             console.log("NEW COMMENT:");
             console.log(event.target.value);
-            // TODO - handle processing comments
+            store.addComment(list, event.target.value);
+            textInput.current.value = "";
         }
     }
 
@@ -37,6 +42,9 @@ function ExpandedListCard(props) {
         event.stopPropagation();
         store.markListForDeletion(id);
     }
+
+    let upvoted = list.upvotes.includes(auth.user.username);
+    let downvoted = list.downvotes.includes(auth.user.username);
 
     let published = list.publishDate === undefined ? false : true;
     let views = list.views !== undefined ? list.views : null;
@@ -78,14 +86,11 @@ function ExpandedListCard(props) {
             <Box height="30px" fontSize={16}>{"Published: " + list.publishDate.split("T")[0]}</Box>
         );
     }
-    // TODO - look at listcard conditional rendering/functions too! those mirror this closely.
 
-    // TODO - look at list info: if we have a published date, then we render accordingly.
+    // look at list info: if we have a published date, then we render accordingly.
     // TODO - if logged in, check for user's like/dislike status on this list and color one of the buttons accordingly.
     // If they click again on the previous vote then we just remove any votes
     // If they click on the opposite, get rid of old and change it.
-    // TODO - we might be able to just update locally then call updatelist on the api. Need to see if the token allows it.
-    // TODO - this also applies to commenting! We would still need a view route to update.
     
     // No need to check for published status since it's a given here.
     let cardElement = (
@@ -132,24 +137,29 @@ function ExpandedListCard(props) {
                 </Box>
 
 
-                <Box style={{width: '70%'}}>
-                    <Box sx={{ p: 1 }} alignSelf='end'>
-                        <List sx={{bgcolor: '#2c2f70' }} id="list-comments">
+                <Box style={{width: '70%'}}  >
+                    <Box sx={{ p: 1 }} alignSelf='end' id="list-comments">
+                        <List >
                             {
                                 list.comments.map((comment) => {
                                     return (
-                                        <div class="top5-comment" float="left" width="100%">
-                                            <span class="top5-comment-name">
-                                                {comment.author}
-                                            </span> 
-                                            {": " + comment.content + "\n"}
-                                        </div>
+                                        <Card class="top5-comment" style={{backgroundColor: "#c6a433", marginBottom:"20px"}} variant="outlined">
+                                            <CardContent >
+                                                <Typography fontSize="20px" color="black" variant="caption" style={{textDecoration:"underline"}}>
+                                                    {comment.author + ":"}
+                                                </Typography>
+                                                <Typography fontSize="25px" color="black" variant="body1">
+                                                    {comment.content + "\n"}
+                                                </Typography>
+                                                
+                                            </CardContent>
+                                        </Card>
                                     );
                                 })
                             }
                         </List>
-
-                        <Box sx={{ p: 1 }} height="15px">
+                    </Box>
+                    <Box sx={{ p: 1 }} height="15px" id="comment-input">
                             <TextField
                                 margin="normal"
                                 required
@@ -157,11 +167,10 @@ function ExpandedListCard(props) {
                                 placeholder="Make a comment!"
                                 onKeyPress={handleKeyPress}
                                 onChange={handleUpdateText}
-                                defaultValue={text}
+                                inputRef={textInput}
                                 inputProps={{style: {fontSize: 24}}}
                                 InputLabelProps={{style: {fontSize: 18}}}
                             />
-                        </Box>
                     </Box>
                 </Box>
 
@@ -170,9 +179,9 @@ function ExpandedListCard(props) {
                         {viewComponent}
                         {publishDate}
                         <Box sx={{ p: 1 }} alignSelf='end' />
-                        <IconButton onClick={(event) => {
+                        <IconButton color = {upvoted ? "success" : "inherit"} onClick={(event) => {
                             console.log("Upvote");
-                            // TODO - add Upvote functionality
+                            store.upvote(list);
                         }} aria-label='upvote'>
                             <ThumbUpOffAltIcon style={{fontSize:'20pt'}} />
                             
@@ -181,9 +190,9 @@ function ExpandedListCard(props) {
                     </Box>
 
                     <Box sx={{ p: 1 }} alignSelf='start'>
-                        <IconButton onClick={(event) => {
+                        <IconButton color = {downvoted ? "error" : "inherit"} onClick={(event) => {
                             console.log("Downvote");
-                            // TODO - add downvote functionality
+                            store.downvote(list);
                         }} aria-label='downvote'>
                             <ThumbDownOffAltIcon style={{fontSize:'20pt'}} />
                         </IconButton>
