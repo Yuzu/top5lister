@@ -24,7 +24,8 @@ const HomeScreen = () => {
             store.lists.length !== oldStore.lists.length ||
             store.expandedListCards.length !== oldStore.expandedListCards.length ||
             store.currentView !== oldStore.currentView ||
-            store.searchQuery !== oldStore.searchQuery
+            store.searchQuery !== oldStore.searchQuery ||
+            store.currentSort !== oldStore.currentSort
         ) {
 
             console.log("RE-LOADING LISTS DUE TO CHANGES");

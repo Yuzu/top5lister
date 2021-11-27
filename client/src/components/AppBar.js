@@ -70,7 +70,15 @@ export default function PrimarySearchAppBar() {
     USER_LISTS: "USER_LISTS",
     COMMUNITY_LISTS: "COMMUNITY_LISTS"
   }
-    
+  
+  const currentSortType = {
+    PUB_NEW: "PUB_NEW",
+    PUB_OLD: "PUB_OLD",
+    VIEWS: "VIEWS",
+    LIKES: "LIKES",
+    DISLIKES: "DISLIKES"
+}
+
   const { store } = useContext(GlobalStoreContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -82,22 +90,26 @@ export default function PrimarySearchAppBar() {
 
   const handleMenuClose = (event) => {
     setAnchorEl(null);
-    console.log(event.target.textContent);
-    // TODO - write store functions to get lists and sort.
+    console.log("Sort By: " + event.target.textContent);
     switch (event.target.textContent) {
         case "Publish Date (Newest)":
-            break;
+          store.setSort(currentSortType.PUB_NEW);
+          break;
         case "Publish Date (Oldest)":
-            break;
+          store.setSort(currentSortType.PUB_OLD);
+          break;
         case "Views":
-            break;
+          store.setSort(currentSortType.VIEWS);
+          break;
         case "Likes":
-            break;
+          store.setSort(currentSortType.LIKES);
+          break;
         case "Dislikes":
-            break;
+          store.setSort(currentSortType.DISLIKES);
+          break;
         default:
-            console.log("Sort menu closed");
-            break;
+          console.log("Sort menu closed");
+          break;
     }
   };
 
@@ -110,7 +122,31 @@ export default function PrimarySearchAppBar() {
     }
   }
 
+  let pubNewOption = (<MenuItem onClick={handleMenuClose}>Publish Date (Newest)</MenuItem>);
+  let pubOldOption = (<MenuItem onClick={handleMenuClose}>Publish Date (Oldest)</MenuItem>);
+  let viewsOption = (<MenuItem onClick={handleMenuClose}>Views</MenuItem>);
+  let likesOption = (<MenuItem onClick={handleMenuClose}>Likes</MenuItem>);
+  let dislikesOption = <MenuItem onClick={handleMenuClose}>Dislikes</MenuItem>;
 
+  switch (store.currentSort) {
+    case currentSortType.PUB_NEW:
+      pubNewOption = (<MenuItem selected onClick={handleMenuClose}>Publish Date (Newest)</MenuItem>);
+      break;
+    case currentSortType.PUB_OLD:
+      pubOldOption = (<MenuItem selected onClick={handleMenuClose}>Publish Date (Oldest)</MenuItem>);
+      break;
+    case currentSortType.VIEWS:
+      viewsOption = (<MenuItem selected onClick={handleMenuClose}>Views</MenuItem>);
+      break;
+    case currentSortType.LIKES:
+      likesOption = (<MenuItem selected onClick={handleMenuClose}>Likes</MenuItem>);
+      break;
+    case currentSortType.DISLIKES:
+      dislikesOption = <MenuItem selected onClick={handleMenuClose}>Dislikes</MenuItem>;
+      break;
+    default:
+      break;
+}
   
   const menuId = 'sort-menu';
   const renderMenu = (
@@ -129,11 +165,11 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Publish Date (Newest)</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Publish Date (Oldest)</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Views</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Likes</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Dislikes</MenuItem>
+      {pubNewOption}
+      {pubOldOption}
+      {viewsOption}
+      {likesOption}
+      {dislikesOption}
     </Menu>
   );
   return (

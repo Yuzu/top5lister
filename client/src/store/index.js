@@ -29,7 +29,8 @@ export const GlobalStoreActionType = {
     SET_SEARCH_QUERY: "SET_SEARCH_QUERY",
     EXPAND_LIST_CARD: "EXPAND_LIST_CARD",
     COLLAPSE_LIST_CARD: "COLLAPSE_LIST_CARD",
-    FILTER_HOME_LISTS: "FILTER_HOME_LISTS"
+    FILTER_HOME_LISTS: "FILTER_HOME_LISTS",
+    SET_SORT_TYPE: "SET_SORT_TYPE"
 }
 
 export const CurrentViewType = {
@@ -37,6 +38,14 @@ export const CurrentViewType = {
     ALL_LISTS: "ALL_LISTS",
     USER_LISTS: "USER_LISTS",
     COMMUNITY_LISTS: "COMMUNITY_LISTS"
+}
+
+export const currentSortType = {
+    PUB_NEW: "PUB_NEW",
+    PUB_OLD: "PUB_OLD",
+    VIEWS: "VIEWS",
+    LIKES: "LIKES",
+    DISLIKES: "DISLIKES"
 }
 
 // WITH THIS WE'RE MAKING OUR GLOBAL DATA STORE
@@ -55,7 +64,8 @@ function GlobalStoreContextProvider(props) {
         currentView: "HOME_SCREEN",
         searchQuery: "",
         expandedListCards: [],
-        originalLists: []
+        originalLists: [],
+        currentSort: null
     });
     const history = useHistory();
 
@@ -79,7 +89,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             // STOP EDITING THE CURRENT LIST
@@ -94,7 +105,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 })
             }
             // CREATE A NEW LIST
@@ -109,7 +121,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 })
             }
             // GET ALL THE LISTS SO WE CAN PRESENT THEM
@@ -124,7 +137,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             // PREPARE TO DELETE A LIST
@@ -135,7 +149,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             // PREPARE TO DELETE A LIST
@@ -146,7 +161,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             // UPDATE A LIST
@@ -161,7 +177,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             // START EDITING A LIST ITEM
@@ -173,7 +190,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             // START EDITING A LIST NAME
@@ -186,7 +204,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: store.currentView,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 });
             }
             case GlobalStoreActionType.SET_CURRENT_VIEW: {
@@ -195,7 +214,8 @@ function GlobalStoreContextProvider(props) {
                     currentView: payload,
                     searchQuery: store.searchQuery,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 })
             }
             case GlobalStoreActionType.SET_SEARCH_QUERY: {
@@ -203,27 +223,37 @@ function GlobalStoreContextProvider(props) {
                     ...store,
                     searchQuery: payload,
                     expandedListCards: store.expandedListCards,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 })
             }
             case GlobalStoreActionType.EXPAND_LIST_CARD: {
                 return setStore({
                     ...store,
                     expandedListCards: payload,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 })
             }
             case GlobalStoreActionType.COLLAPSE_LIST_CARD: {
                 return setStore({   
                     ...store,
                     expandedListCards: payload,
-                    originalLists: store.originalLists
+                    originalLists: store.originalLists,
+                    currentSort: store.currentSort
                 })
             }
             case GlobalStoreActionType.FILTER_HOME_LISTS: {
                 return setStore({
                     ...store,
-                    originalLists: payload
+                    originalLists: payload,
+                    currentSort: store.currentSort
+                })
+            }
+            case GlobalStoreActionType.SET_SORT_TYPE: {
+                return setStore({
+                    ...store,
+                    currentSort: payload
                 })
             }
             default:
@@ -234,6 +264,123 @@ function GlobalStoreContextProvider(props) {
     // THESE ARE THE FUNCTIONS THAT WILL UPDATE OUR STORE AND
     // DRIVE THE STATE OF THE APPLICATION. WE'LL CALL THESE IN 
     // RESPONSE TO EVENTS INSIDE OUR COMPONENTS.
+
+    store.setSort = function (sort) {
+        if (sort === store.currentSort) {
+            storeReducer({
+                type: GlobalStoreActionType.SET_SORT_TYPE,
+                payload: null
+            });
+        }
+        else {
+            storeReducer({
+                type: GlobalStoreActionType.SET_SORT_TYPE,
+                payload: sort
+            });
+        }
+        
+    }
+
+    store.sortLists = function (sort, lists) {
+        let unpublished = [];
+        let published = [];
+        lists.forEach((list) => {
+            if (!list.publishDate) {
+                unpublished.push(list);
+            }
+            else {
+                published.push(list);
+            }
+        });
+        let final = [];
+        switch (sort) {
+            case currentSortType.PUB_NEW:
+                published.sort(function(x, y) {
+                    let x_date = new Date(x.publishDate);
+                    let y_date = new Date(y.publishDate);
+
+                    if (x_date < y_date) {
+                        return 1;
+                    }
+                    else if (x_date > y_date) {
+                        return -1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
+                final = published.concat(unpublished);
+              break;
+
+            case currentSortType.PUB_OLD:
+                published.sort(function(x, y) {
+                    let x_date = new Date(x.publishDate);
+                    let y_date = new Date(y.publishDate);
+
+                    if (x_date < y_date) {
+                        return -1;
+                    }
+                    else if (x_date > y_date) {
+                        return 1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
+                final = published.concat(unpublished);
+                break;
+
+            case currentSortType.VIEWS:
+                published.sort(function(x, y) {
+                    if (x.views < y.views) {
+                        return 1;
+                    }
+                    else if (x.views > y.views) {
+                        return -1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
+                final = published.concat(unpublished);
+                break;
+            case currentSortType.LIKES:
+                published.sort(function(x, y) {
+                    if (x.upvotes.length < y.upvotes.length) {
+                        return 1;
+                    }
+                    else if (x.upvotes.length > y.upvotes.length) {
+                        return -1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
+                final = published.concat(unpublished);
+                break;
+            case currentSortType.DISLIKES:
+                published.sort(function(x, y) {
+
+                    if (x.downvotes.length < y.downvotes.length) {
+                        return 1;
+                    }
+                    else if (x.downvotes.length > y.downvotes.length) {
+                        return -1;
+                    }
+                    else {
+                        return 0;
+                    }
+                });
+                final = published.concat(unpublished);
+                break;
+            default:
+                console.log("INVALID SORT");
+                break;
+        }
+        console.log("Sorted lists:");
+        console.log(final);
+        return final;
+    }
 
     store.expandListCard = function (list) {
         let expandedListCards = store.expandedListCards
@@ -472,6 +619,10 @@ function GlobalStoreContextProvider(props) {
                         
                     }
                     
+                    if (store.currentSort) {
+                        lists = store.sortLists(store.currentSort, store.lists);
+                    }
+
                     break;
                 
                 case CurrentViewType.ALL_LISTS: 
