@@ -424,7 +424,7 @@ function GlobalStoreContextProvider(props) {
         if (query === "") {
             storeReducer({
                 type: GlobalStoreActionType.SET_SEARCH_QUERY,
-                payload: ""
+                payload: null
             });
             return;
         }
@@ -707,8 +707,8 @@ function GlobalStoreContextProvider(props) {
                     }
                     
                     let filterLists = [];
-                    // TODO Afterwards, if we have a search query, filter further.
-                    if (store.searchQuery !== "") {
+                    // Afterwards, if we have a search query, filter further and return early with the filtered lists.
+                    if (store.searchQuery) {
                         lists.forEach(list => {
                             if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
                                 filterLists.push(list);
@@ -723,19 +723,20 @@ function GlobalStoreContextProvider(props) {
                         console.log(originalLists);
                         console.log("filtered lists:");
                         console.log(filterLists);
-                        if (filterLists.length !== 0) {
-                            storeReducer({
-                                type: GlobalStoreActionType.FILTER_HOME_LISTS,
-                                payload: originalLists
-                            });
-
-                            storeReducer({
-                                type: GlobalStoreActionType.LOAD_LISTS,
-                                payload: filterLists
-                            });
-                            return;
+                        if (store.currentSort) {
+                            filterLists = store.sortLists(store.currentSort, filterLists);
                         }
-                        
+
+                        storeReducer({
+                            type: GlobalStoreActionType.FILTER_HOME_LISTS,
+                            payload: originalLists
+                        });
+
+                        storeReducer({
+                            type: GlobalStoreActionType.LOAD_LISTS,
+                            payload: filterLists
+                        });
+                        return;
                     }
                     
                     if (store.currentSort) {
@@ -747,16 +748,45 @@ function GlobalStoreContextProvider(props) {
                 case CurrentViewType.ALL_LISTS: 
                     // Load all published lists for anyone to see!
                     lists = lists.filter(list => list.publishDate !== undefined);
-                    // TODO Afterwards, if we have a search query, filter further.
+                    // Afterwards, if we have a search query, filter further and return early with the filtered lists.
+                    if (store.searchQuery) {
+                        let filterLists = [];
+                        lists.forEach(list => {
+                            if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
+                                filterLists.push(list);
+                            }
+                        });
+
+                        console.log("Original lists:");
+                        console.log(lists);
+                        console.log("filtered lists:");
+                        console.log(filterLists);
+                        if (store.currentSort) {
+                            filterLists = store.sortLists(store.currentSort, filterLists);
+                        }
+
+                        storeReducer({
+                            type: GlobalStoreActionType.LOAD_LISTS,
+                            payload: filterLists
+                        });
+                        return;
+                    }
+                    
+                    if (store.currentSort) {
+                        lists = store.sortLists(store.currentSort, store.lists);
+                    }
                     break;
                 
                 case CurrentViewType.USER_LISTS: 
                     // Check for a user search query and filter accordingly.
-                    if (store.searchQuery === "") {
+                    if (!store.searchQuery) {
                         lists = [];
                     }
                     else {
                         lists = lists.filter(list => list.ownerUsername === store.searchQuery && list.publishDate);
+                        if (store.currentSort) {
+                            lists = store.sortLists(store.currentSort, store.lists);
+                        }
                     }
                     break;
                 
