@@ -416,7 +416,6 @@ function GlobalStoreContextProvider(props) {
 
     store.collapseListCard = function (list) {
         let expandedListCards = store.expandedListCards
-        console.log("a");
         console.log(expandedListCards);
         let i = expandedListCards.indexOf(list._id);
         if (i < 0) {
@@ -625,7 +624,7 @@ function GlobalStoreContextProvider(props) {
 
                 response = await api.updateCommunityList(toUpdate._id, toUpdate);
                 if (response.data.success) {
-                    console.log("UPDATED COMMUNITY LIST");
+                    console.log("UPDATED COMMUNITY LIST WITH ADDITION");
                     console.log(response.data.communityList);
                 }
             }
@@ -807,7 +806,7 @@ function GlobalStoreContextProvider(props) {
                 store.loadLists();
             }
         }
-        
+
         else {
             let response = await api.getTop5ListById(id);
             if (response.data.success) {
@@ -1059,10 +1058,57 @@ function GlobalStoreContextProvider(props) {
     }
 
     store.deleteList = async function (listToDelete) {
-        let response = await api.deleteTop5ListById(listToDelete._id);
-        // TODO - we dont need to worry about checking if it's the owner who's deleting since the button wont even be
-        // rendered if that's the case.
-        // TODO - what we do need to worry about is if this list is currently expanded. if it is, we'll need to collapse it first.
+        console.log("DELETING: ");
+        console.log(listToDelete);
+        // also need to update community list
+        
+        console.log("Updating community");
+        let response = await api.getCommunityLists();
+        if (response.data.success) {
+            let lists = response.data.data;
+            let match = false;
+            let toUpdate = null;
+            console.log(lists);
+            lists.forEach((list) => {
+                if (list.name.toLowerCase() === listToDelete.name.toLowerCase()) {
+                    match = true;
+                    toUpdate = list;
+                }
+            });
+
+            if (match) {
+                console.log("here");
+                let existingItems = [];
+                toUpdate.items.forEach((item) => {
+                    existingItems.push(item.name);
+                });
+
+                listToDelete.items.forEach((item, index) => {
+                    if (existingItems.includes(item.toLowerCase())) {
+                        // item already in the community list
+
+                        // find the corresponding item in the list
+                        toUpdate.items.forEach((communityItem) => {
+                            if (communityItem.name === item.toLowerCase()) {
+                                communityItem.votes -= (5 - index);
+                            }
+                        });
+                    }
+                    // else not in list, nothing to change.
+                });
+                
+                toUpdate.pooledListNum -= 1;
+
+                response = await api.updateCommunityList(toUpdate._id, toUpdate);
+                if (response.data.success) {
+                    console.log("UPDATED COMMUNITY LIST WITH REMOVAL");
+                    console.log(response.data.communityList);
+                }
+            }
+
+        }
+        
+        response = await api.deleteTop5ListById(listToDelete._id);
         if (response.data.success) {
             store.loadLists();
             history.push("/");

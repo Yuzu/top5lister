@@ -128,23 +128,40 @@ function ExpandedListCard(props) {
                 <ListItemText primaryTypographyProps={{fontSize: '18px', color: "#d4af37"}}>
                     {"Pooled From: " + list.pooledListNum + " lists!"}
                 </ListItemText>
+
                 <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                    {"1: \t" + list.items[0].name + "\n Votes: " + list.items[0].votes}
+                    {"1: \t" + list.items[0].name}
                 </ListItemText>
-                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                    {"2: \t" + list.items[1].name + "\n Votes: " + list.items[1].votes}
+                <ListItemText primaryTypographyProps={{fontSize: '15px', color: "#d4af37"}}>
+                    {"(" + list.items[0].votes + " votes)"}
                 </ListItemText>
 
                 <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                    {"3: \t" + list.items[2].name + "\n Votes: " + list.items[2].votes}
+                    {"2: \t" + list.items[1].name}
+                </ListItemText>
+                <ListItemText primaryTypographyProps={{fontSize: '15px', color: "#d4af37"}}>
+                    {"(" + list.items[1].votes + " votes)"}
                 </ListItemText>
 
                 <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                    {"4: \t" + list.items[3].name + "\n Votes: " + list.items[3].votes}
+                    {"3: \t" + list.items[2].name}
+                </ListItemText>
+                <ListItemText primaryTypographyProps={{fontSize: '15px', color: "#d4af37"}}>
+                    {"(" + list.items[2].votes + " votes)"}
                 </ListItemText>
 
                 <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                    {"5: \t" + list.items[4].name + "\n Votes: " + list.items[4].votes}
+                    {"4: \t" + list.items[3].name}
+                </ListItemText>
+                <ListItemText primaryTypographyProps={{fontSize: '15px', color: "#d4af37"}}>
+                    {"(" + list.items[3].votes + " votes)"}
+                </ListItemText>
+
+                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                    {"5: \t" + list.items[4].name}
+                </ListItemText>
+                <ListItemText primaryTypographyProps={{fontSize: '15px', color: "#d4af37"}}>
+                    {"(" + list.items[4].votes + " votes)"}
                 </ListItemText>
             </div>
         );
