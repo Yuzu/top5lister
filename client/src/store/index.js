@@ -740,7 +740,7 @@ function GlobalStoreContextProvider(props) {
                     }
                     
                     if (store.currentSort) {
-                        lists = store.sortLists(store.currentSort, store.lists);
+                        lists = store.sortLists(store.currentSort, lists);
                     }
 
                     break;
@@ -773,7 +773,7 @@ function GlobalStoreContextProvider(props) {
                     }
                     
                     if (store.currentSort) {
-                        lists = store.sortLists(store.currentSort, store.lists);
+                        lists = store.sortLists(store.currentSort, lists);
                     }
                     break;
                 
@@ -785,7 +785,7 @@ function GlobalStoreContextProvider(props) {
                     else {
                         lists = lists.filter(list => list.ownerUsername === store.searchQuery && list.publishDate);
                         if (store.currentSort) {
-                            lists = store.sortLists(store.currentSort, store.lists);
+                            lists = store.sortLists(store.currentSort, lists);
                         }
                     }
                     break;
