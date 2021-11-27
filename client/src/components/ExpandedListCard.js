@@ -87,6 +87,74 @@ function ExpandedListCard(props) {
         );
     }
 
+    let community = false;
+
+    let listItems = (
+        <div>
+            <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                {"1: \t" + list.items[0]}
+            </ListItemText>
+
+            <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                {"2: \t" + list.items[1]}
+            </ListItemText>
+
+            <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                {"3: \t" + list.items[2]}
+            </ListItemText>
+
+            <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                {"4: \t" + list.items[3]}
+            </ListItemText>
+
+            <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                {"5: \t" + list.items[4]}
+            </ListItemText>
+        </div>
+    );
+    
+    // community list
+    if (list.pooledListNum) {
+        community = true;
+        published = true;
+        upvotes = list.upvotes.length;
+        downvotes = list.downvotes.length;
+        publishDate = (
+            <Box height="30px" fontSize={16}>{"Updated at: " + list.updatedAt.split("T")[0]}</Box>
+        );
+
+        listItems = (
+            <div>
+                <ListItemText primaryTypographyProps={{fontSize: '18px', color: "#d4af37"}}>
+                    {"Pooled From: " + list.pooledListNum + " lists!"}
+                </ListItemText>
+                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                    {"1: \t" + list.items[0].name + "\n Votes: " + list.items[0].votes}
+                </ListItemText>
+                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                    {"2: \t" + list.items[1].name + "\n Votes: " + list.items[1].votes}
+                </ListItemText>
+
+                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                    {"3: \t" + list.items[2].name + "\n Votes: " + list.items[2].votes}
+                </ListItemText>
+
+                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                    {"4: \t" + list.items[3].name + "\n Votes: " + list.items[3].votes}
+                </ListItemText>
+
+                <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
+                    {"5: \t" + list.items[4].name + "\n Votes: " + list.items[4].votes}
+                </ListItemText>
+            </div>
+        );
+    }
+
+    let author = (<Box sx={{ p: 1, flexGrow: 1}} fontSize={16} alignSelf='start'>{"By: " + list.ownerUsername}</Box>);
+
+    if (community) {
+        author = "";
+    }
     // look at list info: if we have a published date, then we render accordingly.
     // TODO - if logged in, check for user's like/dislike status on this list and color one of the buttons accordingly.
     // If they click again on the previous vote then we just remove any votes
@@ -106,32 +174,10 @@ function ExpandedListCard(props) {
             >       
                 <Box style={{width: '400%'}}>
                     <Box sx={{ p: 1, flexGrow: 1}} fontSize={24} alignSelf='start' >{list.name}</Box>
-                    <Box sx={{ p: 1, flexGrow: 1}} fontSize={16} alignSelf='start'>{"By: " + list.ownerUsername}</Box>
+                    {author}
                     <Box sx={{ p: 1 }} alignSelf='end'>
                         <List sx={{ width: '80%', left: '5%', bgcolor: '#2c2f70' }}>
-                            {
-                                <div>
-                                    <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                                        {"1: \t" + list.items[0]}
-                                    </ListItemText>
-
-                                    <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                                        {"2: \t" + list.items[1]}
-                                    </ListItemText>
-
-                                    <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                                        {"3: \t" + list.items[2]}
-                                    </ListItemText>
-
-                                    <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                                        {"4: \t" + list.items[3]}
-                                    </ListItemText>
-
-                                    <ListItemText primaryTypographyProps={{fontSize: '28px', color: "#d4af37"}}>
-                                        {"5: \t" + list.items[4]}
-                                    </ListItemText>
-                                </div>
-                            }
+                            {listItems}
                         </List>
                     </Box>
                 </Box>

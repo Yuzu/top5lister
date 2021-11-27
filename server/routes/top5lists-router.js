@@ -17,6 +17,7 @@ router.put("/top5list/increment/normal/:id", Top5ListController.incrementView)
 router.get("/communitylists/", CommunityListController.getCommunityLists)
 router.put("/top5list/increment/community/:id", CommunityListController.incrementView)
 router.put("/top5list/community/:id", auth.verify, CommunityListController.updateList)
+router.post("/top5list/community/", auth.verify, CommunityListController.createList)
 
 router.post('/register', UserController.registerUser)
 router.get('/loggedIn', UserController.getLoggedIn)

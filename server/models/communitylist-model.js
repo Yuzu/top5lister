@@ -12,7 +12,6 @@ const CommunityListSchema = new Schema(
                 votes: Number
             }], required: true
             },
-        ownerEmail: {type: String, required: true},
         comments: {
             type: [{
                 author: String,

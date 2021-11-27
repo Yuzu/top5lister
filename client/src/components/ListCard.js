@@ -35,16 +35,24 @@ function ListCard(props) {
         store.markListForDeletion(id);
     }
 
+
     let upvoted = list.upvotes.includes(auth.user.username);
     let downvoted = list.downvotes.includes(auth.user.username);
 
     let published = list.publishDate === undefined ? false : true;
     let views = list.views !== undefined ? list.views : null;
 
+    
+    let community = false;
+    if (list.pooledListNum) {
+        community = true;
+        published = true;
+    }
+
     let deleteButton = "";
 
     // conditionally render if this list's owner is the currently logged in user
-    if (auth.user !== null && auth.user.username === list.ownerUsername) {
+    if (auth.user !== null && auth.user.username === list.ownerUsername && !community) {
         deleteButton = (
             <Box sx={{ p: 1 }} alignSelf='end'>
                 <IconButton onClick={(event) => {
@@ -80,6 +88,11 @@ function ListCard(props) {
             <Link  sx={{cursor:"pointer", p: 1, flexGrow: 1}} fontSize={16} onClick={(event) => {handleLoadList(event, list._id)}} alignSelf='start'>Edit</Link>
         );
     }
+    else if (community) {
+        editComponent = (
+            <Box height="30px" fontSize={16}>{"Updated at: " + list.updatedAt.split("T")[0]}</Box>
+        )
+    }
     else if (published) {
         editComponent = (
             <Box height="30px" fontSize={16}>{"Published: " + list.publishDate.split("T")[0]}</Box>
@@ -89,7 +102,6 @@ function ListCard(props) {
         editComponent = ""
     }
 
-    // ELSE WE SHOW THE PUBLISH DATE
 
     let paddingBox = (<Box sx={{ p: 1 }} height="-250px" alignSelf='start' />);
 
@@ -115,6 +127,12 @@ function ListCard(props) {
                 </IconButton>
             </Box>);
     }
+
+    let author = (<Box sx={{ p: 1, flexGrow: 1}} fontSize={16} alignSelf='start'>{"By: " + list.ownerUsername}</Box>);
+
+    if (community) {
+        author = "";
+    }
     // TODO - if logged in, check for user's like/dislike status on this list and color one of the buttons accordingly.
     // If they click again on the previous vote then we just remove any votes
     // If they click on the opposite, get rid of old and change it.
@@ -131,7 +149,7 @@ function ListCard(props) {
         >       
             <Box style={{width: '400%'}}>
                 <Box sx={{ p: 1, flexGrow: 1}} fontSize={24} alignSelf='start' >{list.name}</Box>
-                <Box sx={{ p: 1, flexGrow: 1}} fontSize={16} alignSelf='start'>{"By: " + list.ownerUsername}</Box>
+                {author}
                 {editComponent}
             </Box>
 

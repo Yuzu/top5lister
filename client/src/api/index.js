@@ -45,6 +45,8 @@ export const incrementCommunityList = (id) => api.put(`/top5list/increment/commu
 // auth required since it's implied that if a community list is to be updated, there must be an active user currently.
 export const updateCommunityList = (id, payload) => api.put(`/top5list/community/${id}`, payload)
 
+// upon trying to update a community list, client side will call api.getCommunityLists(). If the list it wants to update is not there, we will have to make one.
+export const createCommunityList = (payload) => api.post("/top5list/community/", payload);
 
 export const getLoggedIn = () => api.get(`/loggedIn/`);
 export const registerUser = (payload) => api.post(`/register/`, payload)
@@ -60,9 +62,11 @@ const apis = {
     getTop5ListById,
 
     incrementViewTop5List,
+
     getCommunityLists,
     incrementCommunityList,
     updateCommunityList,
+    createCommunityList,
 
     getLoggedIn,
     registerUser,

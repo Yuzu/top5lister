@@ -283,11 +283,23 @@ function GlobalStoreContextProvider(props) {
 
     store.incrementViewCount = async function (list) {
         console.log("Incrementing view count");
-        let response = await api.incrementViewTop5List(list._id);
-        if (response.data.success) {
-            console.log("Successful increment");
-            store.loadLists();
+        // community list
+        if (list.pooledListNum) {
+            let response = await api.incrementCommunityList(list._id);
+            if (response.data.success) {
+                console.log("Successful community increment");
+                store.loadLists();
+            }
         }
+        // else normal list
+        else {
+            let response = await api.incrementViewTop5List(list._id);
+            if (response.data.success) {
+                console.log("Successful increment");
+                store.loadLists();
+            }
+        }
+        
     }
 
     store.sortLists = function (sort, lists) {
@@ -569,6 +581,80 @@ function GlobalStoreContextProvider(props) {
             updateList(top5List);
         }
 
+
+        // deal with community list part
+        response = await api.getCommunityLists();
+        if (response.data.success) {
+            let communityLists = response.data.data;
+
+            let match = false;
+            let toUpdate = null;
+            communityLists.forEach((communityList) => {
+                if (communityList.name.toLowerCase() === list.name.toLowerCase()) {
+                    match = true;
+                    toUpdate = communityList;
+                }
+            });
+
+            // update the community list
+            if (match) {
+
+                let existingItems = [];
+                toUpdate.items.forEach((item) => {
+                    existingItems.push(item.name);
+                });
+
+                list.items.forEach((item, index) => {
+                    if (existingItems.includes(item.toLowerCase())) {
+                        // item already in the community list
+
+                        // find the corresponding item in the list
+                        toUpdate.items.forEach((communityItem) => {
+                            if (communityItem.name === item.toLowerCase()) {
+                                communityItem.votes += (5 - index);
+                            }
+                        });
+                    }
+                    // else new item
+                    else {
+                        toUpdate.items.push({name: item.toLowerCase(), votes: (5-index)});
+                    }
+                });
+                
+                toUpdate.pooledListNum += 1;
+
+                response = await api.updateCommunityList(toUpdate._id, toUpdate);
+                if (response.data.success) {
+                    console.log("UPDATED COMMUNITY LIST");
+                    console.log(response.data.communityList);
+                }
+            }
+            // make new list
+            else {
+                console.log("TRYING TO CREATE NEW COMMUNITY LIST");
+                let newList = {
+                    name: list.name.toLowerCase(),
+                    items: [
+                        {name: list.items[0].toLowerCase(), votes: 5},
+                        {name: list.items[1].toLowerCase(), votes: 4},
+                        {name: list.items[2].toLowerCase(), votes: 3},
+                        {name: list.items[3].toLowerCase(), votes: 2},
+                        {name: list.items[4].toLowerCase(), votes: 1}
+                    ],
+                    comments: [],
+                    views: 0,
+                    pooledListNum: 1,
+                    upvotes: [],
+                    downvotes: []
+                };
+
+                response = await api.createCommunityList(newList);
+                if (response.data.success) {
+                    console.log("CREATED NEW COMMUNITY LIST");
+                    console.log(response.data.communityList);
+                }
+            }
+        }
     }
 
     store.addComment = async function (list, content) {
@@ -579,63 +665,112 @@ function GlobalStoreContextProvider(props) {
 
         let id = list._id;
 
-        let response = await api.getTop5ListById(id);
-        if (response.data.success) {
-            let top5List = response.data.top5List;
-            top5List.comments.push(comment);
-            async function updateList(top5List) {
-                response = await api.updateTop5ListById(top5List._id, top5List);
-                if (response.data.success) {
-                    // reload lists
-                    console.log("NEW COMMENT ON LIST:");
-                    console.log(top5List);
+        // community list
+        if (list.pooledListNum) {
+            console.log("community list comment update");
+            list.comments.push(comment);
+            let response = await api.updateCommunityList(list._id, list);
+            if (response.data.success) {
+                console.log("NEW COMMENT ON LIST");
+                console.log(response.data.communityList);
 
-                    store.loadLists();
-                }
+                store.loadLists();
+                return;
             }
-            updateList(top5List);
         }
 
+        // normal list
+        else {
+            console.log("regular list comment update");
+            let response = await api.getTop5ListById(id);
+            if (response.data.success) {
+                let top5List = response.data.top5List;
+                top5List.comments.push(comment);
+                async function updateList(top5List) {
+                    response = await api.updateTop5ListById(top5List._id, top5List);
+                    if (response.data.success) {
+                        // reload lists
+                        console.log("NEW COMMENT ON LIST:");
+                        console.log(top5List);
+
+                        store.loadLists();
+                    }
+                }
+                updateList(top5List);
+            }
+            return;
+        }
     }
 
     store.upvote = async function (list) {
 
         let id = list._id;
-
-        let response = await api.getTop5ListById(id);
-        if (response.data.success) {
-            let top5List = response.data.top5List;
+        if (list.pooledListNum) {
             let username = auth.user.username;
             let i;
             // already upvoted, remove upvote
-            if (top5List.upvotes.includes(username)) {
-                i = top5List.upvotes.indexOf(username);
-                top5List.upvotes.splice(i, 1);
+            if (list.upvotes.includes(username)) {
+                i = list.upvotes.indexOf(username);
+                list.upvotes.splice(i, 1);
             }
             // currently downvoted, remove downvote and set to upvote
-            else if (top5List.downvotes.includes(username)) {
-                i = top5List.downvotes.indexOf(username);
-                top5List.downvotes.splice(i, 1);
+            else if (list.downvotes.includes(username)) {
+                i = list.downvotes.indexOf(username);
+                list.downvotes.splice(i, 1);
 
                 // set to upvote
-                top5List.upvotes.push(username);
+                list.upvotes.push(username);
             }
             // else no vote currently, add upvote
             else {
-                top5List.upvotes.push(username);
+                list.upvotes.push(username);
             }
 
-            async function updateList(top5List) {
-                response = await api.updateTop5ListById(top5List._id, top5List);
-                if (response.data.success) {
-                    // reload lists
-                    console.log("UPVOTE CHANGE");
-                    console.log(top5List);
+            let response = await api.updateCommunityList(list._id, list);
+            if (response.data.success) {
+                console.log("UPVOTE CHANGE");
+                console.log(response.data.communityList);
 
-                    store.loadLists();
+                store.loadLists();
+            }
+        }
+
+        else {
+            let response = await api.getTop5ListById(id);
+            if (response.data.success) {
+                let top5List = response.data.top5List;
+                let username = auth.user.username;
+                let i;
+                // already upvoted, remove upvote
+                if (top5List.upvotes.includes(username)) {
+                    i = top5List.upvotes.indexOf(username);
+                    top5List.upvotes.splice(i, 1);
                 }
+                // currently downvoted, remove downvote and set to upvote
+                else if (top5List.downvotes.includes(username)) {
+                    i = top5List.downvotes.indexOf(username);
+                    top5List.downvotes.splice(i, 1);
+
+                    // set to upvote
+                    top5List.upvotes.push(username);
+                }
+                // else no vote currently, add upvote
+                else {
+                    top5List.upvotes.push(username);
+                }
+
+                async function updateList(top5List) {
+                    response = await api.updateTop5ListById(top5List._id, top5List);
+                    if (response.data.success) {
+                        // reload lists
+                        console.log("UPVOTE CHANGE");
+                        console.log(top5List);
+
+                        store.loadLists();
+                    }
+                }
+                updateList(top5List);
             }
-            updateList(top5List);
         }
     }
 
@@ -643,171 +778,267 @@ function GlobalStoreContextProvider(props) {
 
         let id = list._id;
 
-        let response = await api.getTop5ListById(id);
-        if (response.data.success) {
-            let top5List = response.data.top5List;
+        if (list.pooledListNum) {
             let username = auth.user.username;
             let i;
             // already downvoted, remove downvote
-            if (top5List.downvotes.includes(username)) {
-                i = top5List.downvotes.indexOf(username);
-                top5List.downvotes.splice(i, 1);
+            if (list.downvotes.includes(username)) {
+                i = list.downvotes.indexOf(username);
+                list.downvotes.splice(i, 1);
             }
             // currently upvoted, remove upvote and set to downvote
-            else if (top5List.upvotes.includes(username)) {
-                i = top5List.upvotes.indexOf(username);
-                top5List.upvotes.splice(i, 1);
+            else if (list.upvotes.includes(username)) {
+                i = list.upvotes.indexOf(username);
+                list.upvotes.splice(i, 1);
 
                 // set to downvote
-                top5List.downvotes.push(username);
+                list.downvotes.push(username);
             }
             // else no vote currently, add downvote
             else {
-                top5List.downvotes.push(username);
+                list.downvotes.push(username);
             }
 
-            async function updateList(top5List) {
-                response = await api.updateTop5ListById(top5List._id, top5List);
-                if (response.data.success) {
-                    // reload lists
-                    console.log("DOWNVOTE CHANGE");
-                    console.log(top5List);
+            let response = await api.updateCommunityList(list._id, list);
+            if (response.data.success) {
+                console.log("DOWNVOTE CHANGE");
+                console.log(response.data.communityList);
 
-                    store.loadLists();
-                }
+                store.loadLists();
             }
-            updateList(top5List);
         }
+        
+        else {
+            let response = await api.getTop5ListById(id);
+            if (response.data.success) {
+                let top5List = response.data.top5List;
+                let username = auth.user.username;
+                let i;
+                // already downvoted, remove downvote
+                if (top5List.downvotes.includes(username)) {
+                    i = top5List.downvotes.indexOf(username);
+                    top5List.downvotes.splice(i, 1);
+                }
+                // currently upvoted, remove upvote and set to downvote
+                else if (top5List.upvotes.includes(username)) {
+                    i = top5List.upvotes.indexOf(username);
+                    top5List.upvotes.splice(i, 1);
+
+                    // set to downvote
+                    top5List.downvotes.push(username);
+                }
+                // else no vote currently, add downvote
+                else {
+                    top5List.downvotes.push(username);
+                }
+
+                async function updateList(top5List) {
+                    response = await api.updateTop5ListById(top5List._id, top5List);
+                    if (response.data.success) {
+                        // reload lists
+                        console.log("DOWNVOTE CHANGE");
+                        console.log(top5List);
+
+                        store.loadLists();
+                    }
+                }
+                updateList(top5List);
+            }
+        }
+        
     }
 
     // THIS FUNCTION LOADS ALL THE LISTS
     // check the current store view and, after loading all lists, filter accordingly.
     store.loadLists = async function () {
 
-        let userEmail = auth.user.email;
+        // load community lists
+        if (store.currentView === CurrentViewType.COMMUNITY_LISTS) {
+            const response = await api.getCommunityLists();
+            if (response.data.success) {
+                let lists = response.data.data;
+                console.log("FILTERING LISTS BY: " + store.currentView);
+                console.log("QUERY: " + store.searchQuery);
+                // don't want community list with 0 users pooling.
+                lists = lists.filter(list => list.pooledListNum > 0);
 
-        const response = await api.getAllTop5Lists();
-        if (response.data.success) {
-            let lists = response.data.data;
-            console.log("FILTERING LISTS BY: " + store.currentView);
-            console.log("QUERY: " + store.searchQuery);
-            // TODO - filter properly!!!
-            // Note that we can have different search queries.
-            // If the search query is coming with user lists, we want to filter by users
-            // If the search query is coming with any other view, we want to search for a list.
-            switch (store.currentView) {
-                case CurrentViewType.HOME_SCREEN: 
-                    // If logged in, only show user's lists.
-                    if (auth.loggedIn) {
-                        lists = lists.filter(list => list.ownerEmail === userEmail);
-                    }
-                    // Else, that means this is a guest, so load NOTHING!
-                    else {
-                        lists = [];
-                    }
-                    
+                lists.forEach((list) => {
+                    console.log(list);
+                    list.items.sort((x, y) => {
+                        if (x.votes < y.votes) {
+                            return 1;
+                        }
+                        else if (x.votes > y.votes) {
+                            return -1;
+                        }
+                        else {
+                            return 0;
+                        }
+                    });
+                });
+                if (store.searchQuery) {
                     let filterLists = [];
-                    // Afterwards, if we have a search query, filter further and return early with the filtered lists.
-                    if (store.searchQuery) {
-                        lists.forEach(list => {
-                            if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
-                                filterLists.push(list);
-                            }
-                        });
-
-                        let originalLists = []; // keep track of original names
-                        lists.forEach(list => {
-                            originalLists.push(list);
-                        })
-                        console.log("Original lists:");
-                        console.log(originalLists);
-                        console.log("filtered lists:");
-                        console.log(filterLists);
-                        if (store.currentSort) {
-                            filterLists = store.sortLists(store.currentSort, filterLists);
+                    lists.forEach(list => {
+                        if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
+                            filterLists.push(list);
                         }
+                    });
 
-                        storeReducer({
-                            type: GlobalStoreActionType.FILTER_HOME_LISTS,
-                            payload: originalLists
-                        });
-
-                        storeReducer({
-                            type: GlobalStoreActionType.LOAD_LISTS,
-                            payload: filterLists
-                        });
-                        return;
-                    }
-                    
+                    console.log("Original lists:");
+                    console.log(lists);
+                    console.log("filtered lists:");
+                    console.log(filterLists);
                     if (store.currentSort) {
-                        lists = store.sortLists(store.currentSort, lists);
+                        filterLists = store.sortLists(store.currentSort, filterLists);
                     }
 
-                    break;
+                    storeReducer({
+                        type: GlobalStoreActionType.LOAD_LISTS,
+                        payload: filterLists
+                    });
+                    return;
+                }
                 
-                case CurrentViewType.ALL_LISTS: 
-                    // Load all published lists for anyone to see!
-                    lists = lists.filter(list => list.publishDate !== undefined);
-                    // Afterwards, if we have a search query, filter further and return early with the filtered lists.
-                    if (store.searchQuery) {
+                if (store.currentSort) {
+                    lists = store.sortLists(store.currentSort, lists);
+                }
+                storeReducer({
+                    type: GlobalStoreActionType.LOAD_LISTS,
+                    payload: lists
+                });
+            }
+            else {
+                console.log("API FAILED TO GET THE LISTS");
+            }
+            return;
+        }
+        // load normally
+        else {
+            let userEmail = auth.user.email;
+            const response = await api.getAllTop5Lists();
+            if (response.data.success) {
+                let lists = response.data.data;
+                console.log("FILTERING LISTS BY: " + store.currentView);
+                console.log("QUERY: " + store.searchQuery);
+                // TODO - filter properly!!!
+                // Note that we can have different search queries.
+                // If the search query is coming with user lists, we want to filter by users
+                // If the search query is coming with any other view, we want to search for a list.
+                switch (store.currentView) {
+                    case CurrentViewType.HOME_SCREEN: 
+                        // If logged in, only show user's lists.
+                        if (auth.loggedIn) {
+                            lists = lists.filter(list => list.ownerEmail === userEmail);
+                        }
+                        // Else, that means this is a guest, so load NOTHING!
+                        else {
+                            lists = [];
+                        }
+                        
                         let filterLists = [];
-                        lists.forEach(list => {
-                            if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
-                                filterLists.push(list);
+                        // Afterwards, if we have a search query, filter further and return early with the filtered lists.
+                        if (store.searchQuery) {
+                            lists.forEach(list => {
+                                if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
+                                    filterLists.push(list);
+                                }
+                            });
+
+                            let originalLists = []; // keep track of original names
+                            lists.forEach(list => {
+                                originalLists.push(list);
+                            })
+                            console.log("Original lists:");
+                            console.log(originalLists);
+                            console.log("filtered lists:");
+                            console.log(filterLists);
+                            if (store.currentSort) {
+                                filterLists = store.sortLists(store.currentSort, filterLists);
                             }
-                        });
 
-                        console.log("Original lists:");
-                        console.log(lists);
-                        console.log("filtered lists:");
-                        console.log(filterLists);
-                        if (store.currentSort) {
-                            filterLists = store.sortLists(store.currentSort, filterLists);
+                            storeReducer({
+                                type: GlobalStoreActionType.FILTER_HOME_LISTS,
+                                payload: originalLists
+                            });
+
+                            storeReducer({
+                                type: GlobalStoreActionType.LOAD_LISTS,
+                                payload: filterLists
+                            });
+                            return;
                         }
-
-                        storeReducer({
-                            type: GlobalStoreActionType.LOAD_LISTS,
-                            payload: filterLists
-                        });
-                        return;
-                    }
-                    
-                    if (store.currentSort) {
-                        lists = store.sortLists(store.currentSort, lists);
-                    }
-                    break;
-                
-                case CurrentViewType.USER_LISTS: 
-                    // Check for a user search query and filter accordingly.
-                    if (!store.searchQuery) {
-                        lists = [];
-                    }
-                    else {
-                        lists = lists.filter(list => list.ownerUsername === store.searchQuery && list.publishDate);
+                        
                         if (store.currentSort) {
                             lists = store.sortLists(store.currentSort, lists);
                         }
-                    }
-                    break;
-                
-                case CurrentViewType.COMMUNITY_LISTS: 
-                    // Make calls to the community list endpoints and parse the info properly.
 
-                    // Afterwards, if we have a search query, filter further.
-                    break;
-                default:
-                    console.log("DEFAULT LOADLIST ERROR");
-                    break;
+                        break;
+                    
+                    case CurrentViewType.ALL_LISTS: 
+                        // Load all published lists for anyone to see!
+                        lists = lists.filter(list => list.publishDate !== undefined);
+                        // Afterwards, if we have a search query, filter further and return early with the filtered lists.
+                        if (store.searchQuery) {
+                            let filterLists = [];
+                            lists.forEach(list => {
+                                if (list.name.toLowerCase().includes(store.searchQuery.toLowerCase())) {
+                                    filterLists.push(list);
+                                }
+                            });
+
+                            console.log("Original lists:");
+                            console.log(lists);
+                            console.log("filtered lists:");
+                            console.log(filterLists);
+                            if (store.currentSort) {
+                                filterLists = store.sortLists(store.currentSort, filterLists);
+                            }
+
+                            storeReducer({
+                                type: GlobalStoreActionType.LOAD_LISTS,
+                                payload: filterLists
+                            });
+                            return;
+                        }
+                        
+                        if (store.currentSort) {
+                            lists = store.sortLists(store.currentSort, lists);
+                        }
+                        break;
+                    
+                    case CurrentViewType.USER_LISTS: 
+                        // Check for a user search query and filter accordingly.
+                        if (!store.searchQuery) {
+                            lists = [];
+                        }
+                        else {
+                            lists = lists.filter(list => list.ownerUsername === store.searchQuery && list.publishDate);
+                            if (store.currentSort) {
+                                lists = store.sortLists(store.currentSort, lists);
+                            }
+                        }
+                        break;
+                    
+                    case CurrentViewType.COMMUNITY_LISTS: 
+                        // Make calls to the community list endpoints and parse the info properly.
+
+                        // Afterwards, if we have a search query, filter further.
+                        break;
+                    default:
+                        console.log("DEFAULT LOADLIST ERROR");
+                        break;
+                }
+                console.log("final lists:");
+                console.log(lists);
+                storeReducer({
+                    type: GlobalStoreActionType.LOAD_LISTS,
+                    payload: lists
+                });
             }
-            console.log("final lists:");
-            console.log(lists);
-            storeReducer({
-                type: GlobalStoreActionType.LOAD_LISTS,
-                payload: lists
-            });
-        }
-        else {
-            console.log("API FAILED TO GET THE LISTS");
+            else {
+                console.log("API FAILED TO GET THE LISTS");
+            }
+            return;
         }
     }
 
