@@ -711,7 +711,7 @@ function GlobalStoreContextProvider(props) {
         // community list
         if (list.pooledListNum) {
             console.log("community list comment update");
-            list.comments.push(comment);
+            list.comments.unshift(comment);
             let response = await api.updateCommunityList(list._id, list);
             if (response.data.success) {
                 console.log("NEW COMMENT ON LIST");
@@ -728,7 +728,7 @@ function GlobalStoreContextProvider(props) {
             let response = await api.getTop5ListById(id);
             if (response.data.success) {
                 let top5List = response.data.top5List;
-                top5List.comments.push(comment);
+                top5List.comments.unshift(comment);
                 async function updateList(top5List) {
                     response = await api.updateTop5ListById(top5List._id, top5List);
                     if (response.data.success) {
