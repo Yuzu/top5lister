@@ -15,9 +15,8 @@ function Statusbar() {
 
     let text ="";
     let newListButton = "";
-    // TODO - add new list button for home screen, BUT LEAVE GRAYED OUT IF: GUEST BROWSING OR LIST BEING EDITED
-    // TODO - conditional rendering for newlist button see above
-    let editStatus = false;
+
+    let editStatus = store.currentList || auth.isGuest;
     switch (store.currentView) {
         case "HOME_SCREEN":
             text = "Your Lists";

@@ -32,6 +32,11 @@ export default function AppBanner() {
         auth.logoutUser();
     }
 
+    const browseAsGuest = () => {
+        handleMenuClose();
+        auth.browseAsGuest();
+    }
+
     const menuId = 'primary-search-account-menu';
     const loggedOutMenu = (
         <Menu
@@ -51,7 +56,7 @@ export default function AppBanner() {
         >
             <MenuItem onClick={handleMenuClose}><Link to='/register/'>Create New Account</Link></MenuItem>
             <MenuItem onClick={handleMenuClose}><Link to='/login/'>Login</Link></MenuItem>
-            <MenuItem onClick={handleMenuClose}><Link to="/">Continue As Guest</Link></MenuItem>
+            <MenuItem onClick={browseAsGuest}><Link to="/">Continue As Guest</Link></MenuItem>
         </Menu>
     );
     const loggedInMenu = 

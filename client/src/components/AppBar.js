@@ -93,9 +93,11 @@ export default function PrimarySearchAppBar() {
     console.log("Sort By: " + event.target.textContent);
     switch (event.target.textContent) {
         case "Publish Date (Newest)":
+        case "Update Date (Newest)":
           store.setSort(currentSortType.PUB_NEW);
           break;
         case "Publish Date (Oldest)":
+        case "Update Date (Oldest)":
           store.setSort(currentSortType.PUB_OLD);
           break;
         case "Views":
@@ -122,18 +124,23 @@ export default function PrimarySearchAppBar() {
     }
   }
 
-  let pubNewOption = (<MenuItem onClick={handleMenuClose}>Publish Date (Newest)</MenuItem>);
-  let pubOldOption = (<MenuItem onClick={handleMenuClose}>Publish Date (Oldest)</MenuItem>);
+  let pubUpdate = "Publish";
+  if (store.currentView === CurrentViewType.COMMUNITY_LISTS) {
+    pubUpdate = "Update";
+  }
+
+  let pubNewOption = (<MenuItem onClick={handleMenuClose}>{pubUpdate + " Date (Newest)"}</MenuItem>);
+  let pubOldOption = (<MenuItem onClick={handleMenuClose}>{pubUpdate + " Date (Oldest)"}</MenuItem>);
   let viewsOption = (<MenuItem onClick={handleMenuClose}>Views</MenuItem>);
   let likesOption = (<MenuItem onClick={handleMenuClose}>Likes</MenuItem>);
   let dislikesOption = <MenuItem onClick={handleMenuClose}>Dislikes</MenuItem>;
 
   switch (store.currentSort) {
     case currentSortType.PUB_NEW:
-      pubNewOption = (<MenuItem selected onClick={handleMenuClose}>Publish Date (Newest)</MenuItem>);
+      pubNewOption = (<MenuItem selected onClick={handleMenuClose}>{pubUpdate + " Date (Newest)"}</MenuItem>);
       break;
     case currentSortType.PUB_OLD:
-      pubOldOption = (<MenuItem selected onClick={handleMenuClose}>Publish Date (Oldest)</MenuItem>);
+      pubOldOption = (<MenuItem selected onClick={handleMenuClose}>{pubUpdate + " Date (Oldest)"}</MenuItem>);
       break;
     case currentSortType.VIEWS:
       viewsOption = (<MenuItem selected onClick={handleMenuClose}>Views</MenuItem>);

@@ -42,7 +42,7 @@ function ExpandedListCard(props) {
         event.stopPropagation();
         store.markListForDeletion(id);
     }
-
+    let isGuest = auth.isGuest;
     let upvoted = list.upvotes.includes(auth.user.username);
     let downvoted = list.downvotes.includes(auth.user.username);
 
@@ -119,6 +119,11 @@ function ExpandedListCard(props) {
         published = true;
         upvotes = list.upvotes.length;
         downvotes = list.downvotes.length;
+        views = list.views;
+        deleteButton = "";
+        viewComponent = (
+            <Box height="30px" fontSize={16}>{"Views: " + views}</Box>
+        );
         publishDate = (
             <Box height="30px" fontSize={16}>{"Updated at: " + list.updatedAt.split("T")[0]}</Box>
         );
@@ -224,6 +229,7 @@ function ExpandedListCard(props) {
                     </Box>
                     <Box sx={{ p: 1 }} height="15px" id="comment-input">
                             <TextField
+                                disabled = {isGuest ? true : false}
                                 margin="normal"
                                 required
                                 name="name"
@@ -242,7 +248,7 @@ function ExpandedListCard(props) {
                         {viewComponent}
                         {publishDate}
                         <Box sx={{ p: 1 }} alignSelf='end' />
-                        <IconButton color = {upvoted ? "success" : "inherit"} onClick={(event) => {
+                        <IconButton disabled = {isGuest ? true : false} color = {upvoted ? "success" : "inherit"} onClick={(event) => {
                             console.log("Upvote");
                             store.upvote(list);
                         }} aria-label='upvote'>
@@ -253,7 +259,7 @@ function ExpandedListCard(props) {
                     </Box>
 
                     <Box sx={{ p: 1 }} alignSelf='start'>
-                        <IconButton color = {downvoted ? "error" : "inherit"} onClick={(event) => {
+                        <IconButton disabled = {isGuest ? true : false} color = {downvoted ? "error" : "inherit"} onClick={(event) => {
                             console.log("Downvote");
                             store.downvote(list);
                         }} aria-label='downvote'>

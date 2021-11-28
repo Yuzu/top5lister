@@ -28,9 +28,20 @@ function EditToolbar() {
     let canPublish = true; // change back to false after we ensure disabled if published!
     if (store.currentList) {
         let list = store.currentList;
+        let seen = [];
+        list.items.forEach((item) => {
+            if (seen.includes(item.toLowerCase())) {
+                canPublish = false;
+            }
+            else {
+                seen.push(item.toLowerCase());
+            }
+        });
+
         if (list.items.includes("?")) {
             canPublish = false;
         }
+
         // currently searched lists for duplicate published names
         else if (store.originalLists.length !== 0) {
             store.originalLists.forEach((original) => {

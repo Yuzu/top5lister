@@ -30,7 +30,7 @@ export const GlobalStoreActionType = {
     EXPAND_LIST_CARD: "EXPAND_LIST_CARD",
     COLLAPSE_LIST_CARD: "COLLAPSE_LIST_CARD",
     FILTER_HOME_LISTS: "FILTER_HOME_LISTS",
-    SET_SORT_TYPE: "SET_SORT_TYPE"
+    SET_SORT_TYPE: "SET_SORT_TYPE",
 }
 
 export const CurrentViewType = {
@@ -305,50 +305,94 @@ function GlobalStoreContextProvider(props) {
     store.sortLists = function (sort, lists) {
         let unpublished = [];
         let published = [];
-        lists.forEach((list) => {
-            if (!list.publishDate) {
-                unpublished.push(list);
-            }
-            else {
-                published.push(list);
-            }
-        });
+        if (store.currentView === CurrentViewType.COMMUNITY_LISTS) {
+            published = lists;
+        }
+        else {
+            lists.forEach((list) => {
+                if (!list.publishDate) {
+                    unpublished.push(list);
+                }
+                else {
+                    published.push(list);
+                }
+            });
+        }
+        
         let final = [];
         switch (sort) {
             case currentSortType.PUB_NEW:
-                published.sort(function(x, y) {
-                    let x_date = new Date(x.publishDate);
-                    let y_date = new Date(y.publishDate);
-
-                    if (x_date < y_date) {
-                        return 1;
-                    }
-                    else if (x_date > y_date) {
-                        return -1;
-                    }
-                    else {
-                        return 0;
-                    }
-                });
-                final = published.concat(unpublished);
+                if (store.currentView === CurrentViewType.COMMUNITY_LISTS) {
+                    published.sort(function(x, y) {
+                        let x_date = new Date(x.updatedAt);
+                        let y_date = new Date(y.updatedAt);
+    
+                        if (x_date < y_date) {
+                            return 1;
+                        }
+                        else if (x_date > y_date) {
+                            return -1;
+                        }
+                        else {
+                            return 0;
+                        }
+                    });
+                    final = published.concat(unpublished);
+                }
+                else {
+                    published.sort(function(x, y) {
+                        let x_date = new Date(x.publishDate);
+                        let y_date = new Date(y.publishDate);
+    
+                        if (x_date < y_date) {
+                            return 1;
+                        }
+                        else if (x_date > y_date) {
+                            return -1;
+                        }
+                        else {
+                            return 0;
+                        }
+                    });
+                    final = published.concat(unpublished);
+                }
               break;
 
             case currentSortType.PUB_OLD:
-                published.sort(function(x, y) {
-                    let x_date = new Date(x.publishDate);
-                    let y_date = new Date(y.publishDate);
-
-                    if (x_date < y_date) {
-                        return -1;
-                    }
-                    else if (x_date > y_date) {
-                        return 1;
-                    }
-                    else {
-                        return 0;
-                    }
-                });
-                final = published.concat(unpublished);
+                if (store.currentView === CurrentViewType.COMMUNITY_LISTS) {
+                    published.sort(function(x, y) {
+                        let x_date = new Date(x.updatedAt);
+                        let y_date = new Date(y.updatedAt);
+    
+                        if (x_date < y_date) {
+                            return -1;
+                        }
+                        else if (x_date > y_date) {
+                            return 1;
+                        }
+                        else {
+                            return 0;
+                        }
+                    });
+                    final = published.concat(unpublished);
+                }
+                else {
+                    published.sort(function(x, y) {
+                        let x_date = new Date(x.publishDate);
+                        let y_date = new Date(y.publishDate);
+    
+                        if (x_date < y_date) {
+                            return -1;
+                        }
+                        else if (x_date > y_date) {
+                            return 1;
+                        }
+                        else {
+                            return 0;
+                        }
+                    });
+                    final = published.concat(unpublished);
+                }
                 break;
 
             case currentSortType.VIEWS:

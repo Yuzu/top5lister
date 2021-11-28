@@ -35,7 +35,7 @@ function ListCard(props) {
         store.markListForDeletion(id);
     }
 
-
+    let isGuest = auth.isGuest;
     let upvoted = list.upvotes.includes(auth.user.username);
     let downvoted = list.downvotes.includes(auth.user.username);
 
@@ -156,7 +156,7 @@ function ListCard(props) {
 
             <Box style={{width: '70%'}}>
                 <Box sx={{ p: 1 }} alignSelf='end' >
-                    <IconButton disabled = {published ? false : true} color = {upvoted ? "success" : "inherit"} onClick={(event) => {
+                    <IconButton disabled = {isGuest ? true : published ? false : true} color = {upvoted ? "success" : "inherit"} onClick={(event) => {
                         console.log("Upvote");
                         store.upvote(list);
                     }} aria-label='upvote'>
@@ -171,7 +171,7 @@ function ListCard(props) {
 
             <Box style={{width: '70%'}}>
                 <Box sx={{ p: 1 }} alignSelf='start'>
-                    <IconButton disabled = {published ? false : true} color = {downvoted ? "error" : "inherit"}onClick={(event) => {
+                    <IconButton disabled = {isGuest ? true : published ? false : true} color = {downvoted ? "error" : "inherit"}onClick={(event) => {
                         console.log("Downvote");
                         store.downvote(list);
                     }} aria-label='downvote'>
