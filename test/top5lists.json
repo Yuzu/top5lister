@@ -9,7 +9,9 @@
     "Trout",
     "Sardines"
   ],
-  "upvotes": [],
+  "upvotes": [
+    "cuteorca"
+  ],
   "downvotes": [
     "rose",
     "korone"
@@ -33,14 +35,14 @@
       "content": "Sardines? I can't stand those..."
     }
   ],
-  "views": 5,
+  "views": 8,
   "createdAt": {
     "$date": "2021-12-04T15:57:38.105Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T16:34:23.600Z"
+    "$date": "2021-12-04T22:35:57.586Z"
   },
-  "__v": 9,
+  "__v": 10,
   "publishDate": {
     "$date": "2021-12-04T15:58:39.276Z"
   }
@@ -66,7 +68,7 @@
     "$date": "2021-12-04T15:58:31.495Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T15:58:34.063Z"
+    "$date": "2021-12-04T22:31:20.206Z"
   },
   "__v": 0
 },{
@@ -91,7 +93,7 @@
     "$date": "2021-12-04T15:58:40.757Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T15:58:44.122Z"
+    "$date": "2021-12-04T22:31:21.980Z"
   },
   "__v": 0
 },{
@@ -113,14 +115,14 @@
   "ownerEmail": "rose@nijisan.ji",
   "ownerUsername": "rose",
   "comments": [],
-  "views": 2,
+  "views": 6,
   "createdAt": {
     "$date": "2021-12-04T15:59:58.409Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T16:09:27.600Z"
+    "$date": "2021-12-04T18:12:10.862Z"
   },
-  "__v": 8,
+  "__v": 12,
   "publishDate": {
     "$date": "2021-12-04T16:00:55.478Z"
   }
@@ -283,12 +285,12 @@
   "ownerEmail": "intern@holox.net",
   "ownerUsername": "cuteorca",
   "comments": [],
-  "views": 2,
+  "views": 3,
   "createdAt": {
     "$date": "2021-12-04T16:29:13.427Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T16:36:22.234Z"
+    "$date": "2021-12-04T22:31:27.667Z"
   },
   "__v": 6,
   "publishDate": {
@@ -364,12 +366,12 @@
   "ownerEmail": "rose@nijisan.ji",
   "ownerUsername": "rose",
   "comments": [],
-  "views": 0,
+  "views": 1,
   "createdAt": {
     "$date": "2021-12-04T16:35:28.464Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T16:35:51.318Z"
+    "$date": "2021-12-04T22:26:24.458Z"
   },
   "__v": 7,
   "publishDate": {
@@ -392,15 +394,129 @@
   "ownerEmail": "intern@holox.net",
   "ownerUsername": "cuteorca",
   "comments": [],
-  "views": 0,
+  "views": 1,
   "createdAt": {
     "$date": "2021-12-04T16:37:33.225Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T16:38:20.707Z"
+    "$date": "2021-12-04T22:31:59.636Z"
   },
   "__v": 6,
   "publishDate": {
     "$date": "2021-12-04T16:38:20.697Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abadf46e836730c4e56f5c"
+  },
+  "items": [
+    "?",
+    "?",
+    "?",
+    "?",
+    "?"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "wip",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T18:05:40.087Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T22:33:05.232Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61abadfa6e836730c4e56f66"
+  },
+  "items": [
+    "ok",
+    "t",
+    "h",
+    "?a",
+    "?a"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "fish",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T18:05:46.090Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T22:33:01.424Z"
+  },
+  "__v": 5
+},{
+  "_id": {
+    "$oid": "61abeb3a3247f6542cc7d960"
+  },
+  "items": [
+    "akizuki",
+    "yuubari",
+    "i-401",
+    "kitakami",
+    "kaga"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "kancolle characters",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61abec5a3247f6542cc7da47"
+      },
+      "author": "cuteorca",
+      "content": "i love akizuki! she's so cute!"
+    }
+  ],
+  "views": 3,
+  "createdAt": {
+    "$date": "2021-12-04T22:27:06.314Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T22:31:54.005Z"
+  },
+  "__v": 8,
+  "publishDate": {
+    "$date": "2021-12-04T22:27:53.712Z"
+  }
+},{
+  "_id": {
+    "$oid": "61abeba43247f6542cc7d9ae"
+  },
+  "items": [
+    "yuubari",
+    "shimakaze",
+    "suzuya",
+    "atlanta",
+    "akatsuki"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "kancolle characters",
+  "ownerEmail": "doggo@gmail.com",
+  "ownerUsername": "korone",
+  "comments": [],
+  "views": 2,
+  "createdAt": {
+    "$date": "2021-12-04T22:28:52.267Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T22:31:45.689Z"
+  },
+  "__v": 6,
+  "publishDate": {
+    "$date": "2021-12-04T22:29:24.636Z"
   }
 }]

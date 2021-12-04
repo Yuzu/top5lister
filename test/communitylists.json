@@ -289,13 +289,13 @@
     }
   ],
   "comments": [],
-  "views": 2,
+  "views": 3,
   "pooledListNum": 1,
   "createdAt": {
     "$date": "2021-12-04T16:30:24.035Z"
   },
   "updatedAt": {
-    "$date": "2021-12-04T16:38:37.672Z"
+    "$date": "2021-12-04T22:29:40.334Z"
   },
   "__v": 1
 },{
@@ -369,4 +369,96 @@
     "$date": "2021-12-04T16:38:26.852Z"
   },
   "__v": 4
+},{
+  "_id": {
+    "$oid": "61abeb693247f6542cc7d97c"
+  },
+  "upvotes": [
+    "cuteorca"
+  ],
+  "downvotes": [],
+  "name": "kancolle characters",
+  "items": [
+    {
+      "_id": {
+        "$oid": "61abeb693247f6542cc7d97e"
+      },
+      "name": "yuubari",
+      "votes": 9
+    },
+    {
+      "_id": {
+        "$oid": "61abeb693247f6542cc7d97d"
+      },
+      "name": "akizuki",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61abebc43247f6542cc7d9ca"
+      },
+      "name": "shimakaze",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61abeb693247f6542cc7d97f"
+      },
+      "name": "i-401",
+      "votes": 3
+    },
+    {
+      "_id": {
+        "$oid": "61abebc43247f6542cc7d9cb"
+      },
+      "name": "suzuya",
+      "votes": 3
+    },
+    {
+      "_id": {
+        "$oid": "61abeb693247f6542cc7d980"
+      },
+      "name": "kitakami",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61abebc43247f6542cc7d9cc"
+      },
+      "name": "atlanta",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61abeb693247f6542cc7d981"
+      },
+      "name": "kaga",
+      "votes": 1
+    },
+    {
+      "_id": {
+        "$oid": "61abebc43247f6542cc7d9cd"
+      },
+      "name": "akatsuki",
+      "votes": 1
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61abec063247f6542cc7da02"
+      },
+      "author": "cuteorca",
+      "content": "I really like kancolle yuubari's design more than azur lane's honestly."
+    }
+  ],
+  "views": 3,
+  "pooledListNum": 2,
+  "createdAt": {
+    "$date": "2021-12-04T22:27:53.752Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T22:30:34.880Z"
+  },
+  "__v": 3
 }]
