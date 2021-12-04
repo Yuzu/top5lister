@@ -1056,18 +1056,13 @@ function GlobalStoreContextProvider(props) {
                             lists = [];
                         }
                         else {
-                            lists = lists.filter(list => list.ownerUsername === store.searchQuery && list.publishDate);
+                            lists = lists.filter(list => list.ownerUsername.toLowerCase() === store.searchQuery.toLowerCase() && list.publishDate);
                             if (store.currentSort) {
                                 lists = store.sortLists(store.currentSort, lists);
                             }
                         }
                         break;
-                    
-                    case CurrentViewType.COMMUNITY_LISTS: 
-                        // Make calls to the community list endpoints and parse the info properly.
 
-                        // Afterwards, if we have a search query, filter further.
-                        break;
                     default:
                         console.log("DEFAULT LOADLIST ERROR");
                         break;
