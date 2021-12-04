@@ -1,0 +1,6576 @@
+[
+    {
+        "name": "animals to eat",
+        "items": [
+            {
+                "name": "chicken",
+                "votes": 481
+            },
+            {
+                "name": "cow",
+                "votes": 387
+            },
+            {
+                "name": "pig",
+                "votes": 253
+            },
+            {
+                "name": "fish",
+                "votes": 146
+            },
+            {
+                "name": "lamb",
+                "votes": 123
+            },
+            {
+                "name": "salmon",
+                "votes": 76
+            },
+            {
+                "name": "shrimp",
+                "votes": 68
+            },
+            {
+                "name": "duck",
+                "votes": 66
+            },
+            {
+                "name": "turkey",
+                "votes": 40
+            },
+            {
+                "name": "?",
+                "votes": 33
+            },
+            {
+                "name": "beef",
+                "votes": 30
+            },
+            {
+                "name": "pork",
+                "votes": 29
+            },
+            {
+                "name": "lobster",
+                "votes": 25
+            },
+            {
+                "name": "tuna",
+                "votes": 20
+            },
+            {
+                "name": "crab",
+                "votes": 16
+            },
+            {
+                "name": "goat",
+                "votes": 15
+            },
+            {
+                "name": "cows",
+                "votes": 12
+            },
+            {
+                "name": "squid",
+                "votes": 12
+            },
+            {
+                "name": "pigs",
+                "votes": 11
+            },
+            {
+                "name": "sheep",
+                "votes": 10
+            },
+            {
+                "name": "chickens",
+                "votes": 10
+            },
+            {
+                "name": "lamp",
+                "votes": 8
+            },
+            {
+                "name": "monkey",
+                "votes": 6
+            },
+            {
+                "name": "human",
+                "votes": 6
+            },
+            {
+                "name": "yellowtail",
+                "votes": 6
+            },
+            {
+                "name": "deer",
+                "votes": 5
+            },
+            {
+                "name": "bird",
+                "votes": 5
+            },
+            {
+                "name": "jaguars",
+                "votes": 5
+            },
+            {
+                "name": "rabbit",
+                "votes": 4
+            },
+            {
+                "name": "lions",
+                "votes": 4
+            },
+            {
+                "name": "mackerel",
+                "votes": 4
+            },
+            {
+                "name": "horse",
+                "votes": 3
+            },
+            {
+                "name": "dog",
+                "votes": 3
+            },
+            {
+                "name": "tigers",
+                "votes": 3
+            },
+            {
+                "name": "rabbits",
+                "votes": 3
+            },
+            {
+                "name": "bat",
+                "votes": 3
+            },
+            {
+                "name": "camel",
+                "votes": 2
+            },
+            {
+                "name": "ants",
+                "votes": 2
+            },
+            {
+                "name": "alligator",
+                "votes": 2
+            },
+            {
+                "name": "bison",
+                "votes": 2
+            },
+            {
+                "name": "flounder",
+                "votes": 2
+            },
+            {
+                "name": "cougars",
+                "votes": 2
+            },
+            {
+                "name": "dolphinfish",
+                "votes": 2
+            },
+            {
+                "name": "donkey",
+                "votes": 2
+            },
+            {
+                "name": "snake",
+                "votes": 2
+            },
+            {
+                "name": "chichen",
+                "votes": 2
+            },
+            {
+                "name": "clam",
+                "votes": 1
+            },
+            {
+                "name": "octopus",
+                "votes": 1
+            },
+            {
+                "name": "tasselled wobbegong",
+                "votes": 1
+            },
+            {
+                "name": "dragon",
+                "votes": 1
+            },
+            {
+                "name": "giraffe",
+                "votes": 1
+            },
+            {
+                "name": "cod",
+                "votes": 1
+            },
+            {
+                "name": "tucky",
+                "votes": 1
+            },
+            {
+                "name": "mountain lions",
+                "votes": 1
+            },
+            {
+                "name": "octupus",
+                "votes": 1
+            },
+            {
+                "name": "kangeroo",
+                "votes": 1
+            },
+            {
+                "name": "lizard",
+                "votes": 1
+            },
+            {
+                "name": "tilapia",
+                "votes": 1
+            },
+            {
+                "name": "chimp",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 132,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "books",
+        "items": [
+            {
+                "name": "?",
+                "votes": 105
+            },
+            {
+                "name": "harry potter",
+                "votes": 58
+            },
+            {
+                "name": "1984",
+                "votes": 34
+            },
+            {
+                "name": "the great gatsby",
+                "votes": 21
+            },
+            {
+                "name": "the three-body problem",
+                "votes": 19
+            },
+            {
+                "name": "diary of a wimpy kid",
+                "votes": 14
+            },
+            {
+                "name": "harry potter 1",
+                "votes": 14
+            },
+            {
+                "name": "harry potter 3",
+                "votes": 14
+            },
+            {
+                "name": "born a crime",
+                "votes": 13
+            },
+            {
+                "name": "the catcher in the rye",
+                "votes": 13
+            },
+            {
+                "name": "hamlet",
+                "votes": 11
+            },
+            {
+                "name": "the giver",
+                "votes": 10
+            },
+            {
+                "name": "the little prince",
+                "votes": 10
+            },
+            {
+                "name": "jack reacher",
+                "votes": 10
+            },
+            {
+                "name": "great expectations",
+                "votes": 9
+            },
+            {
+                "name": "to kill a mockingbird",
+                "votes": 9
+            },
+            {
+                "name": "the son of neptune",
+                "votes": 9
+            },
+            {
+                "name": "glass castle",
+                "votes": 8
+            },
+            {
+                "name": "hunger games",
+                "votes": 8
+            },
+            {
+                "name": "and then there were none",
+                "votes": 8
+            },
+            {
+                "name": "war and peace",
+                "votes": 8
+            },
+            {
+                "name": "the mark",
+                "votes": 8
+            },
+            {
+                "name": "harry potter 2",
+                "votes": 7
+            },
+            {
+                "name": "harry potter 4",
+                "votes": 7
+            },
+            {
+                "name": "harry potter 5",
+                "votes": 7
+            },
+            {
+                "name": "kite runner",
+                "votes": 7
+            },
+            {
+                "name": "odyssey",
+                "votes": 7
+            },
+            {
+                "name": "grit",
+                "votes": 6
+            },
+            {
+                "name": "mistborn",
+                "votes": 6
+            },
+            {
+                "name": "the lightning thief",
+                "votes": 6
+            },
+            {
+                "name": "game of thrones",
+                "votes": 6
+            },
+            {
+                "name": "jane eyre",
+                "votes": 6
+            },
+            {
+                "name": "harry potter and the chamber of secrets",
+                "votes": 6
+            },
+            {
+                "name": "11/22/63",
+                "votes": 6
+            },
+            {
+                "name": "how to kill a mocking bird",
+                "votes": 5
+            },
+            {
+                "name": "the disposessed",
+                "votes": 5
+            },
+            {
+                "name": "a tree grows in brooklyn; a soldier of the great war; guns",
+                "votes": 5
+            },
+            {
+                "name": "100 years of solitude",
+                "votes": 5
+            },
+            {
+                "name": "why we sleep",
+                "votes": 5
+            },
+            {
+                "name": "a thousand splendid suns",
+                "votes": 5
+            },
+            {
+                "name": "throne of glass",
+                "votes": 5
+            },
+            {
+                "name": "atomic habits",
+                "votes": 5
+            },
+            {
+                "name": "the big book of bugs",
+                "votes": 5
+            },
+            {
+                "name": "the algorithm design manual",
+                "votes": 5
+            },
+            {
+                "name": "beat the dealer",
+                "votes": 5
+            },
+            {
+                "name": "outliers",
+                "votes": 5
+            },
+            {
+                "name": "the miracles of the namiya general store",
+                "votes": 5
+            },
+            {
+                "name": "the expanse",
+                "votes": 5
+            },
+            {
+                "name": "i",
+                "votes": 5
+            },
+            {
+                "name": "lord of the flies",
+                "votes": 5
+            },
+            {
+                "name": "a wrinkle in time",
+                "votes": 5
+            },
+            {
+                "name": "applied combinatorics",
+                "votes": 5
+            },
+            {
+                "name": "manufacturing consent",
+                "votes": 5
+            },
+            {
+                "name": "reading",
+                "votes": 5
+            },
+            {
+                "name": "anna karenina",
+                "votes": 5
+            },
+            {
+                "name": "harry potter and the prisoner of azkaban",
+                "votes": 5
+            },
+            {
+                "name": "doraemon",
+                "votes": 5
+            },
+            {
+                "name": "inferno",
+                "votes": 5
+            },
+            {
+                "name": "cloud atlas",
+                "votes": 5
+            },
+            {
+                "name": "martin eden",
+                "votes": 5
+            },
+            {
+                "name": "the witcher series",
+                "votes": 5
+            },
+            {
+                "name": "the time machine",
+                "votes": 5
+            },
+            {
+                "name": "cosmos",
+                "votes": 5
+            },
+            {
+                "name": "the cuckoo's egg",
+                "votes": 5
+            },
+            {
+                "name": "the skin collector",
+                "votes": 5
+            },
+            {
+                "name": "pheonix",
+                "votes": 5
+            },
+            {
+                "name": "mistborn series",
+                "votes": 5
+            },
+            {
+                "name": "all the light we cannot see",
+                "votes": 5
+            },
+            {
+                "name": "magic tree house",
+                "votes": 5
+            },
+            {
+                "name": "cirque du freak",
+                "votes": 5
+            },
+            {
+                "name": "the chosen",
+                "votes": 4
+            },
+            {
+                "name": "an inspector calls",
+                "votes": 4
+            },
+            {
+                "name": "the tipping point",
+                "votes": 4
+            },
+            {
+                "name": "germs",
+                "votes": 4
+            },
+            {
+                "name": "deep secret",
+                "votes": 4
+            },
+            {
+                "name": "how to think like a monk",
+                "votes": 4
+            },
+            {
+                "name": "the hitchhiker's guide to the galaxy",
+                "votes": 4
+            },
+            {
+                "name": "crazy rich asians",
+                "votes": 4
+            },
+            {
+                "name": "harry potter 6",
+                "votes": 4
+            },
+            {
+                "name": "diary of a wimpy kid 1",
+                "votes": 4
+            },
+            {
+                "name": "xanathar's guide to everything",
+                "votes": 4
+            },
+            {
+                "name": "percy jackson",
+                "votes": 4
+            },
+            {
+                "name": "animal farm",
+                "votes": 4
+            },
+            {
+                "name": "the world of yesterday",
+                "votes": 4
+            },
+            {
+                "name": "the storied life of a. j. fikry",
+                "votes": 4
+            },
+            {
+                "name": "a brief history of humankind",
+                "votes": 4
+            },
+            {
+                "name": "the order of time",
+                "votes": 4
+            },
+            {
+                "name": "don't",
+                "votes": 4
+            },
+            {
+                "name": "jurassic park",
+                "votes": 4
+            },
+            {
+                "name": "the sea of monsters",
+                "votes": 4
+            },
+            {
+                "name": "to kill a mocking bird",
+                "votes": 4
+            },
+            {
+                "name": "watchmen",
+                "votes": 4
+            },
+            {
+                "name": "is",
+                "votes": 4
+            },
+            {
+                "name": "data structure textbook",
+                "votes": 4
+            },
+            {
+                "name": "the brothers karamazov",
+                "votes": 4
+            },
+            {
+                "name": "the mysterious benedict society",
+                "votes": 4
+            },
+            {
+                "name": "chess story",
+                "votes": 4
+            },
+            {
+                "name": "the percy jackson series",
+                "votes": 4
+            },
+            {
+                "name": "gentlemen bastards",
+                "votes": 4
+            },
+            {
+                "name": "the wonderful visit",
+                "votes": 4
+            },
+            {
+                "name": "grapes of wrath",
+                "votes": 4
+            },
+            {
+                "name": "the lorax",
+                "votes": 4
+            },
+            {
+                "name": "twilight",
+                "votes": 4
+            },
+            {
+                "name": "the bone collector",
+                "votes": 4
+            },
+            {
+                "name": "farenheit 451",
+                "votes": 4
+            },
+            {
+                "name": "akira",
+                "votes": 4
+            },
+            {
+                "name": "monogatari series",
+                "votes": 4
+            },
+            {
+                "name": "the power broker",
+                "votes": 4
+            },
+            {
+                "name": "house of hades",
+                "votes": 4
+            },
+            {
+                "name": "this earth of mankind",
+                "votes": 4
+            },
+            {
+                "name": "fahrenheit 451",
+                "votes": 4
+            },
+            {
+                "name": "wuthering heights",
+                "votes": 3
+            },
+            {
+                "name": "the importance of being earnest",
+                "votes": 3
+            },
+            {
+                "name": "and steel; the great gatsby",
+                "votes": 3
+            },
+            {
+                "name": "the left hand of darkness",
+                "votes": 3
+            },
+            {
+                "name": "7 habits of highly effective people",
+                "votes": 3
+            },
+            {
+                "name": "maze runner",
+                "votes": 3
+            },
+            {
+                "name": "the one that got away",
+                "votes": 3
+            },
+            {
+                "name": "diary of a wimpy kid 2",
+                "votes": 3
+            },
+            {
+                "name": "van richten's guide to ravenloft",
+                "votes": 3
+            },
+            {
+                "name": "heaven",
+                "votes": 3
+            },
+            {
+                "name": "how to win friends and influence people",
+                "votes": 3
+            },
+            {
+                "name": "anne of green gables",
+                "votes": 3
+            },
+            {
+                "name": "the count of monte cristo",
+                "votes": 3
+            },
+            {
+                "name": "pride and prejudice",
+                "votes": 3
+            },
+            {
+                "name": "three body",
+                "votes": 3
+            },
+            {
+                "name": "one flew over the cuckoos nest",
+                "votes": 3
+            },
+            {
+                "name": "rich dad poor dad",
+                "votes": 3
+            },
+            {
+                "name": "read",
+                "votes": 3
+            },
+            {
+                "name": "hunger game",
+                "votes": 3
+            },
+            {
+                "name": "the beginning of the end",
+                "votes": 3
+            },
+            {
+                "name": "introduction to linear algebra",
+                "votes": 3
+            },
+            {
+                "name": "hillbilly elegy",
+                "votes": 3
+            },
+            {
+                "name": "golem xiv",
+                "votes": 3
+            },
+            {
+                "name": "very",
+                "votes": 3
+            },
+            {
+                "name": "the sound and the fury",
+                "votes": 3
+            },
+            {
+                "name": "the search for wondla",
+                "votes": 3
+            },
+            {
+                "name": "spice and wolf",
+                "votes": 3
+            },
+            {
+                "name": "catch-22",
+                "votes": 3
+            },
+            {
+                "name": "walden",
+                "votes": 3
+            },
+            {
+                "name": "stormlight archives",
+                "votes": 3
+            },
+            {
+                "name": "the island of doctor moreau",
+                "votes": 3
+            },
+            {
+                "name": "godel escher bach",
+                "votes": 3
+            },
+            {
+                "name": "things to make and do in the fourth dimension",
+                "votes": 3
+            },
+            {
+                "name": "harry potter and the deathly hallows",
+                "votes": 3
+            },
+            {
+                "name": "kafka on the shore",
+                "votes": 3
+            },
+            {
+                "name": "the red pyramid",
+                "votes": 3
+            },
+            {
+                "name": "lord of the rings",
+                "votes": 3
+            },
+            {
+                "name": "return of the spirit",
+                "votes": 2
+            },
+            {
+                "name": "freakonomics",
+                "votes": 2
+            },
+            {
+                "name": "of mice and men",
+                "votes": 2
+            },
+            {
+                "name": "the dream catcher",
+                "votes": 2
+            },
+            {
+                "name": "when the game was ours",
+                "votes": 2
+            },
+            {
+                "name": "harry potter 7",
+                "votes": 2
+            },
+            {
+                "name": "diary of a wimpy kid 3",
+                "votes": 2
+            },
+            {
+                "name": "tasha's cauldron of everything",
+                "votes": 2
+            },
+            {
+                "name": "naruto",
+                "votes": 2
+            },
+            {
+                "name": "paradise lost",
+                "votes": 2
+            },
+            {
+                "name": "a brief history of time",
+                "votes": 2
+            },
+            {
+                "name": "nancy drew",
+                "votes": 2
+            },
+            {
+                "name": "the alchemist",
+                "votes": 2
+            },
+            {
+                "name": "48 laws of power",
+                "votes": 2
+            },
+            {
+                "name": "any",
+                "votes": 2
+            },
+            {
+                "name": "iliad",
+                "votes": 2
+            },
+            {
+                "name": "the titan's curse",
+                "votes": 2
+            },
+            {
+                "name": "probability and statistics for science and engineering with examples in r",
+                "votes": 2
+            },
+            {
+                "name": "when breath becomes air",
+                "votes": 2
+            },
+            {
+                "name": "foundation",
+                "votes": 2
+            },
+            {
+                "name": "hard",
+                "votes": 2
+            },
+            {
+                "name": "no country for old men",
+                "votes": 2
+            },
+            {
+                "name": "harry potter and the sorceror's stone",
+                "votes": 2
+            },
+            {
+                "name": "mushoku tensei",
+                "votes": 2
+            },
+            {
+                "name": "rebecca",
+                "votes": 2
+            },
+            {
+                "name": "overlord",
+                "votes": 2
+            },
+            {
+                "name": "a song of ice and fire",
+                "votes": 2
+            },
+            {
+                "name": "the wheels of chance",
+                "votes": 2
+            },
+            {
+                "name": "flash boys",
+                "votes": 2
+            },
+            {
+                "name": "who's bigger?",
+                "votes": 2
+            },
+            {
+                "name": "lovely bones",
+                "votes": 2
+            },
+            {
+                "name": "thousand splendid suns",
+                "votes": 2
+            },
+            {
+                "name": "white fang",
+                "votes": 2
+            },
+            {
+                "name": "know my name",
+                "votes": 2
+            },
+            {
+                "name": "the blood of olympus",
+                "votes": 2
+            },
+            {
+                "name": "",
+                "votes": 2
+            },
+            {
+                "name": "illiad",
+                "votes": 2
+            },
+            {
+                "name": "breath",
+                "votes": 1
+            },
+            {
+                "name": "murder on the orient express",
+                "votes": 1
+            },
+            {
+                "name": "diary of a wimpy kid 4",
+                "votes": 1
+            },
+            {
+                "name": "volo's guide to monsters",
+                "votes": 1
+            },
+            {
+                "name": "bleach",
+                "votes": 1
+            },
+            {
+                "name": "sadako and the thousand paper cranes",
+                "votes": 1
+            },
+            {
+                "name": "the crucible",
+                "votes": 1
+            },
+            {
+                "name": "sense and sensibility",
+                "votes": 1
+            },
+            {
+                "name": "inviting disaster",
+                "votes": 1
+            },
+            {
+                "name": "journey under the midnight sun",
+                "votes": 1
+            },
+            {
+                "name": "supermarket",
+                "votes": 1
+            },
+            {
+                "name": "books",
+                "votes": 1
+            },
+            {
+                "name": "artemis fowl",
+                "votes": 1
+            },
+            {
+                "name": "the last olympian",
+                "votes": 1
+            },
+            {
+                "name": "the data science design manual",
+                "votes": 1
+            },
+            {
+                "name": "waiting for godot",
+                "votes": 1
+            },
+            {
+                "name": "solaris",
+                "votes": 1
+            },
+            {
+                "name": "book12",
+                "votes": 1
+            },
+            {
+                "name": "screwtape letters",
+                "votes": 1
+            },
+            {
+                "name": "mein kampf",
+                "votes": 1
+            },
+            {
+                "name": "dream of the red chamber",
+                "votes": 1
+            },
+            {
+                "name": "a clockwork orange",
+                "votes": 1
+            },
+            {
+                "name": "the warrior cat series",
+                "votes": 1
+            },
+            {
+                "name": "the inheritance cycle",
+                "votes": 1
+            },
+            {
+                "name": "the invisible man",
+                "votes": 1
+            },
+            {
+                "name": "the life and death of the mckilla gorilla",
+                "votes": 1
+            },
+            {
+                "name": "the stranger",
+                "votes": 1
+            },
+            {
+                "name": "the tender bar",
+                "votes": 1
+            },
+            {
+                "name": "bartleby the screenvener",
+                "votes": 1
+            },
+            {
+                "name": "michael vey: the prisoner of cell 25",
+                "votes": 1
+            },
+            {
+                "name": "world of warcraft",
+                "votes": 1
+            },
+            {
+                "name": "the outsiders",
+                "votes": 1
+            },
+            {
+                "name": "harry potter and the order of the phoenix",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 71,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "countries you'd like to visit",
+        "items": [
+            {
+                "name": "japan",
+                "votes": 375
+            },
+            {
+                "name": "china",
+                "votes": 134
+            },
+            {
+                "name": "korea",
+                "votes": 134
+            },
+            {
+                "name": "france",
+                "votes": 120
+            },
+            {
+                "name": "italy",
+                "votes": 113
+            },
+            {
+                "name": "germany",
+                "votes": 91
+            },
+            {
+                "name": "south korea",
+                "votes": 70
+            },
+            {
+                "name": "spain",
+                "votes": 66
+            },
+            {
+                "name": "switzerland",
+                "votes": 47
+            },
+            {
+                "name": "sweden",
+                "votes": 43
+            },
+            {
+                "name": "iceland",
+                "votes": 39
+            },
+            {
+                "name": "norway",
+                "votes": 33
+            },
+            {
+                "name": "england",
+                "votes": 32
+            },
+            {
+                "name": "russia",
+                "votes": 29
+            },
+            {
+                "name": "ireland",
+                "votes": 26
+            },
+            {
+                "name": "canada",
+                "votes": 25
+            },
+            {
+                "name": "new zealand",
+                "votes": 22
+            },
+            {
+                "name": "singapore",
+                "votes": 20
+            },
+            {
+                "name": "hong kong",
+                "votes": 19
+            },
+            {
+                "name": "netherlands",
+                "votes": 19
+            },
+            {
+                "name": "australia",
+                "votes": 17
+            },
+            {
+                "name": "taiwan",
+                "votes": 16
+            },
+            {
+                "name": "mexico",
+                "votes": 15
+            },
+            {
+                "name": "?",
+                "votes": 15
+            },
+            {
+                "name": "india",
+                "votes": 14
+            },
+            {
+                "name": "brazil",
+                "votes": 13
+            },
+            {
+                "name": "peru",
+                "votes": 12
+            },
+            {
+                "name": "vietnam",
+                "votes": 12
+            },
+            {
+                "name": "netherland",
+                "votes": 12
+            },
+            {
+                "name": "greece",
+                "votes": 12
+            },
+            {
+                "name": "finland",
+                "votes": 12
+            },
+            {
+                "name": "israel",
+                "votes": 11
+            },
+            {
+                "name": "czech republic",
+                "votes": 11
+            },
+            {
+                "name": "britain",
+                "votes": 10
+            },
+            {
+                "name": "poland",
+                "votes": 9
+            },
+            {
+                "name": "egypt",
+                "votes": 8
+            },
+            {
+                "name": "north korea",
+                "votes": 8
+            },
+            {
+                "name": "austria",
+                "votes": 8
+            },
+            {
+                "name": "turkey",
+                "votes": 7
+            },
+            {
+                "name": "portugal",
+                "votes": 7
+            },
+            {
+                "name": "saudi arabia",
+                "votes": 6
+            },
+            {
+                "name": "greenland",
+                "votes": 6
+            },
+            {
+                "name": "ukraine",
+                "votes": 6
+            },
+            {
+                "name": "liechtenstein",
+                "votes": 6
+            },
+            {
+                "name": "uk",
+                "votes": 6
+            },
+            {
+                "name": "uae",
+                "votes": 5
+            },
+            {
+                "name": "chile",
+                "votes": 5
+            },
+            {
+                "name": "united kingdom",
+                "votes": 5
+            },
+            {
+                "name": "i'll",
+                "votes": 5
+            },
+            {
+                "name": "chad",
+                "votes": 5
+            },
+            {
+                "name": "jamaica",
+                "votes": 5
+            },
+            {
+                "name": "malaysia",
+                "votes": 5
+            },
+            {
+                "name": "luxembourg",
+                "votes": 5
+            },
+            {
+                "name": "indonesia",
+                "votes": 5
+            },
+            {
+                "name": "palestine",
+                "votes": 4
+            },
+            {
+                "name": "mali",
+                "votes": 4
+            },
+            {
+                "name": "botswana",
+                "votes": 4
+            },
+            {
+                "name": "thailand",
+                "votes": 4
+            },
+            {
+                "name": "die",
+                "votes": 4
+            },
+            {
+                "name": "swaziland",
+                "votes": 4
+            },
+            {
+                "name": "argentina",
+                "votes": 4
+            },
+            {
+                "name": "puerto rico",
+                "votes": 4
+            },
+            {
+                "name": "philippines",
+                "votes": 4
+            },
+            {
+                "name": "iran",
+                "votes": 4
+            },
+            {
+                "name": "pakistan",
+                "votes": 3
+            },
+            {
+                "name": "cuba",
+                "votes": 3
+            },
+            {
+                "name": "new zeland",
+                "votes": 3
+            },
+            {
+                "name": "morocco",
+                "votes": 3
+            },
+            {
+                "name": "dominican republic",
+                "votes": 3
+            },
+            {
+                "name": "never",
+                "votes": 3
+            },
+            {
+                "name": "christmas island",
+                "votes": 3
+            },
+            {
+                "name": "greek",
+                "votes": 3
+            },
+            {
+                "name": "oman",
+                "votes": 3
+            },
+            {
+                "name": "iraq",
+                "votes": 2
+            },
+            {
+                "name": "belgium",
+                "votes": 2
+            },
+            {
+                "name": "united states",
+                "votes": 2
+            },
+            {
+                "name": "isreal",
+                "votes": 2
+            },
+            {
+                "name": "leaving",
+                "votes": 2
+            },
+            {
+                "name": "monaco",
+                "votes": 2
+            },
+            {
+                "name": "arugula",
+                "votes": 2
+            },
+            {
+                "name": "serbia",
+                "votes": 1
+            },
+            {
+                "name": "sweeden",
+                "votes": 1
+            },
+            {
+                "name": "dubai",
+                "votes": 1
+            },
+            {
+                "name": "u.k.",
+                "votes": 1
+            },
+            {
+                "name": "new york",
+                "votes": 1
+            },
+            {
+                "name": "virgin island",
+                "votes": 1
+            },
+            {
+                "name": "bangladesh",
+                "votes": 1
+            },
+            {
+                "name": "united state",
+                "votes": 1
+            },
+            {
+                "name": "aruba",
+                "votes": 1
+            },
+            {
+                "name": "georgia",
+                "votes": 1
+            },
+            {
+                "name": "madagascar",
+                "votes": 1
+            },
+            {
+                "name": "colombia",
+                "votes": 1
+            },
+            {
+                "name": "german",
+                "votes": 1
+            },
+            {
+                "name": "burma",
+                "votes": 1
+            },
+            {
+                "name": "romania",
+                "votes": 1
+            },
+            {
+                "name": "",
+                "votes": 0
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 125,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "foods",
+        "items": [
+            {
+                "name": "sushi",
+                "votes": 168
+            },
+            {
+                "name": "pizza",
+                "votes": 165
+            },
+            {
+                "name": "steak",
+                "votes": 90
+            },
+            {
+                "name": "rice",
+                "votes": 69
+            },
+            {
+                "name": "ramen",
+                "votes": 59
+            },
+            {
+                "name": "fried chicken",
+                "votes": 53
+            },
+            {
+                "name": "dumplings",
+                "votes": 38
+            },
+            {
+                "name": "burgers",
+                "votes": 36
+            },
+            {
+                "name": "hot pot",
+                "votes": 34
+            },
+            {
+                "name": "fried rice",
+                "votes": 28
+            },
+            {
+                "name": "ice cream",
+                "votes": 27
+            },
+            {
+                "name": "chocolate",
+                "votes": 22
+            },
+            {
+                "name": "beef",
+                "votes": 20
+            },
+            {
+                "name": "gyro",
+                "votes": 19
+            },
+            {
+                "name": "tacos",
+                "votes": 16
+            },
+            {
+                "name": "noodles",
+                "votes": 16
+            },
+            {
+                "name": "chicken",
+                "votes": 15
+            },
+            {
+                "name": "fries",
+                "votes": 15
+            },
+            {
+                "name": "burger",
+                "votes": 14
+            },
+            {
+                "name": "hotpot",
+                "votes": 14
+            },
+            {
+                "name": "pho",
+                "votes": 14
+            },
+            {
+                "name": "hamburger",
+                "votes": 12
+            },
+            {
+                "name": "pasta",
+                "votes": 11
+            },
+            {
+                "name": "burrito",
+                "votes": 11
+            },
+            {
+                "name": "french fries",
+                "votes": 11
+            },
+            {
+                "name": "lasagna",
+                "votes": 11
+            },
+            {
+                "name": "pad thai",
+                "votes": 10
+            },
+            {
+                "name": "bbq",
+                "votes": 10
+            },
+            {
+                "name": "chicken parmesean",
+                "votes": 10
+            },
+            {
+                "name": "bacon",
+                "votes": 9
+            },
+            {
+                "name": "pork belly",
+                "votes": 9
+            },
+            {
+                "name": "spaghetti",
+                "votes": 9
+            },
+            {
+                "name": "sashimi",
+                "votes": 9
+            },
+            {
+                "name": "crepes",
+                "votes": 8
+            },
+            {
+                "name": "icecream",
+                "votes": 8
+            },
+            {
+                "name": "chicken tikka masala",
+                "votes": 8
+            },
+            {
+                "name": "salmon",
+                "votes": 8
+            },
+            {
+                "name": "chicken wings",
+                "votes": 8
+            },
+            {
+                "name": "taco",
+                "votes": 8
+            },
+            {
+                "name": "korean fried chicken",
+                "votes": 8
+            },
+            {
+                "name": "egg",
+                "votes": 8
+            },
+            {
+                "name": "biryani",
+                "votes": 7
+            },
+            {
+                "name": "beans",
+                "votes": 7
+            },
+            {
+                "name": "salad",
+                "votes": 7
+            },
+            {
+                "name": "bread",
+                "votes": 7
+            },
+            {
+                "name": "dim sum",
+                "votes": 7
+            },
+            {
+                "name": "poke",
+                "votes": 7
+            },
+            {
+                "name": "cereal",
+                "votes": 7
+            },
+            {
+                "name": "cheeseburger",
+                "votes": 6
+            },
+            {
+                "name": "chipotle",
+                "votes": 6
+            },
+            {
+                "name": "avocado",
+                "votes": 6
+            },
+            {
+                "name": "wings",
+                "votes": 6
+            },
+            {
+                "name": "stuffed shells",
+                "votes": 6
+            },
+            {
+                "name": "fish",
+                "votes": 6
+            },
+            {
+                "name": "cookies",
+                "votes": 5
+            },
+            {
+                "name": "greens",
+                "votes": 5
+            },
+            {
+                "name": "shrimp scampi",
+                "votes": 5
+            },
+            {
+                "name": "masala dosa",
+                "votes": 5
+            },
+            {
+                "name": "butter chicken",
+                "votes": 5
+            },
+            {
+                "name": "chicken on rice",
+                "votes": 5
+            },
+            {
+                "name": "adeptus' temptation",
+                "votes": 5
+            },
+            {
+                "name": "fake burrito",
+                "votes": 5
+            },
+            {
+                "name": "sandwich",
+                "votes": 5
+            },
+            {
+                "name": "garbage plate",
+                "votes": 5
+            },
+            {
+                "name": "feijoada",
+                "votes": 5
+            },
+            {
+                "name": "mr. kim teriyaki steak and cheese",
+                "votes": 5
+            },
+            {
+                "name": "pancakes",
+                "votes": 5
+            },
+            {
+                "name": "beef soup",
+                "votes": 5
+            },
+            {
+                "name": "roast duck",
+                "votes": 5
+            },
+            {
+                "name": "broccoli",
+                "votes": 5
+            },
+            {
+                "name": "halal cart food",
+                "votes": 5
+            },
+            {
+                "name": "chicken wing",
+                "votes": 5
+            },
+            {
+                "name": "tomato",
+                "votes": 5
+            },
+            {
+                "name": "soylent",
+                "votes": 5
+            },
+            {
+                "name": "borgir",
+                "votes": 5
+            },
+            {
+                "name": "jollof rice",
+                "votes": 5
+            },
+            {
+                "name": "cow cheese",
+                "votes": 5
+            },
+            {
+                "name": "zucchini",
+                "votes": 5
+            },
+            {
+                "name": "macaroni",
+                "votes": 5
+            },
+            {
+                "name": "soup",
+                "votes": 5
+            },
+            {
+                "name": "combo over rice",
+                "votes": 5
+            },
+            {
+                "name": "curry",
+                "votes": 5
+            },
+            {
+                "name": "mapo tofu",
+                "votes": 5
+            },
+            {
+                "name": "spicy hotpot",
+                "votes": 5
+            },
+            {
+                "name": "dosa",
+                "votes": 4
+            },
+            {
+                "name": "mac & cheese",
+                "votes": 4
+            },
+            {
+                "name": "calla lily seafood soup",
+                "votes": 4
+            },
+            {
+                "name": "fake pasta",
+                "votes": 4
+            },
+            {
+                "name": "hot dog",
+                "votes": 4
+            },
+            {
+                "name": "eel bowl",
+                "votes": 4
+            },
+            {
+                "name": "milk",
+                "votes": 4
+            },
+            {
+                "name": "beef noodle soup",
+                "votes": 4
+            },
+            {
+                "name": "corn dogs",
+                "votes": 4
+            },
+            {
+                "name": "sesame chicken",
+                "votes": 4
+            },
+            {
+                "name": "ribs",
+                "votes": 4
+            },
+            {
+                "name": "indian food",
+                "votes": 4
+            },
+            {
+                "name": "chicken tendies",
+                "votes": 4
+            },
+            {
+                "name": "peking duck",
+                "votes": 4
+            },
+            {
+                "name": "brownies",
+                "votes": 4
+            },
+            {
+                "name": "poke bowls",
+                "votes": 4
+            },
+            {
+                "name": "ramyeon",
+                "votes": 4
+            },
+            {
+                "name": "pad see ew",
+                "votes": 4
+            },
+            {
+                "name": "goat cheese",
+                "votes": 4
+            },
+            {
+                "name": "nihari",
+                "votes": 4
+            },
+            {
+                "name": "chicken pot pie",
+                "votes": 4
+            },
+            {
+                "name": "noodle",
+                "votes": 4
+            },
+            {
+                "name": "ground chicken",
+                "votes": 4
+            },
+            {
+                "name": "leek soup",
+                "votes": 4
+            },
+            {
+                "name": "nuggets",
+                "votes": 4
+            },
+            {
+                "name": "korean bbq",
+                "votes": 4
+            },
+            {
+                "name": "garlic bread",
+                "votes": 4
+            },
+            {
+                "name": "koshary",
+                "votes": 3
+            },
+            {
+                "name": "tofu scramble",
+                "votes": 3
+            },
+            {
+                "name": "tomatoes",
+                "votes": 3
+            },
+            {
+                "name": "biriyani",
+                "votes": 3
+            },
+            {
+                "name": "potatoe",
+                "votes": 3
+            },
+            {
+                "name": "pav bhaji",
+                "votes": 3
+            },
+            {
+                "name": "lamb chops",
+                "votes": 3
+            },
+            {
+                "name": "fish tofu",
+                "votes": 3
+            },
+            {
+                "name": "jueyun chili chicken",
+                "votes": 3
+            },
+            {
+                "name": "fake pizza",
+                "votes": 3
+            },
+            {
+                "name": "salmon roll",
+                "votes": 3
+            },
+            {
+                "name": "scallion pancakes",
+                "votes": 3
+            },
+            {
+                "name": "hamburgers",
+                "votes": 3
+            },
+            {
+                "name": "chicken soup",
+                "votes": 3
+            },
+            {
+                "name": "samosas",
+                "votes": 3
+            },
+            {
+                "name": "mashed potatoes",
+                "votes": 3
+            },
+            {
+                "name": "shrimp fried rice",
+                "votes": 3
+            },
+            {
+                "name": "eggs",
+                "votes": 3
+            },
+            {
+                "name": "seafood",
+                "votes": 3
+            },
+            {
+                "name": "tteokbokki",
+                "votes": 3
+            },
+            {
+                "name": "quesadillas",
+                "votes": 3
+            },
+            {
+                "name": "pork buns",
+                "votes": 3
+            },
+            {
+                "name": "choclate",
+                "votes": 3
+            },
+            {
+                "name": "soup dumplings",
+                "votes": 3
+            },
+            {
+                "name": "empanadas",
+                "votes": 3
+            },
+            {
+                "name": "chicken parm",
+                "votes": 3
+            },
+            {
+                "name": "tofu",
+                "votes": 3
+            },
+            {
+                "name": "waffles",
+                "votes": 3
+            },
+            {
+                "name": "shrimp tempura",
+                "votes": 3
+            },
+            {
+                "name": "sheep cheese",
+                "votes": 3
+            },
+            {
+                "name": "curry chicken",
+                "votes": 3
+            },
+            {
+                "name": "spinach",
+                "votes": 3
+            },
+            {
+                "name": "guacamole",
+                "votes": 3
+            },
+            {
+                "name": "klobasa",
+                "votes": 3
+            },
+            {
+                "name": "chicken parmesan",
+                "votes": 3
+            },
+            {
+                "name": "teriaki",
+                "votes": 3
+            },
+            {
+                "name": "poke bowl",
+                "votes": 3
+            },
+            {
+                "name": "tempura",
+                "votes": 3
+            },
+            {
+                "name": "fried dumplings",
+                "votes": 3
+            },
+            {
+                "name": "baklava",
+                "votes": 2
+            },
+            {
+                "name": "palak paneer",
+                "votes": 2
+            },
+            {
+                "name": "parota",
+                "votes": 2
+            },
+            {
+                "name": "tomatoe",
+                "votes": 2
+            },
+            {
+                "name": "jerk chicken",
+                "votes": 2
+            },
+            {
+                "name": "pani puri",
+                "votes": 2
+            },
+            {
+                "name": "kimbap",
+                "votes": 2
+            },
+            {
+                "name": "chicken-mushroom skewer",
+                "votes": 2
+            },
+            {
+                "name": "fake burger",
+                "votes": 2
+            },
+            {
+                "name": "chicken breast",
+                "votes": 2
+            },
+            {
+                "name": "grilled chicken",
+                "votes": 2
+            },
+            {
+                "name": "fruits",
+                "votes": 2
+            },
+            {
+                "name": "lamb over rice",
+                "votes": 2
+            },
+            {
+                "name": "asparagus",
+                "votes": 2
+            },
+            {
+                "name": "french toast",
+                "votes": 2
+            },
+            {
+                "name": "tomatoes and eggs",
+                "votes": 2
+            },
+            {
+                "name": "pizza rolls",
+                "votes": 2
+            },
+            {
+                "name": "avacado",
+                "votes": 2
+            },
+            {
+                "name": "banana",
+                "votes": 2
+            },
+            {
+                "name": "chocolates",
+                "votes": 2
+            },
+            {
+                "name": "sandwhiches",
+                "votes": 2
+            },
+            {
+                "name": "ravioli",
+                "votes": 2
+            },
+            {
+                "name": "pork",
+                "votes": 2
+            },
+            {
+                "name": "knish",
+                "votes": 2
+            },
+            {
+                "name": "cakes",
+                "votes": 2
+            },
+            {
+                "name": "soju",
+                "votes": 2
+            },
+            {
+                "name": "cheesecake",
+                "votes": 2
+            },
+            {
+                "name": "mango sago",
+                "votes": 2
+            },
+            {
+                "name": "fried wings",
+                "votes": 2
+            },
+            {
+                "name": "schnitzel",
+                "votes": 2
+            },
+            {
+                "name": "spam",
+                "votes": 2
+            },
+            {
+                "name": "saltanias",
+                "votes": 2
+            },
+            {
+                "name": "chili chicken",
+                "votes": 2
+            },
+            {
+                "name": "breaded porkchops",
+                "votes": 2
+            },
+            {
+                "name": "fried chicken sandwhich",
+                "votes": 2
+            },
+            {
+                "name": "donuts",
+                "votes": 2
+            },
+            {
+                "name": "yogurt",
+                "votes": 2
+            },
+            {
+                "name": "cheese",
+                "votes": 2
+            },
+            {
+                "name": "tater tots",
+                "votes": 2
+            },
+            {
+                "name": "mac and cheese",
+                "votes": 2
+            },
+            {
+                "name": "sweet potato",
+                "votes": 2
+            },
+            {
+                "name": "meatballs",
+                "votes": 2
+            },
+            {
+                "name": "fish fries",
+                "votes": 2
+            },
+            {
+                "name": "donburi",
+                "votes": 2
+            },
+            {
+                "name": "burgerm ice cream",
+                "votes": 2
+            },
+            {
+                "name": "cake",
+                "votes": 2
+            },
+            {
+                "name": "chicken tenders",
+                "votes": 2
+            },
+            {
+                "name": "mahshi",
+                "votes": 1
+            },
+            {
+                "name": "tajine",
+                "votes": 1
+            },
+            {
+                "name": "ham",
+                "votes": 1
+            },
+            {
+                "name": "chana masala",
+                "votes": 1
+            },
+            {
+                "name": "goat curry",
+                "votes": 1
+            },
+            {
+                "name": "roast pork",
+                "votes": 1
+            },
+            {
+                "name": "teyvat fried egg",
+                "votes": 1
+            },
+            {
+                "name": "fake rice",
+                "votes": 1
+            },
+            {
+                "name": "greek yogurt",
+                "votes": 1
+            },
+            {
+                "name": "squid",
+                "votes": 1
+            },
+            {
+                "name": "dumpling",
+                "votes": 1
+            },
+            {
+                "name": "mozzarella sticks",
+                "votes": 1
+            },
+            {
+                "name": "orange",
+                "votes": 1
+            },
+            {
+                "name": "naan",
+                "votes": 1
+            },
+            {
+                "name": "hot pockets",
+                "votes": 1
+            },
+            {
+                "name": "sweets",
+                "votes": 1
+            },
+            {
+                "name": "lasgna",
+                "votes": 1
+            },
+            {
+                "name": "crab leg",
+                "votes": 1
+            },
+            {
+                "name": "onions",
+                "votes": 1
+            },
+            {
+                "name": "strawberries",
+                "votes": 1
+            },
+            {
+                "name": "apple",
+                "votes": 1
+            },
+            {
+                "name": "gummy bears",
+                "votes": 1
+            },
+            {
+                "name": "baconeggandcheeseonaroll",
+                "votes": 1
+            },
+            {
+                "name": "eels",
+                "votes": 1
+            },
+            {
+                "name": "halal",
+                "votes": 1
+            },
+            {
+                "name": "beer",
+                "votes": 1
+            },
+            {
+                "name": "bread bowl",
+                "votes": 1
+            },
+            {
+                "name": "beet soup",
+                "votes": 1
+            },
+            {
+                "name": "kebab",
+                "votes": 1
+            },
+            {
+                "name": "oyakodon",
+                "votes": 1
+            },
+            {
+                "name": "quesadilla",
+                "votes": 1
+            },
+            {
+                "name": "scrambled eggs",
+                "votes": 1
+            },
+            {
+                "name": "chick peas",
+                "votes": 1
+            },
+            {
+                "name": "vegatable",
+                "votes": 1
+            },
+            {
+                "name": "tendies",
+                "votes": 1
+            },
+            {
+                "name": "hotdog",
+                "votes": 1
+            },
+            {
+                "name": "toast",
+                "votes": 1
+            },
+            {
+                "name": "yakitori",
+                "votes": 1
+            },
+            {
+                "name": "summer roll",
+                "votes": 1
+            },
+            {
+                "name": "borgar",
+                "votes": 1
+            },
+            {
+                "name": "lobster",
+                "votes": 1
+            },
+            {
+                "name": "",
+                "votes": 0
+            },
+            {
+                "name": "mushed potatoes",
+                "votes": 0
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 116,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "games",
+        "items": [
+            {
+                "name": "minecraft",
+                "votes": 132
+            },
+            {
+                "name": "league of legends",
+                "votes": 116
+            },
+            {
+                "name": "valorant",
+                "votes": 56
+            },
+            {
+                "name": "?",
+                "votes": 51
+            },
+            {
+                "name": "breath of the wild",
+                "votes": 32
+            },
+            {
+                "name": "pokemon",
+                "votes": 28
+            },
+            {
+                "name": "skyrim",
+                "votes": 25
+            },
+            {
+                "name": "csgo",
+                "votes": 25
+            },
+            {
+                "name": "call of duty",
+                "votes": 22
+            },
+            {
+                "name": "lol",
+                "votes": 22
+            },
+            {
+                "name": "starcraft",
+                "votes": 21
+            },
+            {
+                "name": "tft",
+                "votes": 20
+            },
+            {
+                "name": "genshin impact",
+                "votes": 20
+            },
+            {
+                "name": "dark souls",
+                "votes": 20
+            },
+            {
+                "name": "super smash bros",
+                "votes": 17
+            },
+            {
+                "name": "apex legends",
+                "votes": 16
+            },
+            {
+                "name": "tetris",
+                "votes": 16
+            },
+            {
+                "name": "final fantasy xiv",
+                "votes": 15
+            },
+            {
+                "name": "super smash bros. ultimate",
+                "votes": 14
+            },
+            {
+                "name": "rocket league",
+                "votes": 14
+            },
+            {
+                "name": "destiny",
+                "votes": 13
+            },
+            {
+                "name": "monster hunter",
+                "votes": 12
+            },
+            {
+                "name": "terraria",
+                "votes": 12
+            },
+            {
+                "name": "dota2",
+                "votes": 12
+            },
+            {
+                "name": "rust",
+                "votes": 12
+            },
+            {
+                "name": "halo",
+                "votes": 11
+            },
+            {
+                "name": "league of legend",
+                "votes": 11
+            },
+            {
+                "name": "gta v",
+                "votes": 11
+            },
+            {
+                "name": "gta",
+                "votes": 10
+            },
+            {
+                "name": "cs:go",
+                "votes": 10
+            },
+            {
+                "name": "pokemon platinum",
+                "votes": 10
+            },
+            {
+                "name": "super smash bros ultimate",
+                "votes": 10
+            },
+            {
+                "name": "apex",
+                "votes": 10
+            },
+            {
+                "name": "omori",
+                "votes": 10
+            },
+            {
+                "name": "hollow knight",
+                "votes": 10
+            },
+            {
+                "name": "pokemon shining pearl",
+                "votes": 10
+            },
+            {
+                "name": "hades",
+                "votes": 9
+            },
+            {
+                "name": "osu",
+                "votes": 9
+            },
+            {
+                "name": "fortnite",
+                "votes": 9
+            },
+            {
+                "name": "among us",
+                "votes": 9
+            },
+            {
+                "name": "red dead redemption 2",
+                "votes": 9
+            },
+            {
+                "name": "escape from tarkov",
+                "votes": 9
+            },
+            {
+                "name": "destiny 2",
+                "votes": 9
+            },
+            {
+                "name": "mgs3",
+                "votes": 8
+            },
+            {
+                "name": "marvel's spider-man",
+                "votes": 8
+            },
+            {
+                "name": "maplestory",
+                "votes": 8
+            },
+            {
+                "name": "stardew valley",
+                "votes": 8
+            },
+            {
+                "name": "halo 3",
+                "votes": 8
+            },
+            {
+                "name": "clash of clans",
+                "votes": 8
+            },
+            {
+                "name": "league",
+                "votes": 7
+            },
+            {
+                "name": "legend of zelda: breath of the wild",
+                "votes": 7
+            },
+            {
+                "name": "gta5",
+                "votes": 7
+            },
+            {
+                "name": "animal crossing",
+                "votes": 7
+            },
+            {
+                "name": "super mario galaxy 2",
+                "votes": 7
+            },
+            {
+                "name": "fire emblem",
+                "votes": 7
+            },
+            {
+                "name": "super smash bros.",
+                "votes": 7
+            },
+            {
+                "name": "nba 2k",
+                "votes": 7
+            },
+            {
+                "name": "pubg",
+                "votes": 7
+            },
+            {
+                "name": "witcher 3",
+                "votes": 7
+            },
+            {
+                "name": "portal 2",
+                "votes": 7
+            },
+            {
+                "name": "mario kart",
+                "votes": 6
+            },
+            {
+                "name": "chess",
+                "votes": 6
+            },
+            {
+                "name": "path of exile",
+                "votes": 6
+            },
+            {
+                "name": "guild wars 2",
+                "votes": 6
+            },
+            {
+                "name": "earthbound",
+                "votes": 6
+            },
+            {
+                "name": "overwatch",
+                "votes": 6
+            },
+            {
+                "name": "borderlands 2",
+                "votes": 6
+            },
+            {
+                "name": "2048",
+                "votes": 6
+            },
+            {
+                "name": "sekiro",
+                "votes": 6
+            },
+            {
+                "name": "toon town",
+                "votes": 6
+            },
+            {
+                "name": "bloodborne",
+                "votes": 6
+            },
+            {
+                "name": "clash royale",
+                "votes": 6
+            },
+            {
+                "name": "legend of zelda: ocarina of time",
+                "votes": 5
+            },
+            {
+                "name": "goldeneye",
+                "votes": 5
+            },
+            {
+                "name": "kingdom hearts",
+                "votes": 5
+            },
+            {
+                "name": "elder scrolls",
+                "votes": 5
+            },
+            {
+                "name": "legend of zelda: majora's mask",
+                "votes": 5
+            },
+            {
+                "name": "gta 5",
+                "votes": 5
+            },
+            {
+                "name": "roblox",
+                "votes": 5
+            },
+            {
+                "name": "gta1",
+                "votes": 5
+            },
+            {
+                "name": "patty cake",
+                "votes": 5
+            },
+            {
+                "name": "wind waker",
+                "votes": 5
+            },
+            {
+                "name": "celeste",
+                "votes": 5
+            },
+            {
+                "name": "bravely default",
+                "votes": 5
+            },
+            {
+                "name": "persona 5",
+                "votes": 5
+            },
+            {
+                "name": "wow",
+                "votes": 5
+            },
+            {
+                "name": "gran turismo sport",
+                "votes": 5
+            },
+            {
+                "name": "val",
+                "votes": 5
+            },
+            {
+                "name": "madden",
+                "votes": 5
+            },
+            {
+                "name": "mount and blade",
+                "votes": 5
+            },
+            {
+                "name": "pubg mobile",
+                "votes": 5
+            },
+            {
+                "name": "yakuza 0",
+                "votes": 5
+            },
+            {
+                "name": "batman arkham city",
+                "votes": 5
+            },
+            {
+                "name": "overcooked 2",
+                "votes": 5
+            },
+            {
+                "name": "begone",
+                "votes": 5
+            },
+            {
+                "name": "dominus",
+                "votes": 5
+            },
+            {
+                "name": "the elder scrolls v: skyrim",
+                "votes": 5
+            },
+            {
+                "name": "the need for speed",
+                "votes": 5
+            },
+            {
+                "name": "metro exodus",
+                "votes": 5
+            },
+            {
+                "name": "super smash brother melee",
+                "votes": 5
+            },
+            {
+                "name": "undertale",
+                "votes": 5
+            },
+            {
+                "name": "skate 3",
+                "votes": 5
+            },
+            {
+                "name": "breath of zeld",
+                "votes": 5
+            },
+            {
+                "name": "c&c red alert 2",
+                "votes": 5
+            },
+            {
+                "name": "dominion",
+                "votes": 5
+            },
+            {
+                "name": "legends of runeterra",
+                "votes": 5
+            },
+            {
+                "name": "outer wilds",
+                "votes": 5
+            },
+            {
+                "name": "nethack",
+                "votes": 5
+            },
+            {
+                "name": "guardian tales",
+                "votes": 5
+            },
+            {
+                "name": "rainbow six siege",
+                "votes": 5
+            },
+            {
+                "name": "mk8dx",
+                "votes": 5
+            },
+            {
+                "name": "fallout 3",
+                "votes": 4
+            },
+            {
+                "name": "marvel's spider-man: miles morales",
+                "votes": 4
+            },
+            {
+                "name": "mortal kombat",
+                "votes": 4
+            },
+            {
+                "name": "persona 4 golden",
+                "votes": 4
+            },
+            {
+                "name": "spiderman",
+                "votes": 4
+            },
+            {
+                "name": "new world",
+                "votes": 4
+            },
+            {
+                "name": "osu!",
+                "votes": 4
+            },
+            {
+                "name": "gta2",
+                "votes": 4
+            },
+            {
+                "name": "mario odyssey",
+                "votes": 4
+            },
+            {
+                "name": "gtav",
+                "votes": 4
+            },
+            {
+                "name": "pokemon white",
+                "votes": 4
+            },
+            {
+                "name": "rimworld",
+                "votes": 4
+            },
+            {
+                "name": "monopoly",
+                "votes": 4
+            },
+            {
+                "name": "battlefield",
+                "votes": 4
+            },
+            {
+                "name": "super mario galaxy",
+                "votes": 4
+            },
+            {
+                "name": "fallout 4",
+                "votes": 4
+            },
+            {
+                "name": "halo reach",
+                "votes": 4
+            },
+            {
+                "name": "geoguessr",
+                "votes": 4
+            },
+            {
+                "name": "nier: automata",
+                "votes": 4
+            },
+            {
+                "name": "eve",
+                "votes": 4
+            },
+            {
+                "name": "cs",
+                "votes": 4
+            },
+            {
+                "name": "genshin",
+                "votes": 4
+            },
+            {
+                "name": "underrail",
+                "votes": 4
+            },
+            {
+                "name": "steam",
+                "votes": 4
+            },
+            {
+                "name": "arena of valor",
+                "votes": 4
+            },
+            {
+                "name": "warframe",
+                "votes": 4
+            },
+            {
+                "name": "startcrfat",
+                "votes": 4
+            },
+            {
+                "name": "mother 3",
+                "votes": 4
+            },
+            {
+                "name": "devil may cry 5",
+                "votes": 4
+            },
+            {
+                "name": "final fantasy vii",
+                "votes": 4
+            },
+            {
+                "name": "god of war",
+                "votes": 4
+            },
+            {
+                "name": "animal crossing: new horizons",
+                "votes": 4
+            },
+            {
+                "name": "spelunky 2",
+                "votes": 4
+            },
+            {
+                "name": "stellaris",
+                "votes": 4
+            },
+            {
+                "name": "need for speed ii",
+                "votes": 4
+            },
+            {
+                "name": "halo infinite",
+                "votes": 4
+            },
+            {
+                "name": "rivals of aether",
+                "votes": 4
+            },
+            {
+                "name": "club penguin",
+                "votes": 4
+            },
+            {
+                "name": "super mario",
+                "votes": 4
+            },
+            {
+                "name": "c&c red alert 3",
+                "votes": 4
+            },
+            {
+                "name": "dungeons and dragons",
+                "votes": 4
+            },
+            {
+                "name": "doom 2016",
+                "votes": 4
+            },
+            {
+                "name": "elder scrolls online",
+                "votes": 4
+            },
+            {
+                "name": "it taks two",
+                "votes": 4
+            },
+            {
+                "name": "monster strike",
+                "votes": 4
+            },
+            {
+                "name": "dead cell",
+                "votes": 4
+            },
+            {
+                "name": "amongus",
+                "votes": 4
+            },
+            {
+                "name": "civilization ii",
+                "votes": 3
+            },
+            {
+                "name": "disco elysium",
+                "votes": 3
+            },
+            {
+                "name": "super smash bros 4",
+                "votes": 3
+            },
+            {
+                "name": "ac4",
+                "votes": 3
+            },
+            {
+                "name": "the world ends with you",
+                "votes": 3
+            },
+            {
+                "name": "bioshock",
+                "votes": 3
+            },
+            {
+                "name": "star fox 64",
+                "votes": 3
+            },
+            {
+                "name": "world of tanks",
+                "votes": 3
+            },
+            {
+                "name": "batman arkham knight",
+                "votes": 3
+            },
+            {
+                "name": "pokemon showdown",
+                "votes": 3
+            },
+            {
+                "name": "gta3",
+                "votes": 3
+            },
+            {
+                "name": "tibia",
+                "votes": 3
+            },
+            {
+                "name": "skyward sword",
+                "votes": 3
+            },
+            {
+                "name": "coc",
+                "votes": 3
+            },
+            {
+                "name": "pikmin 3",
+                "votes": 3
+            },
+            {
+                "name": "kirby",
+                "votes": 3
+            },
+            {
+                "name": "cookie clicker",
+                "votes": 3
+            },
+            {
+                "name": "cod",
+                "votes": 3
+            },
+            {
+                "name": "dragon ball fighterz",
+                "votes": 3
+            },
+            {
+                "name": "mhw",
+                "votes": 3
+            },
+            {
+                "name": "mario kart tour",
+                "votes": 3
+            },
+            {
+                "name": "pok\uff83\uff69mon",
+                "votes": 3
+            },
+            {
+                "name": "candy crush",
+                "votes": 3
+            },
+            {
+                "name": "ghost of tsushima",
+                "votes": 3
+            },
+            {
+                "name": "kartrider",
+                "votes": 3
+            },
+            {
+                "name": "borderlands 3",
+                "votes": 3
+            },
+            {
+                "name": "pac man",
+                "votes": 3
+            },
+            {
+                "name": "dishonored",
+                "votes": 3
+            },
+            {
+                "name": "the binding of isaac: rebirth",
+                "votes": 3
+            },
+            {
+                "name": "splatoon 2",
+                "votes": 3
+            },
+            {
+                "name": "need for speed iii: hot pursuit",
+                "votes": 3
+            },
+            {
+                "name": "project m",
+                "votes": 3
+            },
+            {
+                "name": "roller coaster 3",
+                "votes": 3
+            },
+            {
+                "name": "munchkin",
+                "votes": 3
+            },
+            {
+                "name": "the binding of isaac",
+                "votes": 3
+            },
+            {
+                "name": "rusty lake",
+                "votes": 3
+            },
+            {
+                "name": "maple story",
+                "votes": 3
+            },
+            {
+                "name": "planetarian",
+                "votes": 3
+            },
+            {
+                "name": "the battlecats",
+                "votes": 3
+            },
+            {
+                "name": "super mario 64",
+                "votes": 3
+            },
+            {
+                "name": "katamari damacy",
+                "votes": 2
+            },
+            {
+                "name": "valiant hearts",
+                "votes": 2
+            },
+            {
+                "name": "sonic mania",
+                "votes": 2
+            },
+            {
+                "name": "nfs underground",
+                "votes": 2
+            },
+            {
+                "name": "zero escape",
+                "votes": 2
+            },
+            {
+                "name": "nba 2k16",
+                "votes": 2
+            },
+            {
+                "name": "gta4",
+                "votes": 2
+            },
+            {
+                "name": "cats quest",
+                "votes": 2
+            },
+            {
+                "name": "twilight princess",
+                "votes": 2
+            },
+            {
+                "name": "cr",
+                "votes": 2
+            },
+            {
+                "name": "blackjack",
+                "votes": 2
+            },
+            {
+                "name": "nier automata",
+                "votes": 2
+            },
+            {
+                "name": "btd6",
+                "votes": 2
+            },
+            {
+                "name": "crab game",
+                "votes": 2
+            },
+            {
+                "name": "risk",
+                "votes": 2
+            },
+            {
+                "name": "smt",
+                "votes": 2
+            },
+            {
+                "name": "doom eternal",
+                "votes": 2
+            },
+            {
+                "name": "hearthstone",
+                "votes": 2
+            },
+            {
+                "name": "epic seven",
+                "votes": 2
+            },
+            {
+                "name": "fifa",
+                "votes": 2
+            },
+            {
+                "name": "arma 3",
+                "votes": 2
+            },
+            {
+                "name": "red dead redemption",
+                "votes": 2
+            },
+            {
+                "name": "deus ex human revolution",
+                "votes": 2
+            },
+            {
+                "name": "enter the gungeon",
+                "votes": 2
+            },
+            {
+                "name": "tic tac toe",
+                "votes": 2
+            },
+            {
+                "name": "dead by daylight",
+                "votes": 2
+            },
+            {
+                "name": "teamfight tactics",
+                "votes": 2
+            },
+            {
+                "name": "super smash bros. melee",
+                "votes": 2
+            },
+            {
+                "name": "assassin's creed ii",
+                "votes": 2
+            },
+            {
+                "name": "pokemon unite",
+                "votes": 2
+            },
+            {
+                "name": "pokemon emerald",
+                "votes": 2
+            },
+            {
+                "name": "super smash brothers ultimate",
+                "votes": 2
+            },
+            {
+                "name": "sekiro: shadows die twice",
+                "votes": 2
+            },
+            {
+                "name": "need for speed: high stakes",
+                "votes": 2
+            },
+            {
+                "name": "dishonored 2",
+                "votes": 2
+            },
+            {
+                "name": "pokemon hgss",
+                "votes": 2
+            },
+            {
+                "name": "team fortress 2",
+                "votes": 2
+            },
+            {
+                "name": "mw3",
+                "votes": 2
+            },
+            {
+                "name": "dark souls 3",
+                "votes": 2
+            },
+            {
+                "name": "xenoblade",
+                "votes": 2
+            },
+            {
+                "name": "battlefield 4",
+                "votes": 2
+            },
+            {
+                "name": "star realms",
+                "votes": 2
+            },
+            {
+                "name": "cave story",
+                "votes": 2
+            },
+            {
+                "name": "the legend of zelda",
+                "votes": 2
+            },
+            {
+                "name": "assassin's creed origins",
+                "votes": 2
+            },
+            {
+                "name": "warcraft 3",
+                "votes": 2
+            },
+            {
+                "name": "ocarina of time",
+                "votes": 2
+            },
+            {
+                "name": "super mario world",
+                "votes": 1
+            },
+            {
+                "name": "legend of zelda: skyward sword",
+                "votes": 1
+            },
+            {
+                "name": "dead cells",
+                "votes": 1
+            },
+            {
+                "name": "nba jam",
+                "votes": 1
+            },
+            {
+                "name": "pong",
+                "votes": 1
+            },
+            {
+                "name": "cod mw2",
+                "votes": 1
+            },
+            {
+                "name": "danganronpa",
+                "votes": 1
+            },
+            {
+                "name": "resident evil 4",
+                "votes": 1
+            },
+            {
+                "name": "call of duty warzone",
+                "votes": 1
+            },
+            {
+                "name": "bloons td6",
+                "votes": 1
+            },
+            {
+                "name": "zelda breath of the wild",
+                "votes": 1
+            },
+            {
+                "name": "majora's mask",
+                "votes": 1
+            },
+            {
+                "name": "plants vs zombies",
+                "votes": 1
+            },
+            {
+                "name": "starcraft 2",
+                "votes": 1
+            },
+            {
+                "name": "fall guys",
+                "votes": 1
+            },
+            {
+                "name": "bl3",
+                "votes": 1
+            },
+            {
+                "name": "poptropica",
+                "votes": 1
+            },
+            {
+                "name": "yugioh",
+                "votes": 1
+            },
+            {
+                "name": "f1",
+                "votes": 1
+            },
+            {
+                "name": "red alert 2",
+                "votes": 1
+            },
+            {
+                "name": "crab games",
+                "votes": 1
+            },
+            {
+                "name": "final fantasy 14",
+                "votes": 1
+            },
+            {
+                "name": "eternal return",
+                "votes": 1
+            },
+            {
+                "name": "eu4",
+                "votes": 1
+            },
+            {
+                "name": "risk of rain 2",
+                "votes": 1
+            },
+            {
+                "name": "battlefield 1",
+                "votes": 1
+            },
+            {
+                "name": "fire emblem: three houses",
+                "votes": 1
+            },
+            {
+                "name": "eve online",
+                "votes": 1
+            },
+            {
+                "name": "need for speed: porsche unleashed",
+                "votes": 1
+            },
+            {
+                "name": "wii sports",
+                "votes": 1
+            },
+            {
+                "name": "super smash bro",
+                "votes": 1
+            },
+            {
+                "name": "catan",
+                "votes": 1
+            },
+            {
+                "name": "civilization v",
+                "votes": 1
+            },
+            {
+                "name": "yakuza",
+                "votes": 1
+            },
+            {
+                "name": "honkai impact",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 118,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "movies",
+        "items": [
+            {
+                "name": "?",
+                "votes": 75
+            },
+            {
+                "name": "inception",
+                "votes": 41
+            },
+            {
+                "name": "interstellar",
+                "votes": 33
+            },
+            {
+                "name": "iron man",
+                "votes": 19
+            },
+            {
+                "name": "the dark knight",
+                "votes": 18
+            },
+            {
+                "name": "parasite",
+                "votes": 18
+            },
+            {
+                "name": "harry potter",
+                "votes": 17
+            },
+            {
+                "name": "avengers",
+                "votes": 17
+            },
+            {
+                "name": "the shawshank redemption",
+                "votes": 16
+            },
+            {
+                "name": "spirited away",
+                "votes": 15
+            },
+            {
+                "name": "the godfather",
+                "votes": 13
+            },
+            {
+                "name": "spider-man",
+                "votes": 12
+            },
+            {
+                "name": "toy story",
+                "votes": 12
+            },
+            {
+                "name": "forrest gump",
+                "votes": 12
+            },
+            {
+                "name": "the great gatsby",
+                "votes": 12
+            },
+            {
+                "name": "hachi: a dog's tale",
+                "votes": 11
+            },
+            {
+                "name": "shang chi",
+                "votes": 11
+            },
+            {
+                "name": "home alone",
+                "votes": 11
+            },
+            {
+                "name": "just mercy",
+                "votes": 10
+            },
+            {
+                "name": "green book",
+                "votes": 10
+            },
+            {
+                "name": "a silent voice",
+                "votes": 10
+            },
+            {
+                "name": "avengers endgame",
+                "votes": 10
+            },
+            {
+                "name": "spider man",
+                "votes": 10
+            },
+            {
+                "name": "spider-man homecoming",
+                "votes": 10
+            },
+            {
+                "name": "iron man 2",
+                "votes": 10
+            },
+            {
+                "name": "the lord of the rings",
+                "votes": 10
+            },
+            {
+                "name": "the maze runner",
+                "votes": 10
+            },
+            {
+                "name": "the lord of the rings: the return of the king",
+                "votes": 10
+            },
+            {
+                "name": "spiderman",
+                "votes": 9
+            },
+            {
+                "name": "spiderman 3",
+                "votes": 9
+            },
+            {
+                "name": "black panther",
+                "votes": 8
+            },
+            {
+                "name": "the prestige",
+                "votes": 8
+            },
+            {
+                "name": "the lion king",
+                "votes": 8
+            },
+            {
+                "name": "fantasia",
+                "votes": 8
+            },
+            {
+                "name": "megamind",
+                "votes": 8
+            },
+            {
+                "name": "elf",
+                "votes": 8
+            },
+            {
+                "name": "beautiful mind",
+                "votes": 8
+            },
+            {
+                "name": "avengers: infinity war",
+                "votes": 8
+            },
+            {
+                "name": "the lord of the rings: the fellowship of the ring",
+                "votes": 8
+            },
+            {
+                "name": "your name",
+                "votes": 7
+            },
+            {
+                "name": "inglourious basterds",
+                "votes": 7
+            },
+            {
+                "name": "get out",
+                "votes": 7
+            },
+            {
+                "name": "django unchained",
+                "votes": 7
+            },
+            {
+                "name": "goodfellas",
+                "votes": 6
+            },
+            {
+                "name": "pulp fiction",
+                "votes": 6
+            },
+            {
+                "name": "endgame",
+                "votes": 6
+            },
+            {
+                "name": "spiderman 2",
+                "votes": 6
+            },
+            {
+                "name": "romeo and juliet",
+                "votes": 6
+            },
+            {
+                "name": "great gatsby",
+                "votes": 6
+            },
+            {
+                "name": "iron man 1",
+                "votes": 6
+            },
+            {
+                "name": "the pursuit of happyness",
+                "votes": 6
+            },
+            {
+                "name": "the lord of the rings: the two towers",
+                "votes": 6
+            },
+            {
+                "name": "raiders of the lost ark",
+                "votes": 5
+            },
+            {
+                "name": "night of the counting of the years",
+                "votes": 5
+            },
+            {
+                "name": "avengers1",
+                "votes": 5
+            },
+            {
+                "name": "city of god",
+                "votes": 5
+            },
+            {
+                "name": "gladiator",
+                "votes": 5
+            },
+            {
+                "name": "3 idiots",
+                "votes": 5
+            },
+            {
+                "name": "crazy rich asians",
+                "votes": 5
+            },
+            {
+                "name": "catch me if you can",
+                "votes": 5
+            },
+            {
+                "name": "1917",
+                "votes": 5
+            },
+            {
+                "name": "harry potter 1",
+                "votes": 5
+            },
+            {
+                "name": "avengers infinity war",
+                "votes": 5
+            },
+            {
+                "name": "the godfather 2",
+                "votes": 5
+            },
+            {
+                "name": "whatever happened to baby jane",
+                "votes": 5
+            },
+            {
+                "name": "star wars v",
+                "votes": 5
+            },
+            {
+                "name": "spider-man 2",
+                "votes": 5
+            },
+            {
+                "name": "random movie 1",
+                "votes": 5
+            },
+            {
+                "name": "chronicles of narnia",
+                "votes": 5
+            },
+            {
+                "name": "shang-chi",
+                "votes": 5
+            },
+            {
+                "name": "boiler room",
+                "votes": 5
+            },
+            {
+                "name": "shaolin soccer",
+                "votes": 5
+            },
+            {
+                "name": "arcane",
+                "votes": 5
+            },
+            {
+                "name": "titanic",
+                "votes": 5
+            },
+            {
+                "name": "knives out",
+                "votes": 5
+            },
+            {
+                "name": "spy kids 2",
+                "votes": 5
+            },
+            {
+                "name": "spy kids",
+                "votes": 5
+            },
+            {
+                "name": "doraemon",
+                "votes": 5
+            },
+            {
+                "name": "in this corner of the world",
+                "votes": 5
+            },
+            {
+                "name": "revenge of the sith",
+                "votes": 5
+            },
+            {
+                "name": "captain america: civil war",
+                "votes": 5
+            },
+            {
+                "name": "spiderman: no way home",
+                "votes": 5
+            },
+            {
+                "name": "thor: ragnarok",
+                "votes": 5
+            },
+            {
+                "name": "star wars: episode 5",
+                "votes": 5
+            },
+            {
+                "name": "jurassic park",
+                "votes": 5
+            },
+            {
+                "name": "one flew over the cuckoo's nest",
+                "votes": 5
+            },
+            {
+                "name": "star wars: episode ii - attack of the clones",
+                "votes": 5
+            },
+            {
+                "name": "l\uff83\uff69on: the professional",
+                "votes": 5
+            },
+            {
+                "name": "hours",
+                "votes": 5
+            },
+            {
+                "name": "the twilight saga",
+                "votes": 5
+            },
+            {
+                "name": "terrorism and kebab",
+                "votes": 4
+            },
+            {
+                "name": "mrs. doubtfire",
+                "votes": 4
+            },
+            {
+                "name": "no country for old men",
+                "votes": 4
+            },
+            {
+                "name": "avengers2",
+                "votes": 4
+            },
+            {
+                "name": "apollo 13",
+                "votes": 4
+            },
+            {
+                "name": "creed 2",
+                "votes": 4
+            },
+            {
+                "name": "toy story 3",
+                "votes": 4
+            },
+            {
+                "name": "intersellar",
+                "votes": 4
+            },
+            {
+                "name": "godzilla vs kong",
+                "votes": 4
+            },
+            {
+                "name": "downfall",
+                "votes": 4
+            },
+            {
+                "name": "harry potter 3",
+                "votes": 4
+            },
+            {
+                "name": "hereditary",
+                "votes": 4
+            },
+            {
+                "name": "terminator 2",
+                "votes": 4
+            },
+            {
+                "name": "ma",
+                "votes": 4
+            },
+            {
+                "name": "the life of brian",
+                "votes": 4
+            },
+            {
+                "name": "toy story 2",
+                "votes": 4
+            },
+            {
+                "name": "iron man 3",
+                "votes": 4
+            },
+            {
+                "name": "kung fu panda",
+                "votes": 4
+            },
+            {
+                "name": "2",
+                "votes": 4
+            },
+            {
+                "name": "lord of the rings",
+                "votes": 4
+            },
+            {
+                "name": "hannibal",
+                "votes": 4
+            },
+            {
+                "name": "superman",
+                "votes": 4
+            },
+            {
+                "name": "god of cookery",
+                "votes": 4
+            },
+            {
+                "name": "coco",
+                "votes": 4
+            },
+            {
+                "name": "soul",
+                "votes": 4
+            },
+            {
+                "name": "you",
+                "votes": 4
+            },
+            {
+                "name": "roman holiday",
+                "votes": 4
+            },
+            {
+                "name": "rain man",
+                "votes": 4
+            },
+            {
+                "name": "notebook",
+                "votes": 4
+            },
+            {
+                "name": "spider-man: into the spider-verse",
+                "votes": 4
+            },
+            {
+                "name": "the hunger games",
+                "votes": 4
+            },
+            {
+                "name": "the silence of the lambs",
+                "votes": 4
+            },
+            {
+                "name": "the phantom menace",
+                "votes": 4
+            },
+            {
+                "name": "empire strikes back",
+                "votes": 4
+            },
+            {
+                "name": "dune",
+                "votes": 4
+            },
+            {
+                "name": "dodgeball",
+                "votes": 4
+            },
+            {
+                "name": "spiderman: far from home",
+                "votes": 4
+            },
+            {
+                "name": "the godfather part 2",
+                "votes": 4
+            },
+            {
+                "name": "the girl on the train",
+                "votes": 4
+            },
+            {
+                "name": "the truman show",
+                "votes": 4
+            },
+            {
+                "name": "star trek: first contact",
+                "votes": 4
+            },
+            {
+                "name": "the purge",
+                "votes": 4
+            },
+            {
+                "name": "airplane!",
+                "votes": 3
+            },
+            {
+                "name": "kes",
+                "votes": 3
+            },
+            {
+                "name": "hell or high water",
+                "votes": 3
+            },
+            {
+                "name": "avengers3",
+                "votes": 3
+            },
+            {
+                "name": "donny darko",
+                "votes": 3
+            },
+            {
+                "name": "castaway",
+                "votes": 3
+            },
+            {
+                "name": "the shining",
+                "votes": 3
+            },
+            {
+                "name": "shawshank redemption",
+                "votes": 3
+            },
+            {
+                "name": "the beauty inside",
+                "votes": 3
+            },
+            {
+                "name": "this is love",
+                "votes": 3
+            },
+            {
+                "name": "harry potter 5",
+                "votes": 3
+            },
+            {
+                "name": "avatar",
+                "votes": 3
+            },
+            {
+                "name": "kingsman",
+                "votes": 3
+            },
+            {
+                "name": "amadeus",
+                "votes": 3
+            },
+            {
+                "name": "the day of the doctor",
+                "votes": 3
+            },
+            {
+                "name": "iron man series",
+                "votes": 3
+            },
+            {
+                "name": "3",
+                "votes": 3
+            },
+            {
+                "name": "cabin in the woods",
+                "votes": 3
+            },
+            {
+                "name": "fight club",
+                "votes": 3
+            },
+            {
+                "name": "shangchi and the legend of the ten rings",
+                "votes": 3
+            },
+            {
+                "name": "money heist",
+                "votes": 3
+            },
+            {
+                "name": "frozen",
+                "votes": 3
+            },
+            {
+                "name": "citizen kane",
+                "votes": 3
+            },
+            {
+                "name": "ironman",
+                "votes": 3
+            },
+            {
+                "name": "kizumonogatari",
+                "votes": 3
+            },
+            {
+                "name": "how to train your dragon 2",
+                "votes": 3
+            },
+            {
+                "name": "spongebob",
+                "votes": 3
+            },
+            {
+                "name": "the death of stalin",
+                "votes": 3
+            },
+            {
+                "name": "new hope",
+                "votes": 3
+            },
+            {
+                "name": "batman vs. superman",
+                "votes": 3
+            },
+            {
+                "name": "dumb and dumber",
+                "votes": 3
+            },
+            {
+                "name": "spiderman: into the spiderverse",
+                "votes": 3
+            },
+            {
+                "name": "midnight sun",
+                "votes": 3
+            },
+            {
+                "name": "they shall not grow old",
+                "votes": 3
+            },
+            {
+                "name": "silent voice",
+                "votes": 3
+            },
+            {
+                "name": "the legend of 1900",
+                "votes": 3
+            },
+            {
+                "name": "lawrence of arabia",
+                "votes": 2
+            },
+            {
+                "name": "withnail and i",
+                "votes": 2
+            },
+            {
+                "name": "spider-man: homecoming",
+                "votes": 2
+            },
+            {
+                "name": "k3g",
+                "votes": 2
+            },
+            {
+                "name": "howl's moving castle",
+                "votes": 2
+            },
+            {
+                "name": "coach carter",
+                "votes": 2
+            },
+            {
+                "name": "demon slayer: mugen train",
+                "votes": 2
+            },
+            {
+                "name": "life of pi",
+                "votes": 2
+            },
+            {
+                "name": "raya",
+                "votes": 2
+            },
+            {
+                "name": "ff5",
+                "votes": 2
+            },
+            {
+                "name": "the amazing spiderman",
+                "votes": 2
+            },
+            {
+                "name": "paranormal activity",
+                "votes": 2
+            },
+            {
+                "name": "harry potter 6",
+                "votes": 2
+            },
+            {
+                "name": "cars",
+                "votes": 2
+            },
+            {
+                "name": "it follows",
+                "votes": 2
+            },
+            {
+                "name": "i am legend",
+                "votes": 2
+            },
+            {
+                "name": "spongebob squarepants movie",
+                "votes": 2
+            },
+            {
+                "name": "the avengers",
+                "votes": 2
+            },
+            {
+                "name": "karate kid (1984)",
+                "votes": 2
+            },
+            {
+                "name": "toy story 4",
+                "votes": 2
+            },
+            {
+                "name": "guardians of the galaxy",
+                "votes": 2
+            },
+            {
+                "name": "karate kid",
+                "votes": 2
+            },
+            {
+                "name": "the social network",
+                "votes": 2
+            },
+            {
+                "name": "4",
+                "votes": 2
+            },
+            {
+                "name": "infinity war",
+                "votes": 2
+            },
+            {
+                "name": "paul blart mall cop",
+                "votes": 2
+            },
+            {
+                "name": "it",
+                "votes": 2
+            },
+            {
+                "name": "the queen gambit",
+                "votes": 2
+            },
+            {
+                "name": "star wars",
+                "votes": 2
+            },
+            {
+                "name": "sound of music",
+                "votes": 2
+            },
+            {
+                "name": "the suicide squad",
+                "votes": 2
+            },
+            {
+                "name": "thor ragnarok",
+                "votes": 2
+            },
+            {
+                "name": "kung fu panda 2",
+                "votes": 2
+            },
+            {
+                "name": "tom and jerry",
+                "votes": 2
+            },
+            {
+                "name": "donnie darko",
+                "votes": 2
+            },
+            {
+                "name": "hidden figures",
+                "votes": 2
+            },
+            {
+                "name": "return of the jedi",
+                "votes": 2
+            },
+            {
+                "name": "avengers end game",
+                "votes": 2
+            },
+            {
+                "name": "superhero movie",
+                "votes": 2
+            },
+            {
+                "name": "seven pounds",
+                "votes": 2
+            },
+            {
+                "name": "captain america",
+                "votes": 2
+            },
+            {
+                "name": "star wars: episode 6",
+                "votes": 2
+            },
+            {
+                "name": "free guy",
+                "votes": 2
+            },
+            {
+                "name": "space jam 2: electric boogaloo",
+                "votes": 2
+            },
+            {
+                "name": "pacific rim",
+                "votes": 2
+            },
+            {
+                "name": "futurama: bender's big score",
+                "votes": 2
+            },
+            {
+                "name": "big time movie",
+                "votes": 2
+            },
+            {
+                "name": "infernal affairs",
+                "votes": 2
+            },
+            {
+                "name": "life pi",
+                "votes": 2
+            },
+            {
+                "name": "the breakfast club",
+                "votes": 2
+            },
+            {
+                "name": "trainspotting",
+                "votes": 1
+            },
+            {
+                "name": "yeh jeewani hai deewani",
+                "votes": 1
+            },
+            {
+                "name": "ironman1",
+                "votes": 1
+            },
+            {
+                "name": "castle in the sky",
+                "votes": 1
+            },
+            {
+                "name": "her",
+                "votes": 1
+            },
+            {
+                "name": "cj7",
+                "votes": 1
+            },
+            {
+                "name": "kung fu hustle",
+                "votes": 1
+            },
+            {
+                "name": "the eternals",
+                "votes": 1
+            },
+            {
+                "name": "ff6",
+                "votes": 1
+            },
+            {
+                "name": "the amazing spiderman 2",
+                "votes": 1
+            },
+            {
+                "name": "saw",
+                "votes": 1
+            },
+            {
+                "name": "harry potter 7",
+                "votes": 1
+            },
+            {
+                "name": "up",
+                "votes": 1
+            },
+            {
+                "name": "a quiet place",
+                "votes": 1
+            },
+            {
+                "name": "arrietty",
+                "votes": 1
+            },
+            {
+                "name": "a star is born",
+                "votes": 1
+            },
+            {
+                "name": "amores perros",
+                "votes": 1
+            },
+            {
+                "name": "my life is a joke",
+                "votes": 1
+            },
+            {
+                "name": "dead poets society",
+                "votes": 1
+            },
+            {
+                "name": "40 year old virgin",
+                "votes": 1
+            },
+            {
+                "name": "wolf of wall street",
+                "votes": 1
+            },
+            {
+                "name": "5",
+                "votes": 1
+            },
+            {
+                "name": "venom",
+                "votes": 1
+            },
+            {
+                "name": "inside out",
+                "votes": 1
+            },
+            {
+                "name": "training day",
+                "votes": 1
+            },
+            {
+                "name": "insidious",
+                "votes": 1
+            },
+            {
+                "name": "wall-e",
+                "votes": 1
+            },
+            {
+                "name": "godzilla vs. kong",
+                "votes": 1
+            },
+            {
+                "name": "100",
+                "votes": 1
+            },
+            {
+                "name": "weathering with you",
+                "votes": 1
+            },
+            {
+                "name": "hitman's bodyguard",
+                "votes": 1
+            },
+            {
+                "name": "john wick",
+                "votes": 1
+            },
+            {
+                "name": "phineas and ferb",
+                "votes": 1
+            },
+            {
+                "name": "casino",
+                "votes": 1
+            },
+            {
+                "name": "the martian",
+                "votes": 1
+            },
+            {
+                "name": "avengers: endgame",
+                "votes": 1
+            },
+            {
+                "name": "rogue one",
+                "votes": 1
+            },
+            {
+                "name": "rush hour 2",
+                "votes": 1
+            },
+            {
+                "name": "instant family",
+                "votes": 1
+            },
+            {
+                "name": "shrek 2",
+                "votes": 1
+            },
+            {
+                "name": "seven",
+                "votes": 1
+            },
+            {
+                "name": "the conjuring",
+                "votes": 1
+            },
+            {
+                "name": "ready player one",
+                "votes": 1
+            },
+            {
+                "name": "miracle in cell no. 7",
+                "votes": 1
+            },
+            {
+                "name": "monty python and the holy grail",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 86,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "pink floyd songs",
+        "items": [
+            {
+                "name": "?",
+                "votes": 165
+            },
+            {
+                "name": "comfortably numb",
+                "votes": 126
+            },
+            {
+                "name": "time",
+                "votes": 93
+            },
+            {
+                "name": "wish you were here",
+                "votes": 70
+            },
+            {
+                "name": "shine on you crazy diamond",
+                "votes": 58
+            },
+            {
+                "name": "another brick in the wall",
+                "votes": 29
+            },
+            {
+                "name": "money",
+                "votes": 27
+            },
+            {
+                "name": "gunner's dream",
+                "votes": 20
+            },
+            {
+                "name": "",
+                "votes": 15
+            },
+            {
+                "name": "the final cut",
+                "votes": 14
+            },
+            {
+                "name": "learning to fly",
+                "votes": 14
+            },
+            {
+                "name": "paranoid eyes",
+                "votes": 12
+            },
+            {
+                "name": "brain damage",
+                "votes": 12
+            },
+            {
+                "name": "us and them",
+                "votes": 10
+            },
+            {
+                "name": "echoes",
+                "votes": 9
+            },
+            {
+                "name": "stop",
+                "votes": 8
+            },
+            {
+                "name": "dogs",
+                "votes": 8
+            },
+            {
+                "name": "fearless",
+                "votes": 8
+            },
+            {
+                "name": "comfortable numb",
+                "votes": 8
+            },
+            {
+                "name": "hey you",
+                "votes": 7
+            },
+            {
+                "name": "seamus",
+                "votes": 6
+            },
+            {
+                "name": "pigs(three different ones)",
+                "votes": 6
+            },
+            {
+                "name": "high hopes",
+                "votes": 6
+            },
+            {
+                "name": "in the flesh?",
+                "votes": 5
+            },
+            {
+                "name": "round and around",
+                "votes": 5
+            },
+            {
+                "name": "too young to know what this is",
+                "votes": 5
+            },
+            {
+                "name": "several species of small furry animals gathered together in a cave and grooving with a pict",
+                "votes": 5
+            },
+            {
+                "name": "easy on me",
+                "votes": 5
+            },
+            {
+                "name": "i",
+                "votes": 5
+            },
+            {
+                "name": "see emily play",
+                "votes": 5
+            },
+            {
+                "name": "mother",
+                "votes": 4
+            },
+            {
+                "name": "outside the wall",
+                "votes": 4
+            },
+            {
+                "name": "two sun in the sunset",
+                "votes": 4
+            },
+            {
+                "name": "echoes(live at pompeii)",
+                "votes": 4
+            },
+            {
+                "name": "i love rock and roll",
+                "votes": 4
+            },
+            {
+                "name": "chasing pavements",
+                "votes": 4
+            },
+            {
+                "name": "us & them",
+                "votes": 4
+            },
+            {
+                "name": "don't",
+                "votes": 4
+            },
+            {
+                "name": "pigs (three different ones)",
+                "votes": 3
+            },
+            {
+                "name": "breathe (in the air)",
+                "votes": 3
+            },
+            {
+                "name": "obscured by clouds",
+                "votes": 3
+            },
+            {
+                "name": "shine crazy on you diamond",
+                "votes": 3
+            },
+            {
+                "name": "i wanna hold your hand",
+                "votes": 3
+            },
+            {
+                "name": "hello",
+                "votes": 3
+            },
+            {
+                "name": "pigs",
+                "votes": 3
+            },
+            {
+                "name": "know",
+                "votes": 3
+            },
+            {
+                "name": "have a cigar",
+                "votes": 3
+            },
+            {
+                "name": "comfrotably numb",
+                "votes": 3
+            },
+            {
+                "name": "another brick in the wall pt.2",
+                "votes": 2
+            },
+            {
+                "name": "welcome to the machine",
+                "votes": 2
+            },
+            {
+                "name": "pow r. toc h.",
+                "votes": 2
+            },
+            {
+                "name": "don't stop believin",
+                "votes": 2
+            },
+            {
+                "name": "cut throat",
+                "votes": 2
+            },
+            {
+                "name": "goodbye blue sky",
+                "votes": 2
+            },
+            {
+                "name": "astronomy domine",
+                "votes": 2
+            },
+            {
+                "name": "eclipse",
+                "votes": 2
+            },
+            {
+                "name": "any",
+                "votes": 2
+            },
+            {
+                "name": "marooned",
+                "votes": 2
+            },
+            {
+                "name": "sheep",
+                "votes": 2
+            },
+            {
+                "name": "biding my time",
+                "votes": 2
+            },
+            {
+                "name": "echoes (live from pompeii)",
+                "votes": 1
+            },
+            {
+                "name": "another brick in the wall part ii",
+                "votes": 1
+            },
+            {
+                "name": "julia dream",
+                "votes": 1
+            },
+            {
+                "name": "back in black",
+                "votes": 1
+            },
+            {
+                "name": "water under the bridge",
+                "votes": 1
+            },
+            {
+                "name": "sorry",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 58,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "programming languages",
+        "items": [
+            {
+                "name": "java",
+                "votes": 514
+            },
+            {
+                "name": "python",
+                "votes": 486
+            },
+            {
+                "name": "javascript",
+                "votes": 316
+            },
+            {
+                "name": "c",
+                "votes": 132
+            },
+            {
+                "name": "c++",
+                "votes": 117
+            },
+            {
+                "name": "mips",
+                "votes": 52
+            },
+            {
+                "name": "ocaml",
+                "votes": 51
+            },
+            {
+                "name": "c#",
+                "votes": 31
+            },
+            {
+                "name": "r",
+                "votes": 22
+            },
+            {
+                "name": "ruby",
+                "votes": 21
+            },
+            {
+                "name": "swift",
+                "votes": 18
+            },
+            {
+                "name": "typescript",
+                "votes": 14
+            },
+            {
+                "name": "sql",
+                "votes": 13
+            },
+            {
+                "name": "kotlin",
+                "votes": 10
+            },
+            {
+                "name": "matlab",
+                "votes": 10
+            },
+            {
+                "name": "haskell",
+                "votes": 9
+            },
+            {
+                "name": "lolcode",
+                "votes": 8
+            },
+            {
+                "name": "lua",
+                "votes": 7
+            },
+            {
+                "name": "php",
+                "votes": 7
+            },
+            {
+                "name": "react",
+                "votes": 7
+            },
+            {
+                "name": "scratch",
+                "votes": 6
+            },
+            {
+                "name": "rust",
+                "votes": 5
+            },
+            {
+                "name": "go",
+                "votes": 5
+            },
+            {
+                "name": "fortran",
+                "votes": 5
+            },
+            {
+                "name": "brainf*ck",
+                "votes": 5
+            },
+            {
+                "name": "brainfsck",
+                "votes": 5
+            },
+            {
+                "name": "scheme",
+                "votes": 4
+            },
+            {
+                "name": "pythong",
+                "votes": 4
+            },
+            {
+                "name": "",
+                "votes": 3
+            },
+            {
+                "name": "whitespace",
+                "votes": 3
+            },
+            {
+                "name": "javacript",
+                "votes": 3
+            },
+            {
+                "name": "c/c++",
+                "votes": 3
+            },
+            {
+                "name": "scala",
+                "votes": 3
+            },
+            {
+                "name": "lisp",
+                "votes": 3
+            },
+            {
+                "name": "shell",
+                "votes": 3
+            },
+            {
+                "name": "javascrit",
+                "votes": 3
+            },
+            {
+                "name": "ror",
+                "votes": 2
+            },
+            {
+                "name": "stack overflow",
+                "votes": 2
+            },
+            {
+                "name": "javascipt",
+                "votes": 2
+            },
+            {
+                "name": "d-flat major",
+                "votes": 2
+            },
+            {
+                "name": "angular",
+                "votes": 2
+            },
+            {
+                "name": "english",
+                "votes": 2
+            },
+            {
+                "name": "sml",
+                "votes": 2
+            },
+            {
+                "name": "dart",
+                "votes": 2
+            },
+            {
+                "name": "chicken",
+                "votes": 2
+            },
+            {
+                "name": "rython",
+                "votes": 2
+            },
+            {
+                "name": "holyc",
+                "votes": 2
+            },
+            {
+                "name": "nix",
+                "votes": 2
+            },
+            {
+                "name": "solidity",
+                "votes": 1
+            },
+            {
+                "name": "f",
+                "votes": 1
+            },
+            {
+                "name": "visual basic",
+                "votes": 1
+            },
+            {
+                "name": "perl",
+                "votes": 1
+            },
+            {
+                "name": "latex",
+                "votes": 1
+            },
+            {
+                "name": "standard ml of new jersey",
+                "votes": 1
+            },
+            {
+                "name": "vue",
+                "votes": 1
+            },
+            {
+                "name": "chinese",
+                "votes": 1
+            },
+            {
+                "name": "?",
+                "votes": 1
+            },
+            {
+                "name": "mip",
+                "votes": 1
+            },
+            {
+                "name": "assmebly",
+                "votes": 1
+            },
+            {
+                "name": "c+",
+                "votes": 1
+            },
+            {
+                "name": "js",
+                "votes": 1
+            },
+            {
+                "name": "golfscript",
+                "votes": 1
+            },
+            {
+                "name": "fish",
+                "votes": 1
+            },
+            {
+                "name": "cobol",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 131,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "professional sports teams",
+        "items": [
+            {
+                "name": "?",
+                "votes": 81
+            },
+            {
+                "name": "new york yankees",
+                "votes": 57
+            },
+            {
+                "name": "nets",
+                "votes": 47
+            },
+            {
+                "name": "new york giants",
+                "votes": 42
+            },
+            {
+                "name": "lakers",
+                "votes": 42
+            },
+            {
+                "name": "knicks",
+                "votes": 37
+            },
+            {
+                "name": "new york knicks",
+                "votes": 35
+            },
+            {
+                "name": "yankees",
+                "votes": 32
+            },
+            {
+                "name": "giants",
+                "votes": 28
+            },
+            {
+                "name": "golden state warriors",
+                "votes": 25
+            },
+            {
+                "name": "new york jets",
+                "votes": 25
+            },
+            {
+                "name": "new york mets",
+                "votes": 19
+            },
+            {
+                "name": "new york nets",
+                "votes": 18
+            },
+            {
+                "name": "",
+                "votes": 15
+            },
+            {
+                "name": "edg",
+                "votes": 11
+            },
+            {
+                "name": "toronto blue jays",
+                "votes": 11
+            },
+            {
+                "name": "jets",
+                "votes": 11
+            },
+            {
+                "name": "warriors",
+                "votes": 11
+            },
+            {
+                "name": "mets",
+                "votes": 10
+            },
+            {
+                "name": "kansas city chiefs",
+                "votes": 10
+            },
+            {
+                "name": "los angeles lakers",
+                "votes": 9
+            },
+            {
+                "name": "new england patriots",
+                "votes": 9
+            },
+            {
+                "name": "chelsea",
+                "votes": 9
+            },
+            {
+                "name": "patriots",
+                "votes": 9
+            },
+            {
+                "name": "skt t1",
+                "votes": 8
+            },
+            {
+                "name": "manchester united",
+                "votes": 8
+            },
+            {
+                "name": "celtics",
+                "votes": 8
+            },
+            {
+                "name": "los angeles rams",
+                "votes": 7
+            },
+            {
+                "name": "brooklyn nets",
+                "votes": 7
+            },
+            {
+                "name": "hornets",
+                "votes": 7
+            },
+            {
+                "name": "new york islanders",
+                "votes": 6
+            },
+            {
+                "name": "ny giants",
+                "votes": 6
+            },
+            {
+                "name": "rng",
+                "votes": 6
+            },
+            {
+                "name": "new york rangers",
+                "votes": 6
+            },
+            {
+                "name": "boston red sox",
+                "votes": 6
+            },
+            {
+                "name": "steelers",
+                "votes": 6
+            },
+            {
+                "name": "bills",
+                "votes": 6
+            },
+            {
+                "name": "sheffield united",
+                "votes": 5
+            },
+            {
+                "name": "philadelphia 76ers",
+                "votes": 5
+            },
+            {
+                "name": "chelsea f.c.",
+                "votes": 5
+            },
+            {
+                "name": "tsm",
+                "votes": 5
+            },
+            {
+                "name": "tottenham hotspurs",
+                "votes": 5
+            },
+            {
+                "name": "barcelona",
+                "votes": 5
+            },
+            {
+                "name": "chicago bulls",
+                "votes": 5
+            },
+            {
+                "name": "stony brook seawolves",
+                "votes": 5
+            },
+            {
+                "name": "minnesota vikings",
+                "votes": 5
+            },
+            {
+                "name": "houston rockets",
+                "votes": 5
+            },
+            {
+                "name": "blg",
+                "votes": 5
+            },
+            {
+                "name": "atlanta braves",
+                "votes": 5
+            },
+            {
+                "name": "fc barcelona",
+                "votes": 5
+            },
+            {
+                "name": "arsenal",
+                "votes": 5
+            },
+            {
+                "name": "packers",
+                "votes": 5
+            },
+            {
+                "name": "toronto raptors",
+                "votes": 5
+            },
+            {
+                "name": "hibernian fc",
+                "votes": 4
+            },
+            {
+                "name": "new york city f.c.",
+                "votes": 4
+            },
+            {
+                "name": "ny knicks",
+                "votes": 4
+            },
+            {
+                "name": "new orleans saints",
+                "votes": 4
+            },
+            {
+                "name": "green bay packers",
+                "votes": 4
+            },
+            {
+                "name": "reno aces",
+                "votes": 4
+            },
+            {
+                "name": "bulls",
+                "votes": 4
+            },
+            {
+                "name": "paris saint-germain",
+                "votes": 4
+            },
+            {
+                "name": "psg",
+                "votes": 4
+            },
+            {
+                "name": "real madrid",
+                "votes": 4
+            },
+            {
+                "name": "seattle mariners",
+                "votes": 4
+            },
+            {
+                "name": "baltimore ravens",
+                "votes": 4
+            },
+            {
+                "name": "bucks",
+                "votes": 4
+            },
+            {
+                "name": "west ham united",
+                "votes": 4
+            },
+            {
+                "name": "la rams",
+                "votes": 4
+            },
+            {
+                "name": "spurs",
+                "votes": 4
+            },
+            {
+                "name": "al ahly sc",
+                "votes": 3
+            },
+            {
+                "name": "la galaxy",
+                "votes": 3
+            },
+            {
+                "name": "ny yankees",
+                "votes": 3
+            },
+            {
+                "name": "g2",
+                "votes": 3
+            },
+            {
+                "name": "fpx",
+                "votes": 3
+            },
+            {
+                "name": "ig",
+                "votes": 3
+            },
+            {
+                "name": "calgary flames",
+                "votes": 3
+            },
+            {
+                "name": "toranto raptors",
+                "votes": 3
+            },
+            {
+                "name": "chicago bears",
+                "votes": 3
+            },
+            {
+                "name": "liverpool",
+                "votes": 3
+            },
+            {
+                "name": "bc lions",
+                "votes": 3
+            },
+            {
+                "name": "fc bayern munich",
+                "votes": 3
+            },
+            {
+                "name": "islanders",
+                "votes": 3
+            },
+            {
+                "name": "49ers",
+                "votes": 3
+            },
+            {
+                "name": "angels",
+                "votes": 3
+            },
+            {
+                "name": "alabama crimson tide",
+                "votes": 3
+            },
+            {
+                "name": "brewers",
+                "votes": 3
+            },
+            {
+                "name": "czech republic national football team",
+                "votes": 3
+            },
+            {
+                "name": "seahawks",
+                "votes": 3
+            },
+            {
+                "name": "sen",
+                "votes": 3
+            },
+            {
+                "name": "dallas stars",
+                "votes": 2
+            },
+            {
+                "name": "ny cosmos",
+                "votes": 2
+            },
+            {
+                "name": "phoenix mercury",
+                "votes": 2
+            },
+            {
+                "name": "seattle seahawks",
+                "votes": 2
+            },
+            {
+                "name": "we",
+                "votes": 2
+            },
+            {
+                "name": "san diego padres",
+                "votes": 2
+            },
+            {
+                "name": "milwaukee bucks",
+                "votes": 2
+            },
+            {
+                "name": "philadelphia eagles",
+                "votes": 2
+            },
+            {
+                "name": "phoenix suns",
+                "votes": 2
+            },
+            {
+                "name": "new jersey devils",
+                "votes": 2
+            },
+            {
+                "name": "boston red socks",
+                "votes": 2
+            },
+            {
+                "name": "wolves",
+                "votes": 2
+            },
+            {
+                "name": "atlanta hawks",
+                "votes": 2
+            },
+            {
+                "name": "cincinati reds",
+                "votes": 2
+            },
+            {
+                "name": "rangers",
+                "votes": 2
+            },
+            {
+                "name": "celtic",
+                "votes": 2
+            },
+            {
+                "name": "thunder",
+                "votes": 2
+            },
+            {
+                "name": "boston celtics",
+                "votes": 2
+            },
+            {
+                "name": "oregon ducks",
+                "votes": 2
+            },
+            {
+                "name": "united states national football team",
+                "votes": 2
+            },
+            {
+                "name": "titans",
+                "votes": 2
+            },
+            {
+                "name": "fnc",
+                "votes": 2
+            },
+            {
+                "name": "texas rangers",
+                "votes": 1
+            },
+            {
+                "name": "fc union berlin",
+                "votes": 1
+            },
+            {
+                "name": "chicago sky",
+                "votes": 1
+            },
+            {
+                "name": "tl",
+                "votes": 1
+            },
+            {
+                "name": "los angelos clippers",
+                "votes": 1
+            },
+            {
+                "name": "dallas cowboys",
+                "votes": 1
+            },
+            {
+                "name": "manchester city",
+                "votes": 1
+            },
+            {
+                "name": "colorado rockies",
+                "votes": 1
+            },
+            {
+                "name": "man city",
+                "votes": 1
+            },
+            {
+                "name": "goldent states warriors",
+                "votes": 1
+            },
+            {
+                "name": "bayern munich",
+                "votes": 1
+            },
+            {
+                "name": "kings",
+                "votes": 1
+            },
+            {
+                "name": "georgia bulldogs",
+                "votes": 1
+            },
+            {
+                "name": "rams",
+                "votes": 1
+            },
+            {
+                "name": "navi",
+                "votes": 1
+            },
+            {
+                "name": "buccaneers",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 65,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    },
+    {
+        "name": "tv shows",
+        "items": [
+            {
+                "name": "arcane",
+                "votes": 78
+            },
+            {
+                "name": "?",
+                "votes": 77
+            },
+            {
+                "name": "breaking bad",
+                "votes": 72
+            },
+            {
+                "name": "the office",
+                "votes": 63
+            },
+            {
+                "name": "friends",
+                "votes": 45
+            },
+            {
+                "name": "squid game",
+                "votes": 37
+            },
+            {
+                "name": "avatar",
+                "votes": 30
+            },
+            {
+                "name": "avatar: the last airbender",
+                "votes": 21
+            },
+            {
+                "name": "shark tank",
+                "votes": 20
+            },
+            {
+                "name": "rick and morty",
+                "votes": 19
+            },
+            {
+                "name": "the sopranos",
+                "votes": 18
+            },
+            {
+                "name": "alice in borderland",
+                "votes": 15
+            },
+            {
+                "name": "community",
+                "votes": 15
+            },
+            {
+                "name": "game of thrones",
+                "votes": 14
+            },
+            {
+                "name": "naruto",
+                "votes": 14
+            },
+            {
+                "name": "curb your enthusiasm",
+                "votes": 14
+            },
+            {
+                "name": "money heist",
+                "votes": 14
+            },
+            {
+                "name": "south park",
+                "votes": 13
+            },
+            {
+                "name": "the big bang theory",
+                "votes": 12
+            },
+            {
+                "name": "bojack horseman",
+                "votes": 12
+            },
+            {
+                "name": "attack on titan",
+                "votes": 11
+            },
+            {
+                "name": "sherlock",
+                "votes": 11
+            },
+            {
+                "name": "cosmos",
+                "votes": 10
+            },
+            {
+                "name": "you",
+                "votes": 10
+            },
+            {
+                "name": "tom and jerry",
+                "votes": 10
+            },
+            {
+                "name": "one piece",
+                "votes": 10
+            },
+            {
+                "name": "spongebob",
+                "votes": 9
+            },
+            {
+                "name": "mob psycho 100",
+                "votes": 9
+            },
+            {
+                "name": "young justice",
+                "votes": 9
+            },
+            {
+                "name": "spongebob squarepants",
+                "votes": 9
+            },
+            {
+                "name": "lucifer",
+                "votes": 9
+            },
+            {
+                "name": "criminal minds",
+                "votes": 9
+            },
+            {
+                "name": "the flash",
+                "votes": 9
+            },
+            {
+                "name": "witcher",
+                "votes": 9
+            },
+            {
+                "name": "daredevil",
+                "votes": 9
+            },
+            {
+                "name": "orange is the new black",
+                "votes": 9
+            },
+            {
+                "name": "doctor who",
+                "votes": 8
+            },
+            {
+                "name": "fullmetal alchemist brotherhood",
+                "votes": 8
+            },
+            {
+                "name": "prison break",
+                "votes": 8
+            },
+            {
+                "name": "better call saul",
+                "votes": 8
+            },
+            {
+                "name": "sao",
+                "votes": 8
+            },
+            {
+                "name": "house",
+                "votes": 8
+            },
+            {
+                "name": "ozark",
+                "votes": 8
+            },
+            {
+                "name": "narcos",
+                "votes": 8
+            },
+            {
+                "name": "impractical jokers",
+                "votes": 8
+            },
+            {
+                "name": "family guy",
+                "votes": 8
+            },
+            {
+                "name": "dexter",
+                "votes": 8
+            },
+            {
+                "name": "star trek",
+                "votes": 7
+            },
+            {
+                "name": "how i met your mother",
+                "votes": 7
+            },
+            {
+                "name": "the mandalorian",
+                "votes": 7
+            },
+            {
+                "name": "code geass",
+                "votes": 6
+            },
+            {
+                "name": "peaky blinders",
+                "votes": 6
+            },
+            {
+                "name": "black mirror",
+                "votes": 6
+            },
+            {
+                "name": "behind her eyes",
+                "votes": 6
+            },
+            {
+                "name": "hannibal",
+                "votes": 6
+            },
+            {
+                "name": "gintama",
+                "votes": 5
+            },
+            {
+                "name": "fmab",
+                "votes": 5
+            },
+            {
+                "name": "anohana",
+                "votes": 5
+            },
+            {
+                "name": "fate/zero",
+                "votes": 5
+            },
+            {
+                "name": "dynasty",
+                "votes": 5
+            },
+            {
+                "name": "the walking dead",
+                "votes": 5
+            },
+            {
+                "name": "space dandy",
+                "votes": 5
+            },
+            {
+                "name": "big bang",
+                "votes": 5
+            },
+            {
+                "name": "futurama",
+                "votes": 5
+            },
+            {
+                "name": "yes prime minister",
+                "votes": 5
+            },
+            {
+                "name": "inside job",
+                "votes": 5
+            },
+            {
+                "name": "the irregular at magic high school",
+                "votes": 5
+            },
+            {
+                "name": "it's always sunny in philidelphia",
+                "votes": 5
+            },
+            {
+                "name": "star wars: the clone wars",
+                "votes": 5
+            },
+            {
+                "name": "casa de papel",
+                "votes": 5
+            },
+            {
+                "name": "bungou stray dogs",
+                "votes": 5
+            },
+            {
+                "name": "person of interest",
+                "votes": 5
+            },
+            {
+                "name": "star wars the clone wars",
+                "votes": 5
+            },
+            {
+                "name": "code lyoko",
+                "votes": 5
+            },
+            {
+                "name": "utopia",
+                "votes": 4
+            },
+            {
+                "name": "avatar the last airbender",
+                "votes": 4
+            },
+            {
+                "name": "lupin",
+                "votes": 4
+            },
+            {
+                "name": "mad men",
+                "votes": 4
+            },
+            {
+                "name": "legend of korra",
+                "votes": 4
+            },
+            {
+                "name": "two and a half men",
+                "votes": 4
+            },
+            {
+                "name": "k-on",
+                "votes": 4
+            },
+            {
+                "name": "the rookie",
+                "votes": 4
+            },
+            {
+                "name": "schitt's creek",
+                "votes": 4
+            },
+            {
+                "name": "courage the cowardly dog",
+                "votes": 4
+            },
+            {
+                "name": "jeopardy",
+                "votes": 4
+            },
+            {
+                "name": "crash landing on you",
+                "votes": 4
+            },
+            {
+                "name": "arcane. squid game",
+                "votes": 4
+            },
+            {
+                "name": "power rangers jungle fury",
+                "votes": 4
+            },
+            {
+                "name": "modern family",
+                "votes": 4
+            },
+            {
+                "name": "demon slayer",
+                "votes": 4
+            },
+            {
+                "name": "everybody hates chris",
+                "votes": 4
+            },
+            {
+                "name": "kaguya-sama: love is war",
+                "votes": 4
+            },
+            {
+                "name": "mandalorian",
+                "votes": 4
+            },
+            {
+                "name": "busted",
+                "votes": 4
+            },
+            {
+                "name": "the wire",
+                "votes": 4
+            },
+            {
+                "name": "baccano",
+                "votes": 4
+            },
+            {
+                "name": "the originals",
+                "votes": 4
+            },
+            {
+                "name": "the mandilorian",
+                "votes": 4
+            },
+            {
+                "name": "american dad",
+                "votes": 4
+            },
+            {
+                "name": "seinfeld",
+                "votes": 4
+            },
+            {
+                "name": "shameless",
+                "votes": 4
+            },
+            {
+                "name": "uma musume: pretty derby",
+                "votes": 4
+            },
+            {
+                "name": "vagabond",
+                "votes": 4
+            },
+            {
+                "name": "all american",
+                "votes": 4
+            },
+            {
+                "name": "stranger things",
+                "votes": 4
+            },
+            {
+                "name": "parasyte",
+                "votes": 3
+            },
+            {
+                "name": "atlanta",
+                "votes": 3
+            },
+            {
+                "name": "the daily show",
+                "votes": 3
+            },
+            {
+                "name": "arrested development",
+                "votes": 3
+            },
+            {
+                "name": "regular show",
+                "votes": 3
+            },
+            {
+                "name": "how to catch a murderer",
+                "votes": 3
+            },
+            {
+                "name": "full metal alchemist brotherhood",
+                "votes": 3
+            },
+            {
+                "name": "the amazing race",
+                "votes": 3
+            },
+            {
+                "name": "bob's burger",
+                "votes": 3
+            },
+            {
+                "name": "9-1-1",
+                "votes": 3
+            },
+            {
+                "name": "the grand tour",
+                "votes": 3
+            },
+            {
+                "name": "house md",
+                "votes": 3
+            },
+            {
+                "name": "mr. robot",
+                "votes": 3
+            },
+            {
+                "name": "power rangers mystic force",
+                "votes": 3
+            },
+            {
+                "name": "archer",
+                "votes": 3
+            },
+            {
+                "name": "drake and josh",
+                "votes": 3
+            },
+            {
+                "name": "invincible",
+                "votes": 3
+            },
+            {
+                "name": "loki",
+                "votes": 3
+            },
+            {
+                "name": "love o2o",
+                "votes": 3
+            },
+            {
+                "name": "the blacklist",
+                "votes": 3
+            },
+            {
+                "name": "30 rock",
+                "votes": 3
+            },
+            {
+                "name": "justice league unlimited",
+                "votes": 3
+            },
+            {
+                "name": "hunter x hunter",
+                "votes": 3
+            },
+            {
+                "name": "suits",
+                "votes": 3
+            },
+            {
+                "name": "vampire diaries",
+                "votes": 3
+            },
+            {
+                "name": "the witcher",
+                "votes": 3
+            },
+            {
+                "name": "joe pera talks with you",
+                "votes": 3
+            },
+            {
+                "name": "yellowstone",
+                "votes": 3
+            },
+            {
+                "name": "the secret life of my secretary",
+                "votes": 3
+            },
+            {
+                "name": "elite",
+                "votes": 3
+            },
+            {
+                "name": "steins gate",
+                "votes": 2
+            },
+            {
+                "name": "inside no 9",
+                "votes": 2
+            },
+            {
+                "name": "fullmetal alchemist",
+                "votes": 2
+            },
+            {
+                "name": "burn notice",
+                "votes": 2
+            },
+            {
+                "name": "adventure time",
+                "votes": 2
+            },
+            {
+                "name": "death note",
+                "votes": 2
+            },
+            {
+                "name": "cowboy bebop",
+                "votes": 2
+            },
+            {
+                "name": "promised neverland (1st season only)",
+                "votes": 2
+            },
+            {
+                "name": "new girl",
+                "votes": 2
+            },
+            {
+                "name": "how to get away with murder",
+                "votes": 2
+            },
+            {
+                "name": "sesame street",
+                "votes": 2
+            },
+            {
+                "name": "the expanse",
+                "votes": 2
+            },
+            {
+                "name": "hunterxhunter",
+                "votes": 2
+            },
+            {
+                "name": "unsolved mysteries",
+                "votes": 2
+            },
+            {
+                "name": "green arrow",
+                "votes": 2
+            },
+            {
+                "name": "brooklyn nine nine",
+                "votes": 2
+            },
+            {
+                "name": "simpsons",
+                "votes": 2
+            },
+            {
+                "name": "power rangers rpm",
+                "votes": 2
+            },
+            {
+                "name": "the 100",
+                "votes": 2
+            },
+            {
+                "name": "the queen gambit",
+                "votes": 2
+            },
+            {
+                "name": "sex education",
+                "votes": 2
+            },
+            {
+                "name": "jujutsu kaisen",
+                "votes": 2
+            },
+            {
+                "name": "law and order",
+                "votes": 2
+            },
+            {
+                "name": "the king's avatar",
+                "votes": 2
+            },
+            {
+                "name": "stars align",
+                "votes": 2
+            },
+            {
+                "name": "agents of shield",
+                "votes": 2
+            },
+            {
+                "name": "bodyguard",
+                "votes": 2
+            },
+            {
+                "name": "monogatari",
+                "votes": 2
+            },
+            {
+                "name": "arrow",
+                "votes": 2
+            },
+            {
+                "name": "star wars rebels",
+                "votes": 2
+            },
+            {
+                "name": "it's always sunny in philadelphia",
+                "votes": 2
+            },
+            {
+                "name": "invader zim",
+                "votes": 2
+            },
+            {
+                "name": "big bang theory",
+                "votes": 2
+            },
+            {
+                "name": "jojo's bizzare adventure",
+                "votes": 2
+            },
+            {
+                "name": "gilmore girls",
+                "votes": 2
+            },
+            {
+                "name": "in the dark",
+                "votes": 2
+            },
+            {
+                "name": "zombie land saga",
+                "votes": 2
+            },
+            {
+                "name": "king's avatar",
+                "votes": 2
+            },
+            {
+                "name": "chicago fire",
+                "votes": 2
+            },
+            {
+                "name": "love 020",
+                "votes": 2
+            },
+            {
+                "name": "family feud",
+                "votes": 2
+            },
+            {
+                "name": "mr robot",
+                "votes": 1
+            },
+            {
+                "name": "how it's made",
+                "votes": 1
+            },
+            {
+                "name": "riverdale",
+                "votes": 1
+            },
+            {
+                "name": "white collar",
+                "votes": 1
+            },
+            {
+                "name": "malcolm in the middle",
+                "votes": 1
+            },
+            {
+                "name": "steins;gate",
+                "votes": 1
+            },
+            {
+                "name": "one punch man",
+                "votes": 1
+            },
+            {
+                "name": "twin peaks",
+                "votes": 1
+            },
+            {
+                "name": "hell's kitchen",
+                "votes": 1
+            },
+            {
+                "name": "the mandolorian",
+                "votes": 1
+            },
+            {
+                "name": "steven universe (not future)",
+                "votes": 1
+            },
+            {
+                "name": "kung fu panda: legends of awesomeness",
+                "votes": 1
+            },
+            {
+                "name": "psych",
+                "votes": 1
+            },
+            {
+                "name": "ping pong the animation",
+                "votes": 1
+            },
+            {
+                "name": "100",
+                "votes": 1
+            },
+            {
+                "name": "icarly",
+                "votes": 1
+            },
+            {
+                "name": "transformers prime",
+                "votes": 1
+            },
+            {
+                "name": "the falcon and the winter soldier",
+                "votes": 1
+            },
+            {
+                "name": "bigbang theory",
+                "votes": 1
+            },
+            {
+                "name": "hotel del luna",
+                "votes": 1
+            },
+            {
+                "name": "the promised neverland",
+                "votes": 1
+            },
+            {
+                "name": "ted lasso",
+                "votes": 1
+            },
+            {
+                "name": "a certain scientific railgun",
+                "votes": 1
+            },
+            {
+                "name": "book of boba fett",
+                "votes": 1
+            },
+            {
+                "name": "wentworth",
+                "votes": 1
+            },
+            {
+                "name": "love live! superstar!!",
+                "votes": 1
+            },
+            {
+                "name": "lost in space",
+                "votes": 1
+            }
+        ],
+        "comments": [],
+        "views": 0,
+        "upvotes": [],
+        "downvotes": [],
+        "pooledListNum": 89,
+        "updatedAt": "2021-11-28T16:44:41.509+00:00"
+    }
+]

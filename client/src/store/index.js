@@ -601,10 +601,11 @@ function GlobalStoreContextProvider(props) {
         console.log("PUBLISHING A LIST:");
         console.log(list);
         let id = list._id;
-
+        
         let response = await api.getTop5ListById(id);
         if (response.data.success) {
             let top5List = response.data.top5List;
+            top5List.items = top5List.items.map(item => item.toLowerCase());
             top5List.publishDate = new Date().toISOString();
             async function updateList(top5List) {
                 response = await api.updateTop5ListById(top5List._id, top5List);

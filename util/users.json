@@ -1,0 +1,996 @@
+[
+    {
+        "firstName": "Joe",
+        "lastName": "Shmo",
+        "username": "shmoeyjoey",
+        "email": "joe.shmo@McKillaGorilla.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Abdullah",
+        "lastName": "Saad",
+        "username": "absaad",
+        "email": "absaad@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Abdallah",
+        "lastName": "Salem",
+        "username": "absalem",
+        "email": "absalem@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Adit",
+        "lastName": "Anand",
+        "username": "adit-anand",
+        "email": "adit.anand03@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Aidan",
+        "lastName": "Furey",
+        "username": "fistuvfurey",
+        "email": "afurey@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Alexandra",
+        "lastName": "Jeong",
+        "username": "ajeong",
+        "email": "a@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Hana",
+        "lastName": "Mohideen",
+        "username": "hanamohideen",
+        "email": "ahm@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Aneek",
+        "lastName": "Barua",
+        "username": "anbarua",
+        "email": "anookabara@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Andy",
+        "lastName": "Yang",
+        "username": "andyyang",
+        "email": "andy.yang@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Anthony",
+        "lastName": "Tran",
+        "username": "Kano",
+        "email": "kano@dragon.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Anthony",
+        "lastName": "Pizzulli",
+        "username": "mutexMonster",
+        "email": "antyp@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Aaron",
+        "lastName": "Berkman",
+        "username": "arberkman",
+        "email": "arberkman@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Andrew",
+        "lastName": "Ojeda",
+        "username": "H8TRSHADES",
+        "email": "sigmabolz@gotem.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Avish ",
+        "lastName": "Parmar",
+        "username": "LoneS-",
+        "email": "orbit.actual@yahoo.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Ayon",
+        "lastName": "Paul",
+        "username": "BeanFiddler",
+        "email": "aypaul@aypaul.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Anees",
+        "lastName": "Ziafat",
+        "username": "cripmac",
+        "email": "aziaf@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Bennie",
+        "lastName": "Chen",
+        "username": "bennchen",
+        "email": "benn@top.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Brandon",
+        "lastName": "Lam",
+        "username": "Lamboyant",
+        "email": "lamb@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Chencheng",
+        "lastName": "Yang",
+        "username": "fakeaccount",
+        "email": "fakeacc@fake.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Chengzhi",
+        "lastName": "Dong",
+        "username": "zzzZhi",
+        "email": "zzzZhi@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Christina",
+        "lastName": "Chau",
+        "username": "cchau",
+        "email": "cchau@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Aisen",
+        "lastName": "Kim",
+        "username": "akakak",
+        "email": "ak15@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Chester",
+        "lastName": "Woo",
+        "username": "c_woo",
+        "email": "chester@chester.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Carwyn",
+        "lastName": "Collinsworth",
+        "username": "Mckenna_Dilemma",
+        "email": "mc@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Coby",
+        "lastName": "Yee",
+        "username": "guest",
+        "email": "fake@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Charles",
+        "lastName": "Yip Guoli",
+        "username": "cyg0719",
+        "email": "yipguoli@me.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Daniel",
+        "lastName": "Wu",
+        "username": "dwoo",
+        "email": "dan@sabrina.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Huang",
+        "username": "dummy",
+        "email": "dummy123@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "David",
+        "lastName": "Silverman",
+        "username": "daveed",
+        "email": "ds@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Derek",
+        "lastName": "Wang",
+        "username": "admin",
+        "email": "admin",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Dino",
+        "lastName": "Garofolo",
+        "username": "dsg715",
+        "email": "dinog@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Darren",
+        "lastName": "Tung",
+        "username": "dtung",
+        "email": "darren_tung@hotmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Eric",
+        "lastName": "Chiu",
+        "username": "ec12345",
+        "email": "ec12345@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Eric ",
+        "lastName": "Grunblatt",
+        "username": "egrunblatt",
+        "email": "egrun@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Elijah",
+        "lastName": "Harris",
+        "username": "elharris",
+        "email": "eliharr@wahooie.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Eric",
+        "lastName": "Fan",
+        "username": "erfan",
+        "email": "12345@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Eric",
+        "lastName": "Ruan",
+        "username": "erruan",
+        "email": "coolguy@xyz.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Eunbi",
+        "lastName": "Baek",
+        "username": "eubaek",
+        "email": "eubaek@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Gayatri",
+        "lastName": "Bellam",
+        "username": "gbell",
+        "email": "gbell@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "George",
+        "lastName": "Cheng",
+        "username": "gc12345",
+        "email": "gc12345@yahoo.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "George",
+        "lastName": "Liang",
+        "username": "gliang",
+        "email": "gliang@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Gabriello",
+        "lastName": "Lima",
+        "username": "glima",
+        "email": "glima@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Harry",
+        "lastName": "Kim",
+        "username": "hairy",
+        "email": "hairyemail@yahoo.com ",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Haoran",
+        "lastName": "Weng",
+        "username": "haweng",
+        "email": "my@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Simon",
+        "lastName": "Wang",
+        "username": "hwang",
+        "email": "great@simonh.wang",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Haris",
+        "lastName": "Kamran",
+        "username": "HarisK",
+        "email": "Hk@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Hongcheng",
+        "lastName": "Li",
+        "username": "li2000317",
+        "email": "HL@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Eddie ",
+        "lastName": "Zhu",
+        "username": "hongzhu",
+        "email": "hongzhu@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Hruday",
+        "lastName": "Rajput",
+        "username": "hrrajput",
+        "email": "untxrned@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "hua",
+        "lastName": "lin",
+        "username": "hualin1",
+        "email": "HL@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Alex",
+        "lastName": "Huang",
+        "username": "ape",
+        "email": "ape@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "John",
+        "lastName": "Cho",
+        "username": "hyeocho",
+        "email": "jc@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jack",
+        "lastName": "Liu",
+        "username": "jalliu",
+        "email": "jack@liu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jacob",
+        "lastName": "Richichi",
+        "username": "jarichichi",
+        "email": "richichichichi@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jason",
+        "lastName": "Guo",
+        "username": "jasguo",
+        "email": "jasguo@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jason",
+        "lastName": "Wu",
+        "username": "jwu",
+        "email": "jwu@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jason",
+        "lastName": "Zheng",
+        "username": "joemama",
+        "email": "joemama@joedad.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jason",
+        "lastName": "Tam",
+        "username": "jattam",
+        "email": "jattam@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jonathan",
+        "lastName": "Chan",
+        "username": "jchan",
+        "email": "jon@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jeffrey",
+        "lastName": "Hu",
+        "username": "candice",
+        "email": "whoasked@deez.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jenny",
+        "lastName": "Fu",
+        "username": "jennny",
+        "email": "jennny@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "jiajun",
+        "lastName": "chen",
+        "username": "jiajunchen",
+        "email": "jiajun@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jia Yi",
+        "lastName": "He",
+        "username": "jiayihe",
+        "email": "jiayihe@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jin",
+        "lastName": "Li",
+        "username": "jinkies",
+        "email": "jinki@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Justin",
+        "lastName": "Cai",
+        "username": "jjcai",
+        "email": "dog@dog.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Joshua",
+        "lastName": "Kartzman",
+        "username": "jkartzman",
+        "email": "josh@josh.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jason",
+        "lastName": "Fong",
+        "username": "jlfong",
+        "email": "jlfong@fong.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jacob",
+        "lastName": "Weinstein",
+        "username": "jnweinstein",
+        "email": "abcd@rfg.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Johairi",
+        "lastName": "Bernard",
+        "username": "johbernard",
+        "email": "johbernard@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jonathan",
+        "lastName": "Min",
+        "username": "jonmin",
+        "email": "jonmin@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Joonyoung",
+        "lastName": "Lee",
+        "username": "joolee",
+        "email": "jy73036476@naver.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Joshua",
+        "lastName": "Mathew",
+        "username": "joshmathew",
+        "email": "jmath@india.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Joshua",
+        "lastName": "Rajan",
+        "username": "joshramen",
+        "email": "josh@ramen.co",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jun Yi",
+        "lastName": "Lin",
+        "username": "jljun",
+        "email": "jun0001@cmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Justin",
+        "lastName": "Zhang",
+        "username": "Justin",
+        "email": "justzhang@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Jerry",
+        "lastName": "Kang",
+        "username": "jerrykang",
+        "email": "abc@xyz.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "KaiQi",
+        "lastName": "Liang",
+        "username": "kl2023",
+        "email": "kl2023@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Kevin ",
+        "lastName": "Calle",
+        "username": "kecalle",
+        "email": "kac123@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Kyle",
+        "lastName": "Yee",
+        "username": "kyyee",
+        "email": "kyyee@potato.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Lincoln",
+        "lastName": "Nguyen",
+        "username": "lincolnnguyen18",
+        "email": "lincolnnguyen18@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Matthew",
+        "lastName": "Broadbent",
+        "username": "mattjb01",
+        "email": "mattjb@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Mohidul",
+        "lastName": "Abedin",
+        "username": "meabedin",
+        "email": "mea@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Guarrasi",
+        "username": "mguarrasi",
+        "email": "mike@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Michael",
+        "lastName": "Campos",
+        "username": "Camposm",
+        "email": "michael.campos@stonybrook.edu",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Michelle",
+        "lastName": "Zhu",
+        "username": "mzhu",
+        "email": "mzhu@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Minato",
+        "lastName": "Fukuda",
+        "username": "mifukuda",
+        "email": "mifu@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Mahir",
+        "lastName": "Imtiyaz",
+        "username": "BasedOnWhat421",
+        "email": "baseddept@aypaul.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Mathilde",
+        "lastName": "Sreeves",
+        "username": "msreeves",
+        "email": "mat@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Burcu",
+        "lastName": "Acikoz",
+        "username": "bacikoz",
+        "email": "burcufake@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Nelson",
+        "lastName": "Zheng",
+        "username": "nezheng",
+        "email": "Feshy@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Noah",
+        "lastName": "Menasche",
+        "username": "Noahmena",
+        "email": "helpivebecomeanemail@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Noah",
+        "lastName": "Chen",
+        "username": "nochen",
+        "email": "noah.chen@aol.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Okuchukwu",
+        "lastName": "Nwaduwa",
+        "username": "noku",
+        "email": "gooutsideandtouchgrass@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Patrick",
+        "lastName": "Fan",
+        "username": "Cyfurion",
+        "email": "cyfurion@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Paul",
+        "lastName": "Kogan",
+        "username": "pol",
+        "email": "p@o.l",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Philip",
+        "lastName": "Liu",
+        "username": "phliu",
+        "email": "phliu@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Peter",
+        "lastName": "Walsh",
+        "username": "PeteyLumpkins",
+        "email": "peteylumpkins@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Quinten",
+        "lastName": "De Man",
+        "username": "quintendeman",
+        "email": "quinten.deman@mckenna.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Qamber",
+        "lastName": "Jafri",
+        "username": "qjafri",
+        "email": "bsmalls@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Rahul",
+        "lastName": "Dhillon",
+        "username": "rdhillon",
+        "email": "rahul@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Richard",
+        "lastName": "Chan",
+        "username": "richchan",
+        "email": "chanr@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Roger",
+        "lastName": "Cheng",
+        "username": "rogcheng",
+        "email": "abc123@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Roshan",
+        "lastName": "Kenia",
+        "username": "rokenia",
+        "email": "rokenia@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Ryan",
+        "lastName": "Rychlak",
+        "username": "rrychlak",
+        "email": "gmail@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Ruibo",
+        "lastName": "Xu",
+        "username": "ruibxu",
+        "email": "ruiboxu@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Ruipeng",
+        "lastName": "Sun",
+        "username": "passage",
+        "email": "10086@qq.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Runkai",
+        "lastName": "Qiu",
+        "username": "ruqiu",
+        "email": "333@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Saiful",
+        "lastName": "Haque",
+        "username": "sh",
+        "email": "sh@mail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Sameer",
+        "lastName": "Khan",
+        "username": "samekhan",
+        "email": "sameereal@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Sabareesh",
+        "lastName": "Vishwanathan",
+        "username": "savishwanath",
+        "email": "savishwanath@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Srdjan",
+        "lastName": "Bozin",
+        "username": "sbozin",
+        "email": "sbozin@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Shaan",
+        "lastName": "Khan",
+        "username": "shaakhan",
+        "email": "ilovemydog@dog.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Shaonli",
+        "lastName": "Chakrabarti",
+        "username": "shachakrabar",
+        "email": "shachakrabar@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Sydney",
+        "lastName": "Walker",
+        "username": "srwalker",
+        "email": "s_walker@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Starr",
+        "lastName": "Xu",
+        "username": "staxu",
+        "email": "sx@fakemail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Steven",
+        "lastName": "Sinha",
+        "username": "swsinha",
+        "email": "real_email38@aol.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Sung Mo",
+        "lastName": "Yang",
+        "username": "sungyang",
+        "email": "reallyrealemail@notfake.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Srineeth",
+        "lastName": "Jayanthi",
+        "username": "svjayanthi",
+        "email": "svjayanthi@sbu.edu",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Taylor",
+        "lastName": "Giles",
+        "username": "tagiles",
+        "email": "tagiles@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Tianrun",
+        "lastName": "Liu",
+        "username": "tianruliu",
+        "email": "abc@nsa.gov",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Timothy",
+        "lastName": "Wu",
+        "username": "tiwu",
+        "email": "tiwu@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Tina",
+        "lastName": "Wong",
+        "username": "twong",
+        "email": "twong@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Tahmidul",
+        "lastName": "Alam",
+        "username": "hideOn316",
+        "email": "faker@skt.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Tszhim",
+        "lastName": "Chan",
+        "username": "tchan",
+        "email": "tszhim@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Wei Hang",
+        "lastName": "Hong",
+        "username": "weihangh",
+        "email": "weihangh@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "wenhao",
+        "lastName": "xue",
+        "username": "wenxue",
+        "email": "wh@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Wengan",
+        "lastName": "Ou",
+        "username": "wengan",
+        "email": "wengan@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Bryant",
+        "lastName": "Tsang",
+        "username": "bryanttsang",
+        "email": "b@t.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "xincheng",
+        "lastName": "chi",
+        "username": "xinchi",
+        "email": "xc@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "xinyu",
+        "lastName": "xu",
+        "username": "xinyuxu1",
+        "email": "fake@email.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Xiyang",
+        "lastName": "Hu",
+        "username": "xiyhu",
+        "email": "xiyhu@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yajie",
+        "lastName": "Wang",
+        "username": "yajiwang",
+        "email": "yajiewang@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Cheng",
+        "lastName": "Yang",
+        "username": "yang34",
+        "email": "yang34@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yang ",
+        "lastName": "Yu",
+        "username": "skySmart",
+        "email": "skySky@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yang ",
+        "lastName": "Xie",
+        "username": "yaxxie",
+        "email": "yx@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yashrif",
+        "lastName": "Hasib",
+        "username": "yhasib",
+        "email": "yhas@sbu.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yibo",
+        "lastName": "Hu",
+        "username": "huyibo",
+        "email": "huyibo123@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yinan",
+        "lastName": "Shi",
+        "username": "yinshi",
+        "email": "yinan.shi@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Yongfeng",
+        "lastName": "Liang",
+        "username": "lyflyf",
+        "email": "lyf@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Youni",
+        "lastName": "Chen",
+        "username": "unic",
+        "email": "unic@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Derek",
+        "lastName": "Ding",
+        "username": "DerekD",
+        "email": "DerekD@gmail.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    },
+    {
+        "firstName": "Zalman",
+        "lastName": "Sholomson",
+        "username": "zsholomson",
+        "email": "zs@abc.com",
+        "passwordHash": "$2a$10$RhMr6.62aBAEcvkEVIFp9eo4KT69nq87sfFwVEQ2JbwNPWQ3uYXmy"
+    }
+]

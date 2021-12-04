@@ -1,0 +1,406 @@
+[{
+  "_id": {
+    "$oid": "61ab8ff2abeca13dd0a42f37"
+  },
+  "items": [
+    "Cod",
+    "Salmon",
+    "Tuna",
+    "Trout",
+    "Sardines"
+  ],
+  "upvotes": [],
+  "downvotes": [
+    "rose",
+    "korone"
+  ],
+  "name": "fish",
+  "ownerEmail": "intern@holox.net",
+  "ownerUsername": "cuteorca",
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61ab95f0abeca13dd0a43289"
+      },
+      "author": "cuteorca",
+      "content": "Don't knock it until you try it!"
+    },
+    {
+      "_id": {
+        "$oid": "61ab9078abeca13dd0a42f9d"
+      },
+      "author": "rose",
+      "content": "Sardines? I can't stand those..."
+    }
+  ],
+  "views": 5,
+  "createdAt": {
+    "$date": "2021-12-04T15:57:38.105Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:34:23.600Z"
+  },
+  "__v": 9,
+  "publishDate": {
+    "$date": "2021-12-04T15:58:39.276Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab9027abeca13dd0a42f4b"
+  },
+  "items": [
+    "?",
+    "?",
+    "?",
+    "?",
+    "?"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "fish",
+  "ownerEmail": "intern@holox.net",
+  "ownerUsername": "cuteorca",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T15:58:31.495Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T15:58:34.063Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ab9030abeca13dd0a42f68"
+  },
+  "items": [
+    "?",
+    "?",
+    "?",
+    "?",
+    "?"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "work in progress",
+  "ownerEmail": "intern@holox.net",
+  "ownerUsername": "cuteorca",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T15:58:40.757Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T15:58:44.122Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ab907eabeca13dd0a42fac"
+  },
+  "items": [
+    "horse mackerel",
+    "halibut",
+    "salmon",
+    "tuna",
+    "herring"
+  ],
+  "upvotes": [
+    "rose"
+  ],
+  "downvotes": [],
+  "name": "fish",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [],
+  "views": 2,
+  "createdAt": {
+    "$date": "2021-12-04T15:59:58.409Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:09:27.600Z"
+  },
+  "__v": 8,
+  "publishDate": {
+    "$date": "2021-12-04T16:00:55.478Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab90d0abeca13dd0a42feb"
+  },
+  "items": [
+    "petra gurin",
+    "tsukino mito",
+    "yuzuki roa",
+    "nishizono chigusa",
+    "inugami korone"
+  ],
+  "upvotes": [
+    "korone",
+    "rose"
+  ],
+  "downvotes": [],
+  "name": "nijisanji members",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61ab9194abeca13dd0a4302f"
+      },
+      "author": "korone",
+      "content": "something feels off about that fifth position."
+    }
+  ],
+  "views": 3,
+  "createdAt": {
+    "$date": "2021-12-04T16:01:20.679Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:09:25.900Z"
+  },
+  "__v": 8,
+  "publishDate": {
+    "$date": "2021-12-04T16:03:42.177Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab91a3abeca13dd0a43053"
+  },
+  "items": [
+    "Mario",
+    "?",
+    "?",
+    "?",
+    "that one ET game"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "retro games!",
+  "ownerEmail": "doggo@gmail.com",
+  "ownerUsername": "korone",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T16:04:51.602Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:32:12.993Z"
+  },
+  "__v": 2
+},{
+  "_id": {
+    "$oid": "61ab91ababeca13dd0a4305d"
+  },
+  "items": [
+    "Pomu Rainpuff",
+    "Suzuhara Lulu",
+    "Lize Helesta",
+    "Rosemi Lovelock",
+    "Yuzuki Roa"
+  ],
+  "upvotes": [
+    "rose"
+  ],
+  "downvotes": [
+    "korone"
+  ],
+  "name": "nijisanji members",
+  "ownerEmail": "doggo@gmail.com",
+  "ownerUsername": "korone",
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61ab97e8abeca13dd0a432e4"
+      },
+      "author": "korone",
+      "content": "Isn't it cool how I can dislike my own list?"
+    }
+  ],
+  "views": 3,
+  "createdAt": {
+    "$date": "2021-12-04T16:04:59.433Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:31:36.924Z"
+  },
+  "__v": 9,
+  "publishDate": {
+    "$date": "2021-12-04T16:07:28.224Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab94f8abeca13dd0a4324e"
+  },
+  "items": [
+    "neo sky, neo map!",
+    "snow halation",
+    "mirai wa kaze no you ni",
+    "aozora jumping heart",
+    "yume kataruyori yume utaou"
+  ],
+  "upvotes": [
+    "cuteorca"
+  ],
+  "downvotes": [],
+  "name": "Love Live Songs",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61ab9626abeca13dd0a43291"
+      },
+      "author": "cuteorca",
+      "content": "Ooh! I really like this selection. Surprised you didn't include Hajimari wa Kimi no Sora here, I thought you were a huge Liella! fan, but I can understand why these songs are up there too."
+    }
+  ],
+  "views": 1,
+  "createdAt": {
+    "$date": "2021-12-04T16:19:04.195Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:24:06.851Z"
+  },
+  "__v": 8,
+  "publishDate": {
+    "$date": "2021-12-04T16:21:49.086Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab9759abeca13dd0a432ad"
+  },
+  "items": [
+    "saga jihen",
+    "taiga yo tomo ni naite kure",
+    "yomigaere",
+    "revenge",
+    "mezame returner"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "Franchouchou songs",
+  "ownerEmail": "intern@holox.net",
+  "ownerUsername": "cuteorca",
+  "comments": [],
+  "views": 2,
+  "createdAt": {
+    "$date": "2021-12-04T16:29:13.427Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:36:22.234Z"
+  },
+  "__v": 6,
+  "publishDate": {
+    "$date": "2021-12-04T16:30:23.981Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab97f1abeca13dd0a432f0"
+  },
+  "items": [
+    "?",
+    "?",
+    "?",
+    "?",
+    "?"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "Yubi list",
+  "ownerEmail": "doggo@gmail.com",
+  "ownerUsername": "korone",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T16:31:45.380Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:31:47.877Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ab981aabeca13dd0a4330c"
+  },
+  "items": [
+    "tenkyuu, suisei wa yoru wo mataide",
+    "next color planet",
+    "stellar stellar",
+    "ghost",
+    "bluerose"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "Still Still Stellar Songs",
+  "ownerEmail": "doggo@gmail.com",
+  "ownerUsername": "korone",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T16:32:26.440Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:35:17.510Z"
+  },
+  "__v": 6,
+  "publishDate": {
+    "$date": "2021-12-04T16:35:17.496Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab98d0abeca13dd0a43365"
+  },
+  "items": [
+    "stellar stellar",
+    "starry jet",
+    "bluerose",
+    "ghost",
+    "next color planet"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "still still stellar songs",
+  "ownerEmail": "rose@nijisan.ji",
+  "ownerUsername": "rose",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T16:35:28.464Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:35:51.318Z"
+  },
+  "__v": 7,
+  "publishDate": {
+    "$date": "2021-12-04T16:35:51.275Z"
+  }
+},{
+  "_id": {
+    "$oid": "61ab994dabeca13dd0a433ee"
+  },
+  "items": [
+    "stellar stellar",
+    "bluerose",
+    "next color planet",
+    "tenkyuu, suisei wa yoru wo mataide",
+    "kakero"
+  ],
+  "upvotes": [],
+  "downvotes": [],
+  "name": "still still stellar songs",
+  "ownerEmail": "intern@holox.net",
+  "ownerUsername": "cuteorca",
+  "comments": [],
+  "views": 0,
+  "createdAt": {
+    "$date": "2021-12-04T16:37:33.225Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:38:20.707Z"
+  },
+  "__v": 6,
+  "publishDate": {
+    "$date": "2021-12-04T16:38:20.697Z"
+  }
+}]

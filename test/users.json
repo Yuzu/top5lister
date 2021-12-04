@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "61ab8f1babeca13dd0a42f23"
+  },
+  "firstName": "Korone",
+  "lastName": "Inugami",
+  "username": "korone",
+  "email": "doggo@gmail.com",
+  "passwordHash": "$2a$10$52i1XggtfTFQ.edds4I5lezSjGK8zgLbthsaimuuUqBU6VSuDxuMu",
+  "createdAt": {
+    "$date": "2021-12-04T15:54:03.795Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T15:54:03.795Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ab8f88abeca13dd0a42f2a"
+  },
+  "firstName": "Rosemi",
+  "lastName": "Lovelock",
+  "username": "rose",
+  "email": "rose@nijisan.ji",
+  "passwordHash": "$2a$10$QbpJfHXmtTyxjI0yK7mNR.gyDt..l7m3pNCD7ctGHHnykQnK3CPSG",
+  "createdAt": {
+    "$date": "2021-12-04T15:55:52.108Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T15:55:52.108Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61ab8fedabeca13dd0a42f31"
+  },
+  "firstName": "Chloe",
+  "lastName": "Sakamata",
+  "username": "cuteorca",
+  "email": "intern@holox.net",
+  "passwordHash": "$2a$10$ucasTaLMW8SP1nNDj5yaUuh/UnK5nZZ9pReHLC5k864tTIdtJ3PiC",
+  "createdAt": {
+    "$date": "2021-12-04T15:57:33.515Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T15:57:33.515Z"
+  },
+  "__v": 0
+}]

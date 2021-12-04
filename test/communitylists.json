@@ -1,0 +1,372 @@
+[{
+  "_id": {
+    "$oid": "61ab902fabeca13dd0a42f5f"
+  },
+  "upvotes": [
+    "rose",
+    "korone",
+    "cuteorca"
+  ],
+  "downvotes": [],
+  "name": "fish",
+  "items": [
+    {
+      "_id": {
+        "$oid": "61ab902fabeca13dd0a42f61"
+      },
+      "name": "salmon",
+      "votes": 7
+    },
+    {
+      "_id": {
+        "$oid": "61ab902fabeca13dd0a42f60"
+      },
+      "name": "cod",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab902fabeca13dd0a42f62"
+      },
+      "name": "tuna",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab90b7abeca13dd0a42fce"
+      },
+      "name": "horse mackerel",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab90b7abeca13dd0a42fcf"
+      },
+      "name": "halibut",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab902fabeca13dd0a42f63"
+      },
+      "name": "trout",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ab902fabeca13dd0a42f64"
+      },
+      "name": "sardines",
+      "votes": 1
+    },
+    {
+      "_id": {
+        "$oid": "61ab90b7abeca13dd0a42fd0"
+      },
+      "name": "herring",
+      "votes": 1
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61ab90c0abeca13dd0a42fe5"
+      },
+      "author": "rose",
+      "content": "salmon at the top, as it should be!~"
+    }
+  ],
+  "views": 5,
+  "pooledListNum": 2,
+  "createdAt": {
+    "$date": "2021-12-04T15:58:39.322Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:38:35.178Z"
+  },
+  "__v": 5
+},{
+  "_id": {
+    "$oid": "61ab915eabeca13dd0a43005"
+  },
+  "upvotes": [
+    "rose",
+    "korone",
+    "cuteorca"
+  ],
+  "downvotes": [],
+  "name": "nijisanji members",
+  "items": [
+    {
+      "_id": {
+        "$oid": "61ab915eabeca13dd0a43006"
+      },
+      "name": "petra gurin",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab9240abeca13dd0a43089"
+      },
+      "name": "pomu rainpuff",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab915eabeca13dd0a43007"
+      },
+      "name": "tsukino mito",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab915eabeca13dd0a43008"
+      },
+      "name": "yuzuki roa",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab9240abeca13dd0a4308a"
+      },
+      "name": "suzuhara lulu",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab9240abeca13dd0a4308b"
+      },
+      "name": "lize helesta",
+      "votes": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ab915eabeca13dd0a43009"
+      },
+      "name": "nishizono chigusa",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ab9240abeca13dd0a4308c"
+      },
+      "name": "rosemi lovelock",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ab915eabeca13dd0a4300a"
+      },
+      "name": "inugami korone",
+      "votes": 1
+    }
+  ],
+  "comments": [
+    {
+      "_id": {
+        "$oid": "61ab928aabeca13dd0a430cd"
+      },
+      "author": "rose",
+      "content": "Yeah I think it's pretty cool too"
+    },
+    {
+      "_id": {
+        "$oid": "61ab9257abeca13dd0a430b9"
+      },
+      "author": "korone",
+      "content": "This list is cool."
+    }
+  ],
+  "views": 5,
+  "pooledListNum": 2,
+  "createdAt": {
+    "$date": "2021-12-04T16:03:42.223Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:38:35.843Z"
+  },
+  "__v": 6
+},{
+  "_id": {
+    "$oid": "61ab959dabeca13dd0a43264"
+  },
+  "upvotes": [
+    "cuteorca"
+  ],
+  "downvotes": [],
+  "name": "love live songs",
+  "items": [
+    {
+      "_id": {
+        "$oid": "61ab959dabeca13dd0a43265"
+      },
+      "name": "neo sky, neo map!",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab959dabeca13dd0a43266"
+      },
+      "name": "snow halation",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab959dabeca13dd0a43267"
+      },
+      "name": "mirai wa kaze no you ni",
+      "votes": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ab959dabeca13dd0a43268"
+      },
+      "name": "aozora jumping heart",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ab959dabeca13dd0a43269"
+      },
+      "name": "yume kataruyori yume utaou",
+      "votes": 1
+    }
+  ],
+  "comments": [],
+  "views": 1,
+  "pooledListNum": 1,
+  "createdAt": {
+    "$date": "2021-12-04T16:21:49.128Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:38:36.689Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61ab97a0abeca13dd0a432c3"
+  },
+  "upvotes": [],
+  "downvotes": [
+    "cuteorca"
+  ],
+  "name": "franchouchou songs",
+  "items": [
+    {
+      "_id": {
+        "$oid": "61ab97a0abeca13dd0a432c4"
+      },
+      "name": "saga jihen",
+      "votes": 5
+    },
+    {
+      "_id": {
+        "$oid": "61ab97a0abeca13dd0a432c5"
+      },
+      "name": "taiga yo tomo ni naite kure",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab97a0abeca13dd0a432c6"
+      },
+      "name": "yomigaere",
+      "votes": 3
+    },
+    {
+      "_id": {
+        "$oid": "61ab97a0abeca13dd0a432c7"
+      },
+      "name": "revenge",
+      "votes": 2
+    },
+    {
+      "_id": {
+        "$oid": "61ab97a0abeca13dd0a432c8"
+      },
+      "name": "mezame returner",
+      "votes": 1
+    }
+  ],
+  "comments": [],
+  "views": 2,
+  "pooledListNum": 1,
+  "createdAt": {
+    "$date": "2021-12-04T16:30:24.035Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:38:37.672Z"
+  },
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "61ab98c5abeca13dd0a43355"
+  },
+  "upvotes": [
+    "rose",
+    "cuteorca"
+  ],
+  "downvotes": [],
+  "name": "still still stellar songs",
+  "items": [
+    {
+      "_id": {
+        "$oid": "61ab98c5abeca13dd0a43358"
+      },
+      "name": "stellar stellar",
+      "votes": 13
+    },
+    {
+      "_id": {
+        "$oid": "61ab98c5abeca13dd0a43357"
+      },
+      "name": "next color planet",
+      "votes": 8
+    },
+    {
+      "_id": {
+        "$oid": "61ab98c5abeca13dd0a4335a"
+      },
+      "name": "bluerose",
+      "votes": 8
+    },
+    {
+      "_id": {
+        "$oid": "61ab98c5abeca13dd0a43356"
+      },
+      "name": "tenkyuu, suisei wa yoru wo mataide",
+      "votes": 7
+    },
+    {
+      "_id": {
+        "$oid": "61ab98c5abeca13dd0a43359"
+      },
+      "name": "ghost",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab98e7abeca13dd0a43383"
+      },
+      "name": "starry jet",
+      "votes": 4
+    },
+    {
+      "_id": {
+        "$oid": "61ab997cabeca13dd0a4341b"
+      },
+      "name": "kakero",
+      "votes": 1
+    }
+  ],
+  "comments": [],
+  "views": 4,
+  "pooledListNum": 3,
+  "createdAt": {
+    "$date": "2021-12-04T16:35:17.550Z"
+  },
+  "updatedAt": {
+    "$date": "2021-12-04T16:38:26.852Z"
+  },
+  "__v": 4
+}]
