@@ -181,13 +181,13 @@ function ExpandedListCard(props) {
     // TODO - if logged in, check for user's like/dislike status on this list and color one of the buttons accordingly.
     // If they click again on the previous vote then we just remove any votes
     // If they click on the opposite, get rid of old and change it.
-    
+
     // No need to check for published status since it's a given here.
     let cardElement = (
             <ListItem
                 id={list._id}
                 key={list._id}
-                sx={{ marginTop: '15px', display: 'flex', flexDirection: "row", p: 1, bgcolor: "#d4d4f5" }}
+                sx={{ marginTop: '15px', display: 'flex', flexDirection: "row", p: 1, bgcolor: published ? "#d4d4f5" : "#fffff1" }}
                 style={{
                     fontSize: '24pt',
                     width: '100%',
@@ -229,7 +229,7 @@ function ExpandedListCard(props) {
                     </Box>
                     <Box sx={{ p: 1 }} height="15px" id="comment-input">
                             <TextField
-                                disabled = {isGuest ? true : false}
+                                disabled = {isGuest ? true : published ? false : true}
                                 margin="normal"
                                 required
                                 name="name"
@@ -248,7 +248,7 @@ function ExpandedListCard(props) {
                         {viewComponent}
                         {publishDate}
                         <Box sx={{ p: 1 }} alignSelf='end' />
-                        <IconButton disabled = {isGuest ? true : false} color = {upvoted ? "success" : "inherit"} onClick={(event) => {
+                        <IconButton disabled = {isGuest ? true : published ? false : true} color = {upvoted ? "success" : "inherit"} onClick={(event) => {
                             console.log("Upvote");
                             store.upvote(list);
                         }} aria-label='upvote'>
@@ -259,7 +259,7 @@ function ExpandedListCard(props) {
                     </Box>
 
                     <Box sx={{ p: 1 }} alignSelf='start'>
-                        <IconButton disabled = {isGuest ? true : false} color = {downvoted ? "error" : "inherit"} onClick={(event) => {
+                        <IconButton disabled = {isGuest ? true : published ? false : true} color = {downvoted ? "error" : "inherit"} onClick={(event) => {
                             console.log("Downvote");
                             store.downvote(list);
                         }} aria-label='downvote'>

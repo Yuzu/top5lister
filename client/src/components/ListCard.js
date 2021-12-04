@@ -111,22 +111,21 @@ function ListCard(props) {
 
     let leftPadding = published ? "" : (<Box sx={{ p: 1 }} height="-250px" alignSelf='start' />)
 
-    let expandButton = ""
-
-    if (published) {
-        expandButton = 
+    let expandButton =
             (<Box height="20px" sx={{ p: 1 }} alignSelf='start'>
                 <IconButton onClick={(event) => {
                     console.log("expand");
                     event.preventDefault();
                     event.stopPropagation();
                     store.expandListCard(list);
-                    store.incrementViewCount(list);
+                    if (published) {
+                        store.incrementViewCount(list);
+                    }
                 }} aria-label='open'>
                     <KeyboardArrowDownIcon style={{fontSize:'20pt'}} />
                 </IconButton>
             </Box>);
-    }
+    
 
     let author = (<Box sx={{ p: 1, flexGrow: 1}} fontSize={16} alignSelf='start'>{"By: " + list.ownerUsername}</Box>);
 
