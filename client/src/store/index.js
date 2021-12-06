@@ -491,7 +491,6 @@ function GlobalStoreContextProvider(props) {
     }
 
     store.homeView = async function () {
-        // TODO - MAKE SURE TO LOAD NOTHING FOR A GUEST!!!!
         console.log("Setting current view to: Home");
         storeReducer({
             type: GlobalStoreActionType.SET_CURRENT_VIEW,

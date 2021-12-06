@@ -19,6 +19,7 @@ import SortIcon from '@mui/icons-material/Sort';
 
 import { useContext } from 'react'
 import { GlobalStoreContext } from '../store'
+import AuthContext from '../auth'
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -79,6 +80,7 @@ export default function PrimarySearchAppBar() {
     DISLIKES: "DISLIKES"
 }
 
+  const { auth } = useContext(AuthContext);
   const { store } = useContext(GlobalStoreContext);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -189,6 +191,7 @@ export default function PrimarySearchAppBar() {
                     onClick={store.homeView} 
                     size="large" 
                     sx={{ color: store.currentView === CurrentViewType.HOME_SCREEN ? "#0743e8" :"#6a6a6a"}}
+                    disabled = {auth.isGuest ? true : false}
                 >
                 <Badge>
                     <HouseIcon />

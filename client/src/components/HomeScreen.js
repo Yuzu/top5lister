@@ -5,6 +5,7 @@ import ExpandedListCard from "./ExpandedListCard.js";
 import List from '@mui/material/List';
 import AlertDialog from "./AlertDialog.js";
 import AppBar from "./AppBar.js";
+import AuthContext from '../auth'
 
 /*
     This React component lists all the top5 lists in the UI.
@@ -15,7 +16,8 @@ import AppBar from "./AppBar.js";
 // TODO - rewrite this entire thing to fit the assignment.
 const HomeScreen = () => {
     const { store } = useContext(GlobalStoreContext);
-    
+    const { auth } = useContext(AuthContext);
+
     const[oldStore, updateStore] = useState(store);
 
     useEffect(() => {
@@ -42,10 +44,13 @@ const HomeScreen = () => {
 
     useEffect(() => {
         console.log("INITIAL LOADING");
+        if (auth.isGuest && store.currentView === "HOME_SCREEN") {
+            store.allView();
+            return;
+        }
         store.loadLists();
     }, [])
 
-    
     let listCard = "";
     // TODO - rewrite to account for open vs closed cards, as well as writing the code for the cards.
     if (store) {

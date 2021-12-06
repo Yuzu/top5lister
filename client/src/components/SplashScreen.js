@@ -18,7 +18,7 @@ export default function SplashScreen() {
             </div>
             
             <br/>
-            <div style={{fontSize: 25}}>Create, Share, and View Top 5 Lists with a vast community of likeminded Top 5 Users!</div   >
+            <div style={{fontSize: 25}}>Create, Share, and View Top 5 Lists with a vast community of likeminded Top 5 Users!</div>
             <br />
             <br />
             <Stack id="splash-button-list" spacing={2} direction="column">
